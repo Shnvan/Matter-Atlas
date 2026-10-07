@@ -1,0 +1,75 @@
+<!-- HTML5 with inline CSS and system fonts makes this foundation guide readable directly from a file URL without installation, required network assets, or JavaScript. The future educational application will use vanilla ES6+ and inline SVG/Canvas in this same file. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Project foundation and verified research for Inside the Arduino Uno: From Board to Electron.">
+<title>Inside the Arduino Uno — Project Foundation</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1218;--surface:#14212b;--raised:#1b2d39;--text:#eaf3f6;--muted:#afbfca;--accent:#00979d;--link:#73e3de;--border:#36505f;--caution:#f2c879;--shadow:0 8px 30px #00000030}
+*{box-sizing:border-box}
+html{scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--link);text-underline-offset:.22em;overflow-wrap:anywhere}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--link);outline-offset:4px;border-radius:3px}
+.skip{position:absolute;left:1rem;top:-6rem;padding:.7rem 1rem;background:var(--surface);z-index:10}
+.skip:focus{top:1rem}
+.wrap{max-width:1180px;margin-inline:auto;padding:clamp(1rem,4vw,3rem)}
+header{border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--link);text-transform:uppercase;font-size:.78rem;letter-spacing:.14em;font-weight:700;margin:0}
+h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.12;max-width:20ch;margin:.8rem 0 1.2rem}
+h2{font-size:1.28rem;line-height:1.35;margin:0 0 .8rem}
+p{max-width:72ch;margin:.7rem 0}
+.lead{font-size:1.12rem;color:var(--muted)}
+.status{display:inline-flex;align-items:center;gap:.65rem;border:1px solid var(--border);border-radius:999px;padding:.35rem .8rem;color:var(--link);font-size:.88rem;margin-top:1.2rem}
+.status::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin-top:1.3rem}
+nav a{display:inline-flex;min-height:44px;align-items:center}
+.note{margin:0 0 1.5rem;padding:1rem 1.2rem;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1.1rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.4rem;box-shadow:var(--shadow);min-width:0}
+.card ul{list-style:none;margin:0;padding:0}
+.card li+li{border-top:1px solid var(--border)}
+.card a{display:flex;align-items:center;min-height:44px;padding:.6rem 0}
+.baseline{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:400px){.card{padding:1.1rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to documentation</a>
+<header>
+<div class="wrap">
+<p class="eyebrow">Arduino workbench · Project memory</p>
+<h1>Inside the Arduino Uno: From Board to Electron</h1>
+<p class="lead">An educational journey from the complete board to circuits, materials and the physics of charge and light.</p>
+<p>At every meaningful level: <strong>What is this made of?</strong> and <strong>How does it work?</strong></p>
+<div class="status">Phase 0 · Foundation repository</div>
+<nav aria-label="Guide sections"><a href="#documents">Documentation</a><a href="#baseline">Reference and limits</a><a href="HANDOFF.md">Current handoff</a></nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<div class="note"><p><strong>This is the project foundation guide.</strong> Explore, Explode, Assemble, Zoom, Signal Journey and Quiz are planned in the task register. The documents below capture the verified reference, design contracts and next work.</p><p>Documentation links open local Markdown or text files. Your browser may display raw text or download them; no Markdown viewer is required by this guide.</p></div>
+<div class="grid" id="documents">
+<section class="card" aria-labelledby="group-0"><h2 id="group-0">Start here</h2><ul><li><a href="AGENTS.md">Agent operating manual</a></li><li><a href="HANDOFF.md">Current handoff</a></li><li><a href="TASKS.md">Execution tasks</a></li><li><a href="README.md">Repository guide</a></li></ul></section>
+<section class="card" aria-labelledby="group-1"><h2 id="group-1">Product and specification</h2><ul><li><a href="PROJECT.md">Product vision</a></li><li><a href="CONTEXT.md">Durable context</a></li><li><a href="REQUIREMENTS.md">Requirements and traceability</a></li><li><a href="docs/product/user-journeys.md">Learner journeys</a></li><li><a href="docs/product/learning-objectives.md">Learning objectives</a></li><li><a href="docs/product/terminology.md">Canonical terminology</a></li></ul></section>
+<section class="card" aria-labelledby="group-2"><h2 id="group-2">Evidence and hardware</h2><ul><li><a href="COMPONENT_INVENTORY.md">116-element reference inventory</a></li><li><a href="SOURCES.md">Canonical sources</a></li><li><a href="RESEARCH.md">Findings and open questions</a></li><li><a href="docs/electronics/uno-r3-anatomy.md">Board anatomy</a></li><li><a href="docs/electronics/power-system.md">Power system</a></li><li><a href="docs/electronics/microcontrollers.md">Microcontrollers, software and pins</a></li><li><a href="docs/electronics/pcb.md">PCB structures</a></li><li><a href="docs/electronics/passives.md">Component-family branches</a></li><li><a href="docs/electronics/signal-paths.md">Causal signal paths</a></li></ul></section>
+<section class="card" aria-labelledby="group-3"><h2 id="group-3">Physics</h2><ul><li><a href="docs/physics/transistor.md">MOSFET and field control</a></li><li><a href="docs/physics/semiconductor.md">Semiconductors and doping</a></li><li><a href="docs/physics/materials.md">Materials and crystals</a></li><li><a href="docs/physics/atoms-electrons.md">Atoms, electrons and nuclei</a></li><li><a href="docs/physics/photons.md">Photons and the LED</a></li></ul></section>
+<section class="card" aria-labelledby="group-4"><h2 id="group-4">Design and engineering</h2><ul><li><a href="ARCHITECTURE.md">Application architecture</a></li><li><a href="DATA_MODEL.md">Eight embedded data contracts</a></li><li><a href="CONTENT_MODEL.md">Educational content model</a></li><li><a href="DESIGN.md">Visual design system</a></li><li><a href="UX.md">Interaction design</a></li><li><a href="ACCESSIBILITY.md">Accessibility contract</a></li><li><a href="docs/engineering/rendering.md">Rendering</a></li><li><a href="docs/engineering/interactions.md">Interaction contracts</a></li><li><a href="docs/engineering/performance.md">Performance lifecycle</a></li><li><a href="docs/engineering/browser-support.md">Browser and offline support</a></li></ul></section>
+<section class="card" aria-labelledby="group-5"><h2 id="group-5">Governance and verification</h2><ul><li><a href="DECISIONS.md">Accepted decisions</a></li><li><a href="TESTING.md">Checks, results and limits</a></li><li><a href="RISKS.md">Risk register</a></li><li><a href="CHANGELOG.md">Meaningful changes</a></li><li><a href="scripts/validate-foundation.ps1">Foundation validator</a></li><li><a href="docs/briefs/website-specification.txt">Original website brief</a></li><li><a href="docs/briefs/project-foundation-specification.txt">Original foundation brief</a></li></ul></section>
+</div>
+<section class="baseline" id="baseline" aria-labelledby="baseline-title">
+<h2 id="baseline-title">Reference and limits</h2>
+<p>The main reference is the published <strong>socketed Uno Rev3, UNO-TH_Rev3e</strong> schematic and CAD. The inventory reconciles 116 CAD elements, including board features and unpopulated footprints. An official-document discrepancy is recorded separately from a verified production variant.</p>
+<p>The future visual scenes will be labeled educational, conceptual or simplified. Unsupported die geometry, process nodes, exact material recipes and numerical scales remain omitted or explicitly bounded in the research notebook.</p>
+<p>For contributors: read the agent manual, handoff and task register first. Run <code>powershell -NoProfile -ExecutionPolicy Bypass -File scripts/validate-foundation.ps1</code> to check the foundation.</p>
+</section>
+</main>
+<footer><div class="wrap"><p>Foundation milestone · 8 October 2026 · Local documentation and research. Browser checks and remaining verification limits are recorded in TESTING.md.</p></div></footer>
+</body>
+</html>
+

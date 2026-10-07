@@ -1,0 +1,1177 @@
+Before implementing the website specification I just gave you, set up this project as if it will be worked on by multiple AI agents, engineers, researchers, designers, educators, and reviewers across many separate sessions.
+
+Do not rely on conversation memory as the source of truth.
+
+The repository itself must contain the durable project memory.
+
+Your first task is therefore to create the project's documentation, planning, research, handoff, and agent-operation structure before writing substantial production code.
+
+Think simultaneously like:
+
+- Principal software engineer
+- AI coding-agent architect
+- Front-end architect
+- UX/UI designer
+- Interaction designer
+- Electronics engineer
+- Embedded-systems engineer
+- Semiconductor educator
+- Physics educator
+- Technical researcher
+- Accessibility specialist
+- QA engineer
+- Security-minded web engineer
+- Technical writer
+- Product manager
+- Project manager
+
+The documentation system must make it possible for a completely new AI agent to enter the repository later, read the relevant files, understand the project, continue the work safely, and know what has already been verified, implemented, rejected, or left unresolved.
+
+
+==================================================
+CORE PRINCIPLE
+==================================================
+
+Treat Markdown files as the project's external memory.
+
+Important information must not exist only in chat.
+
+Whenever an important decision, verified fact, unresolved question, design rule, architectural choice, test result, or implementation status changes, update the appropriate repository document.
+
+Documentation should be concise enough to remain useful but detailed enough that another agent does not need the original conversation.
+
+
+==================================================
+CREATE THIS REPOSITORY STRUCTURE
+==================================================
+
+Create at minimum:
+
+/
+├── README.md
+├── AGENTS.md
+├── PROJECT.md
+├── CONTEXT.md
+├── REQUIREMENTS.md
+├── ARCHITECTURE.md
+├── DESIGN.md
+├── UX.md
+├── CONTENT_MODEL.md
+├── DATA_MODEL.md
+├── COMPONENT_INVENTORY.md
+├── RESEARCH.md
+├── SOURCES.md
+├── DECISIONS.md
+├── TASKS.md
+├── TESTING.md
+├── ACCESSIBILITY.md
+├── RISKS.md
+├── HANDOFF.md
+├── CHANGELOG.md
+│
+├── docs/
+│   ├── electronics/
+│   │   ├── uno-r3-anatomy.md
+│   │   ├── power-system.md
+│   │   ├── microcontrollers.md
+│   │   ├── pcb.md
+│   │   ├── passives.md
+│   │   └── signal-paths.md
+│   │
+│   ├── physics/
+│   │   ├── transistor.md
+│   │   ├── semiconductor.md
+│   │   ├── materials.md
+│   │   ├── atoms-electrons.md
+│   │   └── photons.md
+│   │
+│   ├── product/
+│   │   ├── user-journeys.md
+│   │   ├── learning-objectives.md
+│   │   └── terminology.md
+│   │
+│   └── engineering/
+│       ├── rendering.md
+│       ├── interactions.md
+│       ├── performance.md
+│       └── browser-support.md
+│
+└── index.html
+
+Do not create empty ceremonial files.
+
+Every file must contain useful initial content.
+
+If two proposed documents truly overlap, you may merge them, but explain the reason in DECISIONS.md.
+
+
+==================================================
+AGENTS.md
+==================================================
+
+This is the operating manual for every future AI agent.
+
+It should be the first file an agent reads.
+
+Include:
+
+1. Project mission
+2. Scope
+3. Non-goals
+4. Source-of-truth hierarchy
+5. Required reading order
+6. Repository map
+7. Coding conventions
+8. Research rules
+9. Citation rules
+10. Factual-accuracy rules
+11. Rules for educational simplification
+12. Accessibility requirements
+13. Testing expectations
+14. Documentation-update rules
+15. Handoff procedure
+16. Definition of done
+17. Prohibited behaviors
+
+Explicitly instruct future agents:
+
+- Never silently invent electronics facts.
+- Never silently replace Uno Rev3 parts with clone-board parts.
+- Never invent component part numbers.
+- Never invent semiconductor process information.
+- Never invent scale measurements.
+- Never create fake citations.
+- Never leave important discoveries only in chat.
+- Never mark a task complete without testing it.
+- Never modify architectural assumptions without recording the change.
+- Never present a conceptual illustration as an exact physical representation.
+- Never ship a UI control that does nothing.
+
+Add:
+
+"When uncertain, verify before implementing."
+
+
+==================================================
+PROJECT.md
+==================================================
+
+Describe the project at product level.
+
+Include:
+
+- Product name
+- Vision
+- Problem being solved
+- Target audience
+- Learning goals
+- Major features
+- Why this experience is different from existing Arduino tutorials
+- Success criteria
+- Explicit non-goals
+- Current project phase
+
+Include the central learning concept:
+
+"What is this made of?"
+
+and:
+
+"How does it work?"
+
+at every level.
+
+
+==================================================
+CONTEXT.md
+==================================================
+
+Create a condensed but durable summary of the original specification.
+
+This file should answer:
+
+- What are we building?
+- Why?
+- For whom?
+- What constraints already exist?
+- What assumptions have already been made?
+- What concepts are central?
+- What terminology must remain consistent?
+
+Do not simply paste the entire original prompt.
+
+Extract its durable context.
+
+
+==================================================
+REQUIREMENTS.md
+==================================================
+
+Convert the project prompt into numbered requirements.
+
+Use identifiers such as:
+
+FUNC-001
+FUNC-002
+
+CONTENT-001
+
+UX-001
+
+ACC-001
+
+PERF-001
+
+RESEARCH-001
+
+QA-001
+
+Examples:
+
+FUNC-001:
+User can click a board component and open its detail panel.
+
+FUNC-002:
+User can enter a zoom path from a board component.
+
+CONTENT-001:
+Every component must explain purpose, made-of hierarchy, and operating principle.
+
+ACC-001:
+Every draggable component must also be operable without dragging.
+
+Each requirement must have:
+
+- ID
+- Description
+- Priority
+- Verification method
+- Status
+
+This document should eventually allow requirements traceability.
+
+
+==================================================
+ARCHITECTURE.md
+==================================================
+
+Document the software architecture.
+
+Include:
+
+- Single-file deployment constraint
+- Logical modules despite single-file output
+- JavaScript state model
+- Rendering architecture
+- SVG board architecture
+- Canvas/SVG microscopic visualization architecture
+- Event model
+- Navigation/state transitions
+- Explore mode
+- Explode mode
+- Assemble mode
+- Zoom mode
+- Signal Journey mode
+- Quiz mode
+- Data-driven component rendering
+- Source/citation rendering
+- Accessibility architecture
+- Animation lifecycle
+- Performance strategy
+
+Include a dependency diagram.
+
+Explain how the final index.html can remain maintainable even though it is self-contained.
+
+Define which data is canonical and which UI is generated from it.
+
+
+==================================================
+DESIGN.md
+==================================================
+
+This is the visual design system.
+
+Document:
+
+- Design principles
+- Arduino-inspired workbench aesthetic
+- Color tokens
+- Typography
+- Spacing system
+- Radius system
+- Elevation
+- Borders
+- Component-card styles
+- Board visualization rules
+- Microscopic visualization rules
+- Icon style
+- Diagram style
+- Motion principles
+- Dark theme
+- Light theme
+- Responsive behavior
+
+Also define:
+
+VISUAL TRUTH RULES
+
+Examples:
+
+- Scale transitions must not imply scenes are physically to scale.
+- Atomic diagrams must not imply literal planetary electron orbits.
+- Conceptual die layouts must be labeled conceptual.
+- Electric-current animations must not imply individual electrons travel from source to load instantly.
+
+
+==================================================
+UX.md
+==================================================
+
+Think like an interaction designer.
+
+Document:
+
+- Main navigation model
+- Explore journey
+- First-time-user experience
+- Component selection behavior
+- Side panel behavior
+- Mobile bottom-sheet behavior
+- Explode interaction
+- Assembly interaction
+- Zoom interaction
+- Signal Journey interaction
+- Quiz flow
+- Error states
+- Empty states
+- Keyboard interactions
+- Touch interactions
+- User feedback
+- Progress indications
+
+Write major flows step-by-step.
+
+Example:
+
+User clicks ATmega328P
+→ detail panel opens
+→ sees purpose
+→ sees "Made of"
+→ selects "Zoom into this part"
+→ IC package scene
+→ silicon die
+→ functional blocks
+→ transistor
+→ semiconductor
+→ atom
+
+Include user journeys for:
+
+- beginner exploring freely
+- student following the entire zoom path
+- teacher using the site as a demonstration
+- keyboard-only user
+
+
+==================================================
+CONTENT_MODEL.md
+==================================================
+
+Define the educational content structure.
+
+Every meaningful object should be able to answer:
+
+- What is it?
+- What category is it?
+- Where is it?
+- What does it do?
+- How does it work?
+- What is it made of?
+- What happens if it is missing?
+- What analogy helps explain it?
+- What is the limitation of that analogy?
+- What can I zoom into next?
+- What source supports this?
+- Is the visualization exact, conceptual, or simplified?
+
+Define content depth levels:
+
+BEGINNER
+INTERMEDIATE
+DEEP DIVE
+
+Avoid dumping all technical depth on beginners immediately.
+
+
+==================================================
+DATA_MODEL.md
+==================================================
+
+Design the actual data schemas before implementation.
+
+Define:
+
+components
+zoomLevels
+sources
+quizQuestions
+signalJourneys
+terminology
+materialEntries
+
+For each schema specify:
+
+- field
+- type
+- required/optional
+- meaning
+- example
+- validation rules
+
+Example component:
+
+{
+  id,
+  name,
+  referenceDesignator,
+  category,
+  subsystem,
+  purpose,
+  technicalExplanation,
+  specs,
+  ifMissing,
+  analogy,
+  analogyLimit,
+  madeOf,
+  worksBecauseOf,
+  zoomTarget,
+  sourceRefs,
+  boardPosition,
+  assemblySlot,
+  groupedParts,
+  verificationStatus
+}
+
+Add verificationStatus values such as:
+
+verified
+approximate
+conceptual
+unverified
+
+
+==================================================
+COMPONENT_INVENTORY.md
+==================================================
+
+This must become the authoritative hardware inventory for the Uno Rev3.
+
+Create a table with:
+
+- Reference designator
+- Component
+- Part number
+- Category
+- Subsystem
+- Quantity
+- Role
+- Verified source
+- Verification status
+- Notes
+
+Separate:
+
+- Main microcontroller
+- USB microcontroller
+- Power
+- Clock
+- Reset
+- USB
+- LEDs
+- Passives
+- Protection
+- Headers/connectors
+- PCB features
+
+Do not assume the specification's initial component list is perfectly complete.
+
+Verify it against the official schematic.
+
+
+==================================================
+RESEARCH.md
+==================================================
+
+This is the research notebook.
+
+Record:
+
+- Questions investigated
+- Search terms
+- Sources consulted
+- Findings
+- Conflicting information
+- Open questions
+- Confidence level
+- Research still needed
+
+Distinguish clearly between:
+
+VERIFIED FACT
+
+EDUCATIONAL SIMPLIFICATION
+
+INFERENCE
+
+UNVERIFIED
+
+Never allow an inference to silently become a verified fact.
+
+
+==================================================
+SOURCES.md
+==================================================
+
+Maintain the canonical bibliography.
+
+For every source include:
+
+- Source ID
+- Title
+- Organization / author
+- URL
+- Source type
+- Hardware/topic covered
+- Date accessed if useful
+- Notes on authority
+- Claims supported
+
+Use stable source IDs such as:
+
+SRC-001
+SRC-002
+
+Component/content data should reference these IDs.
+
+Prefer:
+
+Arduino official documentation
+→ component manufacturer datasheets
+→ academic/reference material
+→ reputable secondary explanation
+
+
+==================================================
+DECISIONS.md
+==================================================
+
+Use this as an Architecture Decision Record log.
+
+Every important decision should contain:
+
+DEC-XXX
+
+Title
+
+Date
+
+Status:
+proposed / accepted / superseded / rejected
+
+Context
+
+Options considered
+
+Decision
+
+Reasoning
+
+Consequences
+
+Examples:
+
+DEC-001
+Use inline SVG for board representation.
+
+DEC-002
+Use conceptual rather than fabricated ATmega328P die floorplan.
+
+DEC-003
+Keep component information data-driven.
+
+DEC-004
+Treat software as Level 0 but not as a physical scale level.
+
+Never silently change an accepted decision.
+
+
+==================================================
+TASKS.md
+==================================================
+
+This is the execution plan and current status.
+
+Use sections:
+
+BACKLOG
+READY
+IN PROGRESS
+BLOCKED
+REVIEW
+DONE
+
+Each task should have:
+
+- ID
+- Description
+- Requirement IDs
+- Dependencies
+- Acceptance criteria
+- Files likely affected
+- Status
+- Notes
+
+Keep tasks small enough that another agent can safely take one.
+
+Example:
+
+TASK-014
+Implement ATmega328P detail panel.
+
+Acceptance:
+- Clicking the chip opens panel.
+- Displays verified component identity.
+- Links to IC-package zoom level.
+- Keyboard accessible.
+- Source citation visible.
+- Mobile layout works.
+
+Do not mark DONE until acceptance criteria are checked.
+
+
+==================================================
+TESTING.md
+==================================================
+
+Define testing strategy.
+
+Include:
+
+FUNCTIONAL
+- navigation
+- component selection
+- explode mode
+- assembly
+- snap detection
+- reset
+- hints
+- zoom navigation
+- quiz
+- signal journeys
+
+ACCESSIBILITY
+- keyboard
+- screen-reader semantics
+- focus order
+- ARIA live regions
+- reduced motion
+- contrast
+- touch target size
+
+RESPONSIVE
+- narrow phone
+- large phone
+- tablet
+- laptop
+- desktop
+
+CONTENT
+- citations valid
+- component names correct
+- no clone-board contamination
+- no unsupported scientific claims
+- terminology consistent
+
+PERFORMANCE
+- animation loops pause offscreen
+- no runaway requestAnimationFrame
+- no obvious layout thrashing
+
+TECHNICAL
+- no console errors
+- no dead controls
+- no duplicate IDs
+- valid SVG references
+- graceful operation without optional GSAP
+
+Create a manual QA checklist.
+
+
+==================================================
+ACCESSIBILITY.md
+==================================================
+
+Document the accessibility contract.
+
+Include:
+
+- Semantic page structure
+- Focus management
+- SVG accessibility
+- Canvas alternatives
+- Keyboard board exploration
+- Keyboard assembly alternative
+- Touch support
+- ARIA live announcements
+- Reduced motion
+- Contrast
+- Focus visibility
+- Zoom slider accessibility
+- Quiz accessibility
+- Screen-reader descriptions
+
+Treat accessibility as architecture, not final polish.
+
+
+==================================================
+RISKS.md
+==================================================
+
+Track technical, educational, and project risks.
+
+Examples:
+
+RISK:
+Exact Uno Rev3 component revisions may vary.
+
+Mitigation:
+Tie claims to documented revision and clearly label differences.
+
+RISK:
+Atomic visualization may teach an inaccurate Bohr model.
+
+Mitigation:
+Use probability-cloud visuals and explanatory disclaimer.
+
+RISK:
+Single index.html becomes unmaintainable.
+
+Mitigation:
+Use strongly separated modules/functions and data-driven rendering.
+
+RISK:
+Assembly mode may be difficult on touch devices.
+
+Mitigation:
+Pointer Events plus tap/select/place alternative.
+
+RISK:
+Trying to model every physical component individually may overload the SVG.
+
+Mitigation:
+Group repetitive passives educationally while retaining component references.
+
+For each risk include:
+
+- ID
+- Likelihood
+- Impact
+- Mitigation
+- Current status
+
+
+==================================================
+HANDOFF.md
+==================================================
+
+This file is specifically for agent-to-agent continuity.
+
+At the end of EVERY substantial work session, update it.
+
+Required format:
+
+# Current State
+
+# What Was Completed
+
+# What Changed
+
+# Files Modified
+
+# Important Decisions
+
+# Verified Facts Added
+
+# Known Problems
+
+# Unresolved Questions
+
+# Current In-Progress Task
+
+# Recommended Next Task
+
+# How to Verify Current Work
+
+# Warnings for the Next Agent
+
+This document should allow another model to continue immediately.
+
+Do not fill it with historical noise.
+
+Keep only the most useful current handoff information.
+
+
+==================================================
+CHANGELOG.md
+==================================================
+
+Track meaningful user-visible or architectural changes.
+
+Use:
+
+Added
+Changed
+Fixed
+Removed
+Research
+
+Do not log every trivial code edit.
+
+
+==================================================
+TERMINOLOGY
+==================================================
+
+Create:
+
+docs/product/terminology.md
+
+Maintain canonical beginner definitions for terms such as:
+
+conductor
+insulator
+semiconductor
+dopant
+doping
+n-type
+p-type
+electron
+hole
+current
+voltage
+electric field
+resistance
+resistor
+capacitance
+capacitor
+diode
+LED
+photon
+transistor
+MOSFET
+logic gate
+circuit
+integrated circuit
+microcontroller
+PCB
+trace
+pad
+via
+firmware
+bootloader
+machine code
+
+Each should contain:
+
+- Beginner definition
+- More precise definition
+- Common misconception
+- Related terms
+
+The website should reuse these definitions where practical to prevent inconsistent explanations.
+
+
+==================================================
+LEARNING OBJECTIVES
+==================================================
+
+Create:
+
+docs/product/learning-objectives.md
+
+Define what the learner should understand after each major section.
+
+Use measurable statements.
+
+Example:
+
+After the semiconductor section, the learner should be able to:
+
+- Explain why silicon is classified as a semiconductor.
+- Explain what doping means.
+- Distinguish n-type from p-type silicon.
+- Explain that n-type material is not simply a negatively charged block.
+- Describe a hole as an effective positive charge carrier.
+- Connect semiconductor doping to MOSFET operation at a beginner level.
+
+
+==================================================
+USER JOURNEYS
+==================================================
+
+Create:
+
+docs/product/user-journeys.md
+
+Include at least:
+
+JOURNEY 1
+"I found a component and want to know what it does."
+
+JOURNEY 2
+"I want to go from Arduino board to electron."
+
+JOURNEY 3
+"I want to understand why the LED lights."
+
+JOURNEY 4
+"I want to rebuild the board."
+
+JOURNEY 5
+"I want to study for a quiz."
+
+JOURNEY 6
+"I use only a keyboard."
+
+
+==================================================
+SIGNAL-PATH DOCUMENTATION
+==================================================
+
+Create:
+
+docs/electronics/signal-paths.md
+
+Document causal chains such as:
+
+USB power path
+
+External power path
+
+Sketch upload path
+
+GPIO HIGH → LED path
+
+Analog input → ADC path
+
+Clock → CPU execution path
+
+Reset path
+
+For each path show:
+
+starting event
+→ component
+→ physical/electrical effect
+→ next component
+→ final result
+
+This file should later drive Signal Journey animations.
+
+
+==================================================
+AI WORKFLOW
+==================================================
+
+Every future agent should follow approximately this loop:
+
+1. Read AGENTS.md.
+2. Read HANDOFF.md.
+3. Read TASKS.md.
+4. Read relevant architecture/research documents.
+5. Inspect current implementation.
+6. Select one defined task.
+7. Verify uncertain facts before coding.
+8. Implement.
+9. Test.
+10. Update relevant documentation.
+11. Update task state.
+12. Update HANDOFF.md.
+
+Do not start broad refactors without checking DECISIONS.md.
+
+Do not redo research already recorded as verified unless:
+- a conflict is found,
+- a source changed,
+- or verification quality is insufficient.
+
+
+==================================================
+SOURCE OF TRUTH ORDER
+==================================================
+
+When documents conflict, use this priority:
+
+1. Verified official/manufacturer source
+2. REQUIREMENTS.md
+3. Accepted entries in DECISIONS.md
+4. ARCHITECTURE.md / DATA_MODEL.md
+5. Current implementation
+6. TASKS.md
+7. HANDOFF.md
+8. Original conversational assumptions
+
+If the source itself invalidates an existing requirement, record the conflict and update the appropriate documents rather than silently working around it.
+
+
+==================================================
+CONTEXT MANAGEMENT
+==================================================
+
+Assume future AI agents have limited context windows.
+
+Therefore:
+
+- Prefer linking documents rather than duplicating large blocks.
+- Keep HANDOFF.md compact.
+- Keep AGENTS.md stable.
+- Move detailed research into topic-specific documents.
+- Maintain canonical definitions in one location.
+- Maintain canonical source metadata in SOURCES.md.
+- Maintain canonical component identity in COMPONENT_INVENTORY.md.
+- Maintain canonical status in TASKS.md.
+
+Avoid creating five slightly different descriptions of the same fact.
+
+
+==================================================
+DEFINITION OF DONE
+==================================================
+
+A feature is not done merely because code exists.
+
+It is done only when:
+
+1. Functional behavior works.
+2. Relevant facts are verified.
+3. Source references exist where required.
+4. Keyboard interaction works.
+5. Touch interaction works where applicable.
+6. Reduced-motion behavior works.
+7. Responsive layout is checked.
+8. No console errors are introduced.
+9. Relevant documentation is updated.
+10. TASKS.md reflects reality.
+11. HANDOFF.md allows another agent to continue.
+
+
+==================================================
+INITIAL EXECUTION ORDER
+==================================================
+
+Do NOT immediately build the entire website.
+
+First perform:
+
+STEP 1
+Create and populate the documentation structure.
+
+STEP 2
+Research and verify the Uno Rev3 component inventory.
+
+STEP 3
+Resolve uncertain board-specific parts.
+
+STEP 4
+Populate SOURCES.md and RESEARCH.md.
+
+STEP 5
+Create COMPONENT_INVENTORY.md.
+
+STEP 6
+Convert the original specification into REQUIREMENTS.md.
+
+STEP 7
+Design architecture and data schemas.
+
+STEP 8
+Create TASKS.md with dependency-aware implementation phases.
+
+STEP 9
+Create the initial HANDOFF.md.
+
+STEP 10
+Only then begin implementation.
+
+
+==================================================
+IMPLEMENTATION PHASES
+==================================================
+
+Organize TASKS.md approximately around:
+
+PHASE 0 — Research and project foundation
+
+PHASE 1 — Design system and page shell
+
+PHASE 2 — Uno board SVG
+
+PHASE 3 — Component data and Explore mode
+
+PHASE 4 — Component detail system
+
+PHASE 5 — Explode mode
+
+PHASE 6 — Assembly mode
+
+PHASE 7 — Zoom hierarchy
+
+PHASE 8 — IC/transistor/semiconductor visualizations
+
+PHASE 9 — Atomic/electron/photon visualizations
+
+PHASE 10 — Signal Journeys
+
+PHASE 11 — Pin reference
+
+PHASE 12 — Quiz
+
+PHASE 13 — Accessibility review
+
+PHASE 14 — Content/factual review
+
+PHASE 15 — Performance and responsive polish
+
+PHASE 16 — Final QA
+
+
+==================================================
+IMPORTANT FINAL INSTRUCTION
+==================================================
+
+Before writing substantial application code, show me:
+
+1. The proposed repository tree.
+2. A short explanation of the purpose of each major Markdown file.
+3. The initial contents or meaningful first draft of:
+   - AGENTS.md
+   - PROJECT.md
+   - CONTEXT.md
+   - REQUIREMENTS.md
+   - ARCHITECTURE.md
+   - RESEARCH.md
+   - COMPONENT_INVENTORY.md
+   - SOURCES.md
+   - DECISIONS.md
+   - TASKS.md
+   - TESTING.md
+   - HANDOFF.md
+4. Any changes you recommend to this documentation structure.
+5. Any critical questions or contradictions discovered in the original specification.
+
+Do not start large-scale implementation until this project-memory layer is coherent.
+
+The goal is not merely to produce a website.
+
+The goal is to build a repository that another competent AI agent or human engineer can understand, verify, maintain, and continue without needing the original conversation.

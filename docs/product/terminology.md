@@ -1,0 +1,39 @@
+# Canonical terminology
+
+Beginner copy uses these definitions and links to precise context. Definitions are general educational models; they do not establish exact board manufacturing details. Source metadata is in [SOURCES](../../SOURCES.md). Related terms below refer to this table's canonical labels; later embedded IDs normalize labels to kebab-case.
+
+| Term | Beginner definition | More precise definition | Common misconception | Related terms | Sources |
+| --- | --- | --- | --- | --- | --- |
+| conductor | A material in which charge can move readily. | Has mobile charge carriers under an applied field. | It does not make current without a complete circuit and driving conditions. | current, electric field | SRC-020 |
+| insulator | A material that conducts very poorly in normal use. | Carrier availability/mobility is low under stated conditions. | All insulators can fail under sufficiently high fields; not an absolute ban on conduction. | semiconductor, capacitance | SRC-018, SRC-021 |
+| semiconductor | A material whose carriers can be controlled for useful electrical behavior. | Its electronic states and band structure allow controllable carrier populations. | Doping does not turn an ordinary insulator into silicon; pure silicon already is a semiconductor. | doping, electron, hole | SRC-018 |
+| dopant | An added atom that changes carrier behavior. | An impurity species introduced to modify electronic carrier concentration. | A dopant is not a microscopic battery inside silicon. | doping, n-type, p-type | SRC-018 |
+| doping | Adding controlled impurities to a semiconductor. | Changes carrier concentration and electrical characteristics. | It is not what originally makes pure silicon a semiconductor. | dopant, semiconductor | SRC-018 |
+| n-type | Semiconductor where electrons are the majority carriers. | Donor doping increases electron population relative to holes. | The whole piece is not simply negatively charged. | p-type, electron, dopant | SRC-018 |
+| p-type | Semiconductor where holes are the majority carriers. | Acceptor doping increases hole population relative to electrons. | The whole piece is not simply positively charged. | n-type, hole, dopant | SRC-018 |
+| electron | A particle with negative electric charge. | An elementary lepton described by quantum theory. | It is not a planet on a definite orbit and is not consumed as circuit fuel. | hole, current, electric field | SRC-022, SRC-024 |
+| hole | An effective positive carrier in a semiconductor. | Missing occupation in valence electronic states behaves as a positive mobile carrier. | It is not a literal floating empty particle. | electron, p-type | SRC-018 |
+| current | How fast net charge flows. | Charge-flow rate through a cross-section, in amperes. | Signal speed is not the same as net electron drift speed. | conductor, electron, voltage | SRC-020 |
+| voltage | Electric potential difference between points. | Energy change per unit charge between locations. | A single point's voltage needs a reference. | current, electric field, capacitance | SRC-020, SRC-021 |
+| electric field | An electrical influence that exerts force on charge. | Electric force per unit positive test charge locally. | A MOSFET is controlled by a field, not a moving contact. | voltage, MOSFET | SRC-031 |
+| resistance | How a conductor/component limits current under stated conditions. | Ratio of voltage to current at an operating point, with material/temperature dependence. | A resistor does not consume electrons. | resistor, current | SRC-020 |
+| resistor | A component designed to provide resistance. | A part used for limiting current, voltage division and bias. | A resistor is not a semiconductor or transistor by definition. | resistance, circuit | SRC-020 |
+| capacitance | How much separated charge a potential difference supports. | Electrode charge magnitude divided by potential difference. | Capacitance is not the total net charge of both electrodes combined. | capacitor, voltage | SRC-021 |
+| capacitor | Conductors separated by an insulating dielectric. | A component supporting opposite electrode charge and electric field energy. | It does not store free charge in the dielectric as a bucket. | capacitance, insulator | SRC-021 |
+| diode | A part whose current depends strongly on voltage direction. | A general p-n diode's junction/bias controls carrier transport. | Reverse current is not identically zero under all conditions. | semiconductor, LED | SRC-019 |
+| LED | A light-emitting diode. | A semiconductor device producing photons through suitable carrier recombination. | Color is not simply set by using more electricity. | diode, photon | SRC-019 |
+| photon | A quantum of electromagnetic radiation, including light. | An elementary field quantum with energy related to frequency. | It is not a tiny colored ball drawn to physical size. | LED, electron | SRC-023, SRC-024 |
+| transistor | A device that controls electrical conduction. | A semiconductor device family used for amplification and switching. | Not every transistor is a MOSFET or a mechanical switch. | MOSFET, semiconductor | SRC-031 |
+| MOSFET | A transistor whose gate field controls a semiconductor channel. | Metal-oxide-semiconductor field-effect transistor; bias and polarity govern operation. | A gate HIGH does not mean ON for every polarity and source voltage. | transistor, electric field | SRC-008, SRC-031 |
+| logic gate | A circuit implementing a logical input/output function. | Interprets voltage ranges as logical states. | Logical zero/one are not identical to exact universal voltages. | circuit, machine code | SRC-031 |
+| circuit | Connected parts through which electrical effects act. | Network of elements and nodes, including supply/return/control paths. | A drawing's arrows are not necessarily a series wire path. | current, integrated circuit | SRC-001 |
+| integrated circuit | Many electronic structures made together on a chip. | Interconnected digital and/or analog circuits on a semiconductor die. | The black package is larger than the actual die and is not the die itself. | microcontroller, transistor | SRC-006, SRC-032 |
+| microcontroller | A chip combining a processor with memory and peripherals. | An embedded computing device with programmable operation and I/O. | It is not just a CPU, and not all its blocks are logic gates. | integrated circuit, firmware | SRC-006 |
+| PCB | A board supporting and connecting electronic parts. | Printed circuit board with patterned conductors and insulating support. | The board substrate is not the same as its copper traces. | trace, pad, via | SRC-002, SRC-029 |
+| trace | A patterned conductor on a PCB. | A routed copper feature connecting nodes. | It is not an abstract signal arrow with zero electrical properties. | PCB, conductor | SRC-002 |
+| pad | A conductive connection area for a lead or contact. | PCB land associated with mounting/connection/test access. | A pad need not be a via or a plated hole. | trace, via | SRC-002 |
+| via | A connection between board copper layers. | A plated interlayer feature defined in the board design. | Not every mounting hole is a via. | PCB, pad | SRC-002 |
+| firmware | Software programmed into an embedded device. | Executable/data content used by hardware for its operation. | Firmware is information, not literally a physical collection of gates. | bootloader, machine code | SRC-027 |
+| bootloader | A program that helps load another program. | Firmware managing program transfer/storage and startup under configured conditions. | It is not the USB bridge chip itself. | firmware, microcontroller | SRC-003, SRC-027 |
+| machine code | Encoded instructions a processor can execute. | Binary instruction encodings for a specific architecture. | High-level statements do not each map to one universal instruction. | firmware, logic gate | SRC-027 |
+

@@ -1,0 +1,1503 @@
+<role>
+You are a senior front-end engineer, electronics educator, and technical researcher with deep experience in:
+
+- Front-end web development
+- Arduino and AVR microcontrollers
+- Embedded systems
+- Digital and analog electronics
+- Semiconductor fundamentals
+- PCB construction
+- Solid-state physics
+- Beginner-friendly technical education
+
+Your job is to build an accurate, interactive educational experience.
+
+Prioritize factual accuracy over visual flair.
+
+Never invent:
+- Component identities
+- Part numbers
+- Electrical specifications
+- Manufacturing details
+- Process nodes
+- Material compositions
+- Scale values
+- Historical claims
+- Citations
+- URLs
+- Datasheet facts
+
+When a concept is intentionally simplified for beginners, explicitly label it as a simplified model.
+</role>
+
+
+<primary_goal>
+Build a single-page educational website titled:
+
+"Inside the Arduino Uno: From Board to Electron"
+
+The website should let a beginner explore an Arduino Uno Rev3 from the complete board all the way down through:
+
+Arduino Uno
+→ PCB and components
+→ individual components
+→ IC packages
+→ silicon dies
+→ functional circuit blocks
+→ logic gates and memory cells
+→ transistors
+→ semiconductor structures
+→ materials
+→ crystal lattices
+→ atoms
+→ electrons and nuclei
+→ optional subatomic particles
+
+The website must answer two questions at every meaningful level:
+
+1. "What is this made of?"
+2. "How does it work?"
+
+The user should be able to move both downward and upward through this hierarchy.
+
+The site should also explain how software ultimately causes physical electrical changes in the board.
+</primary_goal>
+
+
+<target_board>
+Use the official Arduino Uno Rev3 / Uno R3 as the reference board.
+
+Do NOT silently substitute:
+- Arduino Uno R4
+- Arduino Nano
+- clone boards
+- CH340-based clones
+- boards using different voltage regulators or USB-interface chips
+
+Where genuine production revisions of the Uno Rev3 differ, explain the difference.
+
+Where clone designs differ, mention them only in a clearly labeled note such as:
+
+"Common clone variation"
+
+Do not mix clone components into the main Uno Rev3 anatomy.
+</target_board>
+
+
+<audience>
+Primary audience:
+
+- High-school students
+- Early-college students
+- Electronics beginners
+- Arduino hobbyists
+- Teachers
+
+Writing style:
+
+- Plain English
+- Short explanations
+- Define jargon on first use
+- Prefer cause-and-effect explanations
+- Use analogies only when useful
+- Never let an analogy replace the real explanation
+- Clearly distinguish physical reality from simplified teaching models
+</audience>
+
+
+<tech_stack>
+Create one self-contained:
+
+index.html
+
+Use:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript ES6+
+- Inline SVG for the Arduino board
+- Canvas 2D or SVG for animated microscopic scenes
+- Pointer Events for mouse, touch, and pen
+- IntersectionObserver so animations run only while visible
+- prefers-reduced-motion support
+
+Optional:
+- GSAP from cdnjs.cloudflare.com
+- Pin the exact GSAP version if used
+
+Do not use:
+- React
+- Vue
+- Angular
+- build systems
+- npm dependencies
+- localStorage-dependent core functionality
+- external image assets that are required for the site to function
+
+The page must work by opening index.html directly in a browser, except where browser security restrictions make a local feature impossible.
+
+At the very top of index.html, include an HTML comment explaining why this technology stack was chosen.
+</tech_stack>
+
+
+<research_rules>
+Before writing factual educational content, verify hardware-specific claims with reliable sources whenever web access is available.
+
+Source priority:
+
+1. Official Arduino documentation
+   - Uno Rev3 documentation
+   - official schematic
+   - official pinout
+   - official board files
+   - official product documentation
+
+2. Original component manufacturers
+   Examples:
+   - Microchip for ATmega328P
+   - Microchip for ATmega16U2
+   - regulator manufacturer datasheets
+   - comparator/op-amp manufacturer datasheet
+   - MOSFET manufacturer datasheet
+   - protection-device datasheets where identifiable
+
+3. High-quality electronics references
+   - The Art of Electronics
+   - Microelectronic Circuits
+   - Semiconductor Physics and Devices
+   - Introduction to Solid State Physics
+   - Introduction to Quantum Mechanics
+   - reputable manufacturer application notes
+
+4. University or academic educational resources
+   only when the exact page can be verified
+
+Rules:
+
+- Never fabricate citations.
+- Never fabricate URLs.
+- Never invent page numbers.
+- Never invent quotes.
+- Never invent specifications.
+- Never invent transistor counts.
+- Never invent die sizes.
+- Never invent manufacturing process nodes.
+- Never invent atomic-scale dimensions.
+
+If a fact cannot be verified:
+- omit it, or
+- label it "unverified", or
+- label it "approximate" if the approximation itself is defensible.
+
+Use numbered source references:
+
+[1], [2], [3]
+
+Include a full Sources section at the bottom with:
+
+- title
+- organization or author
+- document type
+- URL where applicable
+
+Paraphrase sources.
+Do not reproduce long copyrighted passages.
+</research_rules>
+
+
+<important_accuracy_rules>
+Keep these distinctions explicit throughout the site.
+
+MATERIAL CATEGORIES:
+- conductor
+- semiconductor
+- insulator / dielectric
+- magnetic material
+- piezoelectric material
+- structural polymer
+
+COMPONENTS:
+- resistor
+- capacitor
+- diode
+- LED
+- MOSFET
+- voltage regulator
+- microcontroller
+- resonator
+- crystal
+- fuse/polyfuse
+- connector
+- switch/button
+
+SYSTEMS:
+- PCB
+- power subsystem
+- reset subsystem
+- USB communication subsystem
+- clock subsystem
+- microcontroller subsystem
+
+Do not imply that every component is made from transistors.
+
+For example:
+
+Microcontroller:
+IC → die → circuits → gates/memory cells → transistors → semiconductor structures
+
+LED:
+LED package → semiconductor die → p-n junction → carriers → photon emission
+
+Resistor:
+resistor package → resistive material → atomic lattice → electron scattering / energy dissipation
+
+Capacitor:
+capacitor → electrodes + dielectric → separated charge → electric field → stored energy
+
+PCB trace:
+copper conductor → metallic lattice → mobile electrons
+
+Connector:
+metal contacts + plating + polymer housing
+
+Each component family must follow its own physically correct branch.
+</important_accuracy_rules>
+
+
+<site_structure>
+
+==================================================
+SECTION 0 — HOW TO USE THIS SITE
+==================================================
+
+Briefly explain the available modes:
+
+- Explore
+- Explode
+- Assemble
+- Zoom
+- Signal Journey
+- Quiz
+
+Explain that the visual scenes are educational illustrations and are not necessarily physically to scale.
+
+
+==================================================
+SECTION 1 — HISTORY AND WHY ARDUINO EXISTS
+==================================================
+
+Target length:
+approximately 300–500 words plus a simple timeline.
+
+Explain, after verification:
+
+- Where Arduino began
+- Interaction Design Institute Ivrea
+- Key people involved
+- Relationship to Wiring
+- Relationship to Processing
+- Why Arduino was designed for non-engineers
+- Open-source hardware and software
+- Accessibility and cost motivations
+- Bootloader-based programming
+- Early Arduino boards
+- Why the Uno was significant
+- Meaning/history of the Arduino name
+- Meaning of "Uno"
+
+Separate well-established facts from stories or disputed historical details.
+
+Add a compact visual timeline.
+
+
+==================================================
+SECTION 2 — COMPLETE ARDUINO UNO REV3 ANATOMY
+==================================================
+
+Use the official schematic and board documentation to create the authoritative component list.
+
+Do not rely only on the list below.
+Verify it and correct it.
+
+At minimum inspect and classify:
+
+MICROCONTROLLERS
+- ATmega328P
+- ATmega16U2
+
+CLOCKING
+- ATmega328P clock source
+- ATmega16U2 clock source
+- associated capacitors if applicable
+
+POWER INPUT
+- USB-B
+- barrel jack
+- Vin
+
+POWER PROTECTION
+- resettable USB polyfuse
+- reverse-polarity/input protection
+- USB protection devices
+- ferrite bead / filtering where present
+
+POWER REGULATION
+- 5 V regulator
+- 3.3 V regulator
+- decoupling / bulk capacitors
+
+POWER SOURCE SELECTION
+- comparator / op-amp device
+- divider resistors
+- power MOSFET
+- exact verified MOSFET type and part number
+
+RESET
+- reset pushbutton
+- pull-up
+- capacitor
+- protection/reset diode if present
+- auto-reset path
+
+INDICATORS
+- ON LED
+- L LED
+- TX LED
+- RX LED
+- current-limiting resistors
+
+PASSIVES
+- resistors
+- resistor networks
+- ceramic capacitors
+- electrolytic or bulk capacitors
+- ferrite bead
+
+CONNECTORS / HEADERS
+- Digital 0–13
+- Analog A0–A5
+- Power header
+- AREF
+- SDA / SCL
+- IOREF
+- USB
+- DC jack
+- ATmega328P ICSP
+- ATmega16U2 ICSP
+
+BOARD FEATURES
+- PCB substrate
+- copper traces
+- copper pours/planes where visible/relevant
+- vias
+- plated through-holes
+- component pads
+- solder joints
+- solder mask
+- silkscreen
+- test pads
+- solder jumpers
+- fiducials if verified
+
+For every meaningful component or grouped component entry, provide:
+
+1. Name
+2. Category
+3. Board location
+4. SVG representation
+5. Plain-language purpose
+6. More technical explanation
+7. Relevant specifications
+8. "What if it were missing?"
+9. Beginner analogy
+10. "Made of"
+11. "Works because of"
+12. Related zoom level
+13. Source reference(s)
+
+Do not create separate cards for every identical bypass capacitor unless doing so adds educational value.
+
+Instead, allow identical components to be grouped while still identifying their physical board locations.
+
+
+==================================================
+SECTION 3 — THE PCB ITSELF
+==================================================
+
+Explain:
+
+FR-4:
+- woven glass fibre
+- epoxy resin
+
+Copper:
+- traces
+- pads
+- planes
+- plated holes
+- vias
+
+Other PCB structures:
+- solder mask
+- silkscreen
+- surface finish
+- solder
+- through-hole mounting
+- surface-mount mounting
+
+Explain the difference between:
+
+wire
+vs
+PCB trace
+
+and:
+
+pad
+vs
+via
+vs
+through-hole
+
+Add an interactive layer-view diagram if feasible.
+
+
+==================================================
+SECTION 4 — COMPONENT FAMILY EXPLORER
+==================================================
+
+Create parallel branches rather than forcing every component through a transistor hierarchy.
+
+Families:
+
+A. Resistors
+Show:
+- typical construction
+- resistive material
+- terminals
+- substrate where relevant
+- current limiting
+- voltage division
+- pull-ups
+- energy dissipation as heat
+
+B. Capacitors
+Show:
+- electrodes
+- dielectric
+- ceramic capacitor structure
+- electrolytic capacitor structure
+- electric field
+- stored energy
+- decoupling
+- smoothing
+- timing
+
+C. Diodes
+Show:
+- semiconductor
+- p-type
+- n-type
+- p-n junction
+- depletion region
+- forward bias
+- reverse bias
+
+D. LEDs
+Show:
+- LED package
+- semiconductor die
+- p-n junction
+- electron-hole recombination
+- photon emission
+- why semiconductor composition affects color
+
+Verify the semiconductor compounds before naming specific ones.
+
+E. Clock devices
+Distinguish:
+- quartz crystal
+- ceramic resonator
+
+Explain:
+- piezoelectric behavior
+- mechanical resonance
+- conversion between electrical and mechanical oscillation
+
+F. Polyfuse
+Verify its construction before describing it.
+Explain:
+- normal low-resistance state
+- heating under excessive current
+- resistance increase
+- reset after cooling
+
+G. Ferrite bead
+Explain:
+- ferrite ceramic
+- impedance to high-frequency noise
+- why it can pass DC while suppressing noise
+
+H. Connectors
+Show:
+- conductive contacts
+- plating
+- insulating housing
+
+I. Pushbutton
+Show:
+- metal contacts
+- spring/contact mechanism
+- open vs closed circuit
+
+J. Solder
+Describe only the alloy family actually supported by a reliable source or board-production information.
+If exact alloy cannot be verified, state that it is board-assembly solder and avoid inventing composition.
+
+
+==================================================
+SECTION 5 — INSIDE AN IC PACKAGE
+==================================================
+
+Use ATmega328P as the primary example.
+
+Show the distinction between:
+
+visible black package
+vs
+actual silicon die
+
+Illustrate:
+
+package
+→ mould compound
+→ lead frame / external leads
+→ bond wires or equivalent die connections
+→ die attach
+→ silicon die
+
+If exact packaging construction varies by package type, explain that.
+
+Do not imply that every ATmega328P package is physically identical internally.
+
+
+==================================================
+SECTION 6 — INSIDE THE SILICON DIE
+==================================================
+
+Show functional regions conceptually:
+
+- CPU core
+- program flash
+- SRAM
+- EEPROM
+- GPIO
+- timers/counters
+- PWM generation
+- ADC
+- UART
+- SPI
+- TWI/I²C
+- interrupt logic
+- reset logic
+- clock distribution
+- power-management/support circuitry
+
+Explain that the exact visible floorplan should not be invented unless an authoritative die image/floorplan source is available.
+
+If no verified floorplan is available:
+use a clearly labeled conceptual diagram.
+
+Then show the structural hierarchy:
+
+functional blocks
+→ circuits
+→ logic gates / registers / memory cells / analog blocks
+→ transistors
+→ interconnects
+
+Explain that analog blocks such as the ADC should not be described merely as logic gates.
+
+
+==================================================
+SECTION 7 — DIGITAL LOGIC
+==================================================
+
+Explain how MOSFETs can form CMOS logic.
+
+Include interactive examples for:
+
+- NOT
+- AND
+- OR
+- NAND
+
+Show:
+
+input voltage states
+→ transistor states
+→ output voltage state
+
+Then show progression:
+
+transistors
+→ logic gates
+→ flip-flops/registers
+→ counters
+→ arithmetic/control circuits
+→ CPU behavior
+
+Do not imply that software is literally made of logic gates.
+Explain that machine instructions are encoded information stored and processed by these circuits.
+
+
+==================================================
+SECTION 8 — MEMORY
+==================================================
+
+Explain separately:
+
+SRAM
+- volatile
+- transistor-based memory cell
+- loses state without power
+
+Flash
+- nonvolatile
+- specialized floating-gate or charge-storage memory technology
+- stores program instructions
+
+EEPROM
+- nonvolatile
+- electrically erasable storage
+
+Only claim specific cell structures for the ATmega328P if supported by reliable documentation.
+
+If internal cell implementation is not publicly documented, teach the general technology while labeling it:
+
+"general AVR/flash memory concept; exact ATmega328P cell implementation not shown"
+
+
+==================================================
+SECTION 9 — MOSFET TRANSISTOR
+==================================================
+
+Create an interactive MOSFET scene.
+
+Show:
+
+- source
+- drain
+- gate
+- body/substrate
+- gate dielectric
+- channel region
+- conductor/interconnect
+
+Interactive control:
+Gate LOW / HIGH or a voltage slider.
+
+Visualize:
+
+gate voltage
+→ electric field
+→ carrier distribution changes
+→ channel becomes conductive/nonconductive
+→ drain current changes
+
+Explicitly explain:
+
+There is no mechanical switch inside a MOSFET.
+
+It switches because an electric field changes charge distribution in a semiconductor.
+
+Also show the Uno's verified discrete power MOSFET as a real board-level example.
+
+
+==================================================
+SECTION 10 — SEMICONDUCTOR PHYSICS
+==================================================
+
+Explain:
+
+- silicon crystal
+- covalent bonding
+- valence electrons
+- intrinsic silicon
+- thermal carriers
+- doping
+- dopants
+- n-type
+- p-type
+- electrons
+- holes
+- donor dopants
+- acceptor dopants
+- p-n junction
+- depletion region
+- electric fields
+- simplified band-gap concept
+
+Use boron and phosphorus as beginner examples where appropriate.
+
+Do not say doping is "what makes silicon a semiconductor."
+
+Correct framing:
+
+Pure silicon is already a semiconductor.
+
+Doping makes its carrier concentration and electrical behavior far more useful and controllable.
+
+
+==================================================
+SECTION 11 — MATERIALS ACROSS THE UNO
+==================================================
+
+Create an interactive periodic/material map.
+
+Potential materials to include only when verified as applicable:
+
+- silicon
+- copper
+- oxygen
+- silicon dioxide
+- aluminium
+- tin
+- carbon
+- gold
+- nickel
+- iron
+- zinc
+- silver
+- glass
+- epoxy polymers
+- ferrite materials
+- ceramic dielectrics
+- plastics
+
+For each material show:
+
+- element / compound / mixture
+- conductor / semiconductor / insulator / magnetic / structural role
+- where it appears on the Uno
+- why that material is useful
+
+Never imply that every Uno necessarily contains every listed element unless verified.
+
+
+==================================================
+SECTION 12 — CRYSTALS, METALS, AND ATOMIC STRUCTURE
+==================================================
+
+Explain that materials behave differently because of:
+
+- atomic composition
+- bonding
+- crystal structure
+- available electron energy states
+
+Visual examples:
+
+A. Silicon crystal
+- covalent bonding
+- lattice structure
+
+B. Copper/metal
+- metallic bonding
+- mobile conduction electrons
+
+C. Insulator/dielectric
+- electrons much less available for conduction
+
+Use the "sea of electrons" analogy only if labeled as a simplified model.
+
+
+==================================================
+SECTION 13 — THE ATOM
+==================================================
+
+Show:
+
+- nucleus
+- electrons
+- electron probability cloud
+
+Do NOT present electrons as literal planets orbiting a nucleus.
+
+If a Bohr-style diagram is included for educational comparison, label it clearly:
+
+"Simplified historical model — electrons do not literally orbit like planets."
+
+Explain:
+
+- proton = positive electric charge
+- electron = negative electric charge
+- neutron = no net electric charge
+- atomic number = proton count
+- neutral atom = equal proton and electron count
+
+Use relevant examples:
+
+- boron
+- silicon
+- phosphorus
+- copper
+
+
+==================================================
+SECTION 14 — ELECTRONS, FIELDS, AND CURRENT
+==================================================
+
+This is a cross-cutting conceptual layer available from every zoom level via a button:
+
+"What is happening electrically?"
+
+Explain separately:
+
+CHARGE
+What electric charge is.
+
+VOLTAGE
+Electric potential difference.
+
+CURRENT
+Rate of charge flow.
+
+ELECTRIC FIELD
+How charges exert forces and how MOSFET gates control channels.
+
+RESISTANCE
+Opposition to current and energy dissipation.
+
+CAPACITANCE
+Separated charge and energy stored in an electric field.
+
+SIGNAL PROPAGATION
+Clarify the common misconception:
+
+Individual electrons in a conductor can have slow net drift velocity.
+
+The electrical/electromagnetic disturbance propagates through the circuit much faster.
+
+Do NOT provide a specific percentage of the speed of light unless calculated or sourced for a specific transmission structure.
+
+Also explain:
+
+Electrons are not "used up" by an ordinary circuit.
+
+Energy is transferred; charge continues around the circuit.
+
+
+==================================================
+SECTION 15 — PHOTONS AND THE LED
+==================================================
+
+Because the board contains LEDs, include photons in the hierarchy.
+
+Explain:
+
+electrical energy
+→ carrier excitation
+→ electron-hole recombination
+→ photon emission
+
+Explain that:
+
+- photon energy is related to light frequency
+- light frequency corresponds to perceived color
+
+Do not oversimplify LED color as merely "different amounts of electricity."
+
+
+==================================================
+SECTION 16 — NUCLEUS AND OPTIONAL PARTICLE PHYSICS
+==================================================
+
+Show:
+
+atom
+→ nucleus
+→ protons + neutrons
+
+Optional "Beyond electronics" expansion:
+
+protons/neutrons
+→ quarks
+→ gluons / strong interaction
+
+Explain clearly:
+
+This level is not needed to understand normal electronics.
+
+Electrons and photons are currently treated as elementary particles in the Standard Model.
+
+Do not imply that electronics engineering normally requires particle physics.
+
+
+==================================================
+SECTION 17 — HOW THE WHOLE UNO WORKS TOGETHER
+==================================================
+
+Create several interactive signal journeys.
+
+
+JOURNEY A — POWER FROM USB
+
+USB
+→ polyfuse
+→ filtering/protection
+→ power-selection circuitry
+→ 5 V rail
+→ regulators / 3.3 V rail where applicable
+→ ATmega supply pins
+→ decoupling capacitors
+
+
+JOURNEY B — POWER FROM BARREL JACK
+
+barrel jack
+→ protection path
+→ input voltage
+→ regulator
+→ source-selection circuitry
+→ 5 V rail
+→ board
+
+
+JOURNEY C — UPLOADING A SKETCH
+
+Arduino source code
+→ preprocessing
+→ compilation
+→ linking
+→ machine code / program image
+→ USB
+→ ATmega16U2
+→ serial communication
+→ ATmega328P bootloader
+→ Flash program memory
+
+
+JOURNEY D — TURNING THE BUILT-IN LED ON
+
+source code
+→ compiler
+→ AVR instruction
+→ CPU fetch/decode
+→ register change
+→ GPIO logic
+→ output-driver MOSFETs
+→ output pin
+→ PCB copper trace
+→ current-limiting resistor
+→ LED
+→ carrier recombination
+→ photon
+→ visible light
+
+
+JOURNEY E — ANALOG INPUT
+
+sensor voltage
+→ analog header
+→ PCB trace
+→ ATmega input
+→ ADC
+→ binary result
+→ CPU/software
+
+
+==================================================
+SECTION 18 — PIN REFERENCE
+==================================================
+
+Create an accessible table containing:
+
+- physical label
+- Arduino name
+- ATmega pin/function where useful
+- digital capability
+- analog capability
+- PWM capability
+- interrupt capability
+- UART
+- SPI
+- I²C/TWI
+- power function
+- notes
+
+Verify all mappings against official Arduino and Microchip documentation.
+
+
+==================================================
+SECTION 19 — MASTER "RUSSIAN DOLL" RECAP
+==================================================
+
+Create a clickable hierarchy.
+
+Example:
+
+Arduino Uno
+↓
+PCB + components
+↓
+microcontroller package
+↓
+silicon die
+↓
+functional blocks
+↓
+circuits
+↓
+logic gates / memory cells
+↓
+MOSFETs
+↓
+doped semiconductor
+↓
+crystal lattice
+↓
+atoms
+↓
+electrons + nuclei
+↓
+optional quarks/gluons
+
+Also show parallel branches:
+
+LED
+→ p-n junction
+→ carriers
+→ photons
+
+Resistor
+→ resistive material
+→ electron scattering
+→ heat
+
+Capacitor
+→ electrodes + dielectric
+→ electric field
+→ stored energy
+
+PCB trace
+→ copper
+→ metallic lattice
+→ mobile charge carriers
+
+This prevents the false impression that every Arduino component follows the same transistor hierarchy.
+
+
+==================================================
+SECTION 20 — LIMITS OF THE MODEL
+==================================================
+
+Add a final educational note explaining:
+
+- illustrations are simplified
+- diagrams are not always to scale
+- atomic images are conceptual
+- current flow visualizations use conventions
+- holes are quasiparticle-like charge-carrier descriptions, not literal empty particles floating through space
+- a microcontroller die contains both digital and analog structures
+- exact proprietary internal geometry may not be publicly documented
+- semiconductor physics eventually requires quantum mechanics for a rigorous explanation
+</site_structure>
+
+
+<zoom_journey>
+Create a guided Scale Journey.
+
+Use these conceptual levels:
+
+0. Software / information
+1. Complete Arduino Uno board
+2. PCB
+3. Component families
+4. IC package
+5. Silicon die
+6. Functional circuit blocks
+7. Logic gates / memory cells / analog circuits
+8. MOSFET transistor
+9. Semiconductor structures
+10. Materials / crystal structures
+11. Atoms
+12. Electron/nucleus level
+13. Optional subatomic bonus
+
+At every physical level show:
+
+- title
+- illustration/animation
+- "Made of"
+- "How it works"
+- approximate scale if responsibly sourced
+- source reference
+- previous/next controls
+- "You are here" hierarchy
+- logarithmic scale indicator where meaningful
+
+Do not assign meaningless physical scale to the software layer.
+
+When scale values are uncertain:
+say "illustrative" or omit the number.
+
+Do not imply that every step is literally a nested physical object.
+Some levels are organizational or functional abstractions.
+</zoom_journey>
+
+
+<board_interactivity>
+
+MODE 1 — EXPLORE
+- Display assembled Uno Rev3
+- Hover/focus highlights a component
+- Click/Enter opens information panel
+- Mobile uses bottom sheet
+- Include search/filter by category
+
+
+MODE 2 — EXPLODE
+- Animate components away from the PCB
+- Use leader lines
+- Preserve understandable spatial relationships
+- Add "Reassemble view"
+
+
+MODE 3 — ASSEMBLE
+- Scatter draggable components around PCB
+- Drag onto correct slots
+- Snap when sufficiently close
+- Correct placement animation
+- Incorrect drop returns component
+- Hint button
+- Progress indicator
+- Reset button
+- Completion state
+
+For accessibility:
+- every draggable part must also be placeable without dragging
+- allow keyboard selection and placement
+- announce correct/incorrect placement with ARIA live regions
+
+
+MODE 4 — ZOOM
+- Enter the Scale Journey
+- Components link to their relevant microscopic branch
+- Back-navigation returns to the originating component
+
+
+MODE 5 — SIGNAL JOURNEY
+Animate:
+- power flow
+- upload flow
+- LED flow
+- analog measurement flow
+
+
+MODE 6 — QUIZ
+Create 10–15 questions across:
+- board anatomy
+- materials
+- component purpose
+- microcontroller
+- transistor
+- semiconductor
+- atoms/electrons
+
+Provide:
+- immediate feedback
+- explanation
+- final score
+- retry
+</board_interactivity>
+
+
+<svg_requirements>
+The board must be represented as inline SVG.
+
+Requirements:
+
+- recognizable Uno Rev3 outline
+- major connectors positioned realistically
+- major ICs positioned realistically
+- headers positioned realistically
+- indicators positioned realistically
+- major power components positioned realistically
+
+Each interactive component must use:
+
+<g id="...">
+
+and have:
+
+- stable unique id
+- data-category
+- accessible label
+- tabindex where appropriate
+- correct slot coordinates
+- tooltip metadata
+
+Do not claim pixel-perfect board fidelity unless based directly on official board files.
+
+If the SVG is educationally simplified, label it:
+
+"Layout-faithful educational illustration"
+</svg_requirements>
+
+
+<data_model>
+Before rendering UI, define structured JS data.
+
+Create at minimum:
+
+const components = [...]
+const zoomLevels = [...]
+const sources = [...]
+const quizQuestions = [...]
+
+A component object should support fields such as:
+
+{
+  id,
+  name,
+  referenceDesignator,
+  category,
+  purpose,
+  technicalExplanation,
+  specs,
+  ifMissing,
+  analogy,
+  madeOf,
+  worksBecauseOf,
+  zoomTarget,
+  sourceRefs,
+  boardX,
+  boardY,
+  slotX,
+  slotY,
+  groupedParts
+}
+
+A zoom level should support fields such as:
+
+{
+  id,
+  title,
+  parentLevel,
+  branch,
+  madeOf,
+  explanation,
+  scale,
+  scaleStatus,
+  sourceRefs,
+  visualType
+}
+
+Avoid duplicating educational text unnecessarily in HTML.
+Generate repeated cards and panels from the data model.
+</data_model>
+
+
+<design_requirements>
+Visual style:
+
+- modern dark electronics workbench
+- Arduino teal accent: #00979D
+- optional light theme
+- CSS variables for all colors
+- clear typography
+- restrained animation
+- no visual clutter
+
+Responsive:
+- mobile first
+- tablet friendly
+- desktop friendly
+- no horizontal page overflow
+
+Accessibility:
+- semantic HTML
+- WCAG AA contrast
+- visible focus states
+- keyboard navigation
+- ARIA labels
+- text alternatives for Canvas/SVG scenes
+- reduced-motion mode
+- touch-friendly controls
+- no interaction that requires a mouse
+
+Microscopic scenes:
+- visually engaging
+- scientifically cautious
+- clearly labeled when conceptual
+</design_requirements>
+
+
+<performance_requirements>
+- Avoid continuous animation when scenes are offscreen.
+- Pause Canvas loops using IntersectionObserver.
+- Respect reduced motion.
+- Avoid expensive layout thrashing.
+- Keep SVG DOM manageable.
+- Use event delegation where practical.
+- Do not attach unnecessary individual global listeners.
+</performance_requirements>
+
+
+<process>
+Work in phases, but complete as much as possible in the current response.
+
+Do not merely describe what you intend to do.
+
+PHASE A — VERIFIED RESEARCH SUMMARY
+
+Return a compact table containing:
+
+- subsystem/component
+- verified identity
+- role
+- source
+- certainty / revision note
+
+Explicitly resolve:
+- power-selection comparator/op-amp
+- discrete power MOSFET
+- voltage regulators
+- clock devices
+- USB protection
+- polyfuse
+- ferrite bead
+
+PHASE B — DATA MODEL
+
+Produce:
+- components array
+- zoomLevels array
+- sources array
+- quizQuestions array
+
+PHASE C — COMPLETE INDEX.HTML
+
+Build a functioning first version containing all major site modes.
+
+If output limitations make the entire implementation impossible in one response, prioritize a coherent, runnable core in this order:
+
+1. Accurate board anatomy
+2. Explore mode
+3. Complete component data model
+4. Zoom hierarchy
+5. Signal Journey
+6. Assemble mode
+7. Quiz
+8. Additional animation polish
+
+Do not leave fake buttons, dead UI controls, TODO markers, or placeholder text in a delivered working version.
+
+If a nonessential enhancement cannot fit, omit the control entirely rather than shipping a button that does nothing.
+</process>
+
+
+<output_requirements>
+Return:
+
+1. Phase A verification summary
+2. Phase B structured data
+3. Complete index.html
+4. Instructions for running it
+5. Instructions for adding a new component
+6. Instructions for adding a new zoom level
+7. Known limitations
+8. Facts that should be rechecked if the board revision changes
+9. Full numbered Sources section
+
+The HTML must be valid and self-contained.
+
+Do not put placeholder citations in the page.
+
+Do not write:
+"source needed"
+unless the item is intentionally and visibly marked unverified.
+</output_requirements>
+
+
+<quality_assurance>
+Before finalizing, verify:
+
+RESEARCH
+- Every board-specific component claim is sourced or marked unverified.
+- Uno Rev3 is not confused with Uno R4 or clones.
+- Power-selection circuitry is correctly identified.
+- MOSFET type and part number are verified before being stated.
+- Regulator identities are verified.
+- Clock-device types are verified.
+- No process node is invented.
+- No transistor count is invented.
+
+EDUCATIONAL ACCURACY
+- Pure silicon is correctly described as a semiconductor.
+- Doping modifies semiconductor carrier concentration.
+- N-type and P-type are not described as globally charged chunks of material.
+- Holes are explained as effective positive charge carriers.
+- Transistors are controlled through electric fields.
+- Resistors are not described as semiconductors by definition.
+- Capacitors are not described as storing charge inside the dielectric.
+- Electrons are not said to travel through the whole circuit at light speed.
+- Signals/electromagnetic effects are distinguished from electron drift.
+- Electrons are not said to be consumed.
+- LEDs include photon emission.
+- Atomic diagrams are not presented as literal planetary systems.
+- Quantum-scale scenes are labeled as conceptual.
+
+SOFTWARE
+- No console errors.
+- All navigation works.
+- Every visible mode works.
+- Every interactive part has keyboard access.
+- Touch dragging works.
+- Keyboard placement works.
+- Reduced-motion mode works.
+- No sideways mobile overflow.
+- Canvas animations pause offscreen.
+- Quiz scoring works.
+- Reset controls work.
+- Assemble snapping works.
+- All source-reference links resolve to entries in the Sources section.
+
+FINAL TEST
+A beginner should be able to click:
+
+Arduino Uno
+→ ATmega328P
+→ silicon die
+→ CPU
+→ logic circuit
+→ MOSFET
+→ doped silicon
+→ silicon atom
+→ electron
+
+and understand at every step:
+
+"What is this?"
+"What is it made of?"
+"How does it work?"
+
+A beginner should also be able to follow parallel paths such as:
+
+Arduino Uno
+→ LED
+→ semiconductor junction
+→ electron-hole recombination
+→ photon
+
+and:
+
+Arduino Uno
+→ resistor
+→ resistive material
+→ atoms/electron scattering
+→ heat
+
+without being falsely taught that every component is made from transistors.
+</quality_assurance>
