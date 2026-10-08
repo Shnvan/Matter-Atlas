@@ -2,7 +2,7 @@
 
 ## Board geometry
 
-Reference positions/rotations come from [inventory](../../COMPONENT_INVENTORY.md) and SRC-002. Board coordinates are mm, y upward. Convert to SVG with x = CADx * 10 and y = (53.34 - CADy) * 10 before margins. This flips coordinate direction; convert rotation consistently rather than copying EAGLE angles blindly. Package origins need not be visual centers. Preserve mirrored footprints and connector overhangs.
+Reference positions/rotations come from [inventory](../../COMPONENT_INVENTORY.md) and SRC-002. Board coordinates are mm, y upward. Convert to SVG with x = CADx and y = 53.34 - CADy (one SVG unit per CAD mm) before margins. This flips coordinate direction; convert rotation consistently rather than copying EAGLE angles blindly. Package origins need not be visual centers. Preserve mirrored footprints and connector overhangs.
 
 Use inline SVG with labeled component groups, stable unique IDs, category metadata, selectable hit regions and semantic slot targets. Draw educational shapes from footprint extents; no pixel-perfect claim. Label “Layout-faithful educational illustration.” Keep repetitive passive shapes manageable; group information while retaining each physical reference. Test pads/fiducials/DNP/frame are not assembly parts.
 

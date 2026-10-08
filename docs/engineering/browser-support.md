@@ -4,9 +4,9 @@
 
 Current evergreen Chromium (Chrome/Edge), Firefox, and Safari, including their current mobile implementations. Required standards: inline SVG, ES6+, Pointer Events, IntersectionObserver, matchMedia prefers-reduced-motion and standard dialog/focus behavior. Target list is intent, not evidence of cross-browser conformance.
 
-## File URL contract
+## Local delivery contract
 
-The teaching application embeds data/code/styles/assets and uses a classic inline script. Do not import modules or fetch local JSON. Core does not depend on localStorage, service workers, network APIs or an HTTP server. Source links may require network when followed; core learning remains offline. Initial guide links relative Markdown/TXT files; browsers may display raw text or download Markdown depending on file associations. It does not require a Markdown viewer.
+The new Next.js static export is served over local HTTP with all content, fonts, icons and diagrams bundled. Source links may open internet documents when deliberately followed; learning interactions require no external requests or persistent storage. Root index.html remains the original file-URL documentation guide. Do not conflate its tests with application tests. No service worker or hosting service is required.
 
 ## Capability recovery
 

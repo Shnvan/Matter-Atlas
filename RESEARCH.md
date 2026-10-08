@@ -22,7 +22,7 @@ VERIFIED FACT means source-supported within its stated scope. EDUCATIONAL SIMPLI
 | ATmega328P / ATmega16U2 memory peripherals | SRC-006, SRC-007 | Separate program/data/nonvolatile memories and peripheral blocks. High public functional level. | No authoritative die floorplan or exact cell cross-section established. |
 | Semiconductors doping atomic probability current drift | SRC-018 through SRC-024 | General teaching physics is supported. High general concepts. | Quantum scenes simplified; hydrogen probability imagery not exact silicon orbitals. |
 | FR4 glass epoxy | SRC-029 | General PCB substrate explanation supported. High general model. | Exact Uno material procurement, finish and solder alloy unverified. |
-| Arduino Ivrea Wiring Processing history | SRC-025, SRC-026 | Official beginner origins and participant account of Wiring lineage. High origins; attributed credit narrative. | Founder chronology/name story/early timeline require further targeted research before final history prose. |
+| Arduino Ivrea Wiring Processing history | SRC-025, SRC-026 | Official beginner origins and participant account of Wiring lineage. High origins; attributed credit narrative. | History is attributed to participant accounts and dated official posts; see the runtime audit below. |
 | AVR sketch build process | SRC-027, SRC-028 | Preprocess -> compile -> link -> program image; pin functions from core and official pinout. High. | Pin lesson and instruction example must use explicit core/datasheet version. |
 | General CMOS and package connections | SRC-031, SRC-032 | Complementary logic and multiple connection technologies supported. High general mechanism. | Exact ATmega package internals and memory-cell layout remain unknown. |
 
@@ -48,4 +48,20 @@ Final URL audit: direct HTTP retrieved 28 of 32 initial canonical URLs with stat
 
 ## Next research
 
-Before Phase 1 content projection, complete the history and package-specific pin review. Recheck any source if its content/hash changes or a contradictory source appears. Already verified design connectivity need not be researched repeatedly. Unknown proprietary details are bounded omissions rather than blockers for generic conceptual teaching.
+### Application content review, 2026-10-08
+
+RES-005 is bounded for the initial public lesson: the official 2021 Uno retrospective (SRC-034), corroborated by the contemporary 24 September 2010 announcement (SRC-035), supports the name meaning, 2010 launch, and usability evolution. The lesson attributes Wiring lineage to Barragan's account (SRC-026); no disputed priority claim is presented as settled. SRC-040 now supports an explicitly attributed first-person naming recollection: Banzi recalls Bar Di Re Arduino in Ivrea. The original oral-history transcript was inspected at printed pages 11–12; later automated full-document retrieval timed out. No exact naming day or adjudicated priority is asserted.
+
+RES-006 is resolved for the published pin reference: ArduinoCore-avr tag 1.8.6 (SRC-033), official pinout (SRC-005), and the exact schematic/CAD (SRC-001/SRC-002) establish physical header nodes and 28-pin package mapping. No compiler-output or exact instruction timing claim is published. The full manufacturer datasheet retrieval limitation remains documented; it does not justify inventing private registers or die details.
+
+RES-001 through RES-004 and RES-007 remain bounded: general material/quantum representations have null physical scales, explicit model labels and no procurement or die-geometry assertions.
+
+The initial history and package-specific pin review is complete within the bounds above. Recheck any source if its content/hash changes or a contradictory source appears. Already verified design connectivity need not be researched repeatedly. Unknown proprietary details are bounded omissions rather than blockers for generic conceptual teaching.
+
+### Application coverage audit
+
+The runtime content now includes a 411-word attributed history (plus source dates for a UI timeline), seven additional topic explanations, the complete 28-pin DIP and baseline header projection, 31 conceptual zoom nodes, seven causal journeys and twelve sourced quiz questions. General ceramic/electrolytic construction and atomic identity now have dedicated manufacturer/academic references SRC-036 through SRC-038; SRC-039 supports explicitly general memory technology. The runtime preserves 116 physical inventory records separately from 49 teaching groups.
+
+Header positions were independently compared with every relevant EAGLE schematic pinref for IOL, IOH, AD, POWER and ICSP. Their package-port mapping remains scoped to the 28-pin device and ArduinoCore-avr 1.8.6. A6/A7 are absent; duplicated SDA/SCL contacts share existing GPIO. Automated content checks verify references, graph reciprocity, physical-coordinate retention and this mapping; they do not establish interactive or visual correctness.
+
+Signal graph edges now branch between power, control, data, parallel and return relationships rather than presenting all explanation steps as a single physical chain. General firmware, device and carrier mechanisms cite their explanatory sources as well as the netlist. Arduino naming is now attributed to Banzi’s primary oral history (SRC-040); Uno naming and dated launch are supported by the official sources. Unknown material recipes and dimensions remain explicit bounds.

@@ -292,4 +292,76 @@ Accessed 2026-10-08 (Asia/Manila). URLs were retrieved or opened during foundati
 - Claims supported and limits: General package connections vary; no exact ATmega328P cross-section or wire alloy established.
 - Access date: 2026-10-08.
 
+## SRC-033 — ArduinoCore-avr 1.8.6 standard variant
 
+- Organization/author: Arduino.
+- Type: versioned official source code.
+- URL: [Version 1.8.6 standard pins](https://raw.githubusercontent.com/arduino/ArduinoCore-avr/1.8.6/variants/standard/pins_arduino.h)
+- Evidence location/document identity: Tag 1.8.6; NUM_ANALOG_INPUTS, PWM/interrupt macros, port/bit/timer tables and DIP diagram; cross-checked with SRC-001/SRC-002/SRC-005 for ATmega328P board/package mapping.
+- Claims supported and limits: Arduino logical aliases, six exposed ADC channels, six PWM pins, dedicated interrupts D2/D3. A6/A7 constants do not establish physical pins on the 28-pin Uno. Not a claim that 1.8.6 is the newest core.
+- Access date: 2026-10-08.
+
+## SRC-034 — One board to rule them all: History of the Arduino UNO
+
+- Organization/author: Arduino Team.
+- Type: official retrospective, 2021-12-09.
+- URL: [History of the Arduino UNO](https://blog.arduino.cc/2021/12/09/one-board-to-rule-them-all-history-of-the-arduino-uno/)
+- Evidence location/document identity: Rise of the Techno-Hippies; Taking Shape; Ten Thousand and UNO; The Day of the UNO.
+- Claims supported and limits: Uno means one; culmination of earlier boards, 2010 New York launch and education/usability motivation. Retrospective participant accounts are attributed; no exhaustive adjudication of historical credit.
+- Access date: 2026-10-08.
+
+## SRC-035 — Dinner is Ready
+
+- Organization/author: Massimo Banzi / Arduino.
+- Type: contemporary announcement, 2010-09-24.
+- URL: [Dinner is Ready](https://blog.arduino.cc/2010/09/24/dinner-is-ready/)
+- Evidence location/document identity: Opening announcement and branding/communication section.
+- Claims supported and limits: Announced unveiling at Maker Faire NYC on 25 September 2010; corroborates launch context without assuming every detail applies to Rev3.
+- Access date: 2026-10-08.
+
+
+
+## SRC-036 — Atomic Structure and Symbolism
+
+- Organization/author: OpenStax / Rice University.
+- Type: academic textbook section.
+- URL: [Chemistry 2e, section 2.3](https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism)
+- Evidence location/document identity: Nuclear structure, particle charges, atomic number, neutrality, and linked periodic table.
+- Claims supported and limits: General atomic identity and charge; not literal planetary trajectories or a board-specific atomic image.
+- Access date: 2026-10-08.
+
+## SRC-037 — Structure and Materials of Ceramic Capacitors
+
+- Organization/author: Murata.
+- Type: manufacturer technical FAQ.
+- URL: [Ceramic capacitor structure](https://www.murata.com/support/faqs/capacitor/ceramiccapacitor/conf/0001)
+- Evidence location/document identity: Multilayer capacitor structure diagram and dielectric/electrode explanation.
+- Claims supported and limits: General alternating electrode and ceramic dielectric model; no attribution of exact Uno capacitor construction or chemistry.
+- Access date: 2026-10-08.
+
+## SRC-038 — Dielectric Materials in Capacitors
+
+- Organization/author: TDK.
+- Type: manufacturer educational article.
+- URL: [Electronics ABC: capacitor dielectric materials](https://www.tdk.com/en/tech-mag/electronics_primer/9)
+- Evidence location/document identity: Electrolytic capacitor types and oxide-film dielectric explanation.
+- Claims supported and limits: General electrolytic construction and material families; does not establish Uno component procurement or composition.
+- Access date: 2026-10-08.
+
+## SRC-039 — What is an FPGA?
+
+- Organization/author: Microchip Developer Help.
+- Type: manufacturer educational article.
+- URL: [FPGA memory technology overview](https://developerhelp.microchip.com/xwiki/bin/view/products/fpga/hello-fpga/what-is/)
+- Evidence location/document identity: SRAM-based and Flash-based technology sections, floating-gate MOS transistor explanation.
+- Claims supported and limits: General volatile SRAM and nonvolatile floating-gate flash concepts. FPGA examples do not establish exact ATmega328P memory cell layout or process.
+- Access date: 2026-10-08.
+
+## SRC-040 — Oral History of Massimo Banzi
+
+- Organization/author: Computer History Museum / Massimo Banzi.
+- Type: recorded participant oral-history transcript.
+- URL: [Banzi oral history](https://archive.computerhistory.org/resources/access/text/2016/03/102740131-05-01-acc.pdf)
+- Evidence location/document identity: CHM Ref X7483.2015, printed pages 11–12; first-person account of early-2005 workshops and naming Arduino after Bar Di Re Arduino in Ivrea.
+- Claims supported and limits: Attributed recollection of the Arduino name and teaching context; not independent confirmation of every recalled date or a resolution of competing historical credit accounts.
+- Access date: 2026-10-08.

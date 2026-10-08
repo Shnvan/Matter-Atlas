@@ -16,3 +16,7 @@ Target WCAG 2.2 AA behavior. This is a design contract, not a conformance claim.
 - prefers-reduced-motion yields static scenes and immediate state changes. A user pause is persistent within the session; hidden/inactive/offscreen animation stops.
 
 Screen-reader checks require actual manual testing; automated semantic inspection is insufficient. Test the initial guide's skip link and document links now, and the full contract as features are implemented. No learner progress depends on storage or mouse use.
+
+## Responsive workspace acceptance
+
+At >=1200px the inspector is a labeled adjacent region. At tablet/mobile sizes a modal drawer or sheet has an accessible name, initial focus, Escape/close, containment and return to its trigger. Navigation and inspector sheets never compete for active focus. Every camera/visibility action has a labeled button and keyboard behavior. Select/place assembly matches dragging correctness and cancellation recovery. Theme colors require measured AA contrast in both themes. Visual screenshots alone do not establish accessibility.

@@ -10,16 +10,16 @@ High-school students, early-college students, hobbyists, electronics beginners, 
 
 ## Product
 
-Six planned modes: Explore components; Explode the assembly; Assemble parts with accessible placement; Zoom along guided branches; follow Signal Journeys; answer a 10-15 question Quiz. Supporting sections cover history, PCB layers, component families, ICs, logic, memory, MOSFETs, semiconductors, materials, atomic structure, current, photons, pins, recap, and model limitations.
+Six modes in the approved implementation scope: Explore components; Explode the assembly; Assemble parts with accessible placement; Zoom along guided branches; follow Signal Journeys; answer a 10-15 question Quiz. Supporting sections cover history, PCB layers, component families, ICs, logic, memory, MOSFETs, semiconductors, materials, atomic structure, current, photons, pins, recap, and model limitations.
 
 ## Learning and success
 
-A learner can identify major parts; explain their purpose and absence; follow board-to-electron and LED-to-photon journeys; distinguish information from matter; explain field-controlled transistors, doping, and carrier motion; and compare resistor, capacitor, and LED branches. Every board-specific claim has evidence or an explicit uncertainty label. Every action is usable with keyboard and touch. The final HTML opens offline without a build or required external asset.
+A learner can identify major parts; explain their purpose and absence; follow board-to-electron and LED-to-photon journeys; distinguish information from matter; explain field-controlled transistors, doping, and carrier motion; and compare resistor, capacitor, and LED branches. Every board-specific claim has evidence or an explicit uncertainty label. Every action is usable with keyboard and touch. The static export runs over local HTTP without required internet assets or persistent storage. The original guide still opens directly as a file.
 
 ## Current phase and exclusions
 
-Phase 0: foundation. `index.html` is currently a documentation guide. Educational modes are future work. The reference is the socketed Uno Rev3 design in the published UNO-TH_Rev3e schematic/CAD. Production variants and manual conflicts are notes, not mixed identities.
+Foundation and the six-mode application release are complete within the recorded acceptance scope. `index.html` preserves the original documentation guide; the new application uses Next.js static export. See TASKS for acceptance status. The reference is the socketed Uno Rev3 design in the published UNO-TH_Rev3e schematic/CAD. Production variants and manual conflicts are notes, not mixed identities.
 
-Excluded: R4/clone substitution, proprietary floorplan reconstruction, fabricated numerical scales, circuit-level simulation, hardware programming, accounts, hosting, and unnecessary external libraries. Light theme and beyond-electronics particle expansion are optional later tasks.
+Excluded: R4/clone substitution, proprietary floorplan reconstruction, fabricated numerical scales, circuit-level simulation, hardware programming, accounts, hosting, and unnecessary external libraries. Warm light is the default with a complete dark theme; beyond-electronics particle expansion remains optional backlog work.
 
 See [requirements](REQUIREMENTS.md), [learning objectives](docs/product/learning-objectives.md), and [tasks](TASKS.md).

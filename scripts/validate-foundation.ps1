@@ -19,7 +19,11 @@ $required = @(
  'docs/product/user-journeys.md','docs/product/learning-objectives.md','docs/product/terminology.md',
  'docs/engineering/rendering.md','docs/engineering/interactions.md',
  'docs/engineering/performance.md','docs/engineering/browser-support.md',
- 'scripts/validate-foundation.ps1'
+ 'scripts/validate-foundation.ps1',
+ 'docs/briefs/redesign-specification.txt','docs/design/UI_AUDIT.md','.agent/PLANS.md',
+ '.agents/skills/ui-art-direction/SKILL.md',
+ '.agents/skills/arduino-fact-verification/SKILL.md',
+ '.agents/skills/frontend-quality-gate/SKILL.md'
 )
 $texts = @{}
 foreach ($relative in $required) {
@@ -28,6 +32,19 @@ foreach ($relative in $required) {
  $body = [IO.File]::ReadAllText($path)
  if ($body.Trim().Length -lt 100) { Fail "Insufficient substantive content: $relative" }
  if ($relative.EndsWith('.md') -or $relative -eq 'index.html') { $texts[$relative] = $body }
+}
+# Include new project-memory documents without traversing dependencies, build output,
+# runtime fixture data or the preserved source briefs. Those are not canonical memory.
+$memoryFiles = @(Get-ChildItem -LiteralPath $Root -File -Filter '*.md')
+foreach ($directory in @('docs','.agent','.agents')) {
+ $memoryRoot = Join-Path $Root $directory
+ if (Test-Path -LiteralPath $memoryRoot -PathType Container) {
+  $memoryFiles += @(Get-ChildItem -LiteralPath $memoryRoot -Recurse -File -Filter '*.md')
+ }
+}
+foreach ($file in $memoryFiles) {
+ $relative = $file.FullName.Substring($Root.Length + 1).Replace('\','/')
+ $texts[$relative] = [IO.File]::ReadAllText($file.FullName)
 }
 foreach ($relative in $texts.Keys) {
  $body = $texts[$relative]
@@ -78,7 +95,7 @@ if ($texts.ContainsKey('TASKS.md')) {
   if ($line -match '^## (BACKLOG|READY|IN PROGRESS|BLOCKED|REVIEW|DONE)$') { $section = $Matches[1] }
   if ($line -match '^### (TASK-\d{3})\b') {
    $current = $Matches[1]
-   $taskInfo[$current] = @{ Section=$section; Status=''; Phase=-1; Dependencies=@(); Requirements=@(); Acceptance=$false; Files=$false }
+   $taskInfo[$current] = @{ Section=$section; Status=''; Phase=-1; Dependencies=@(); Requirements=@(); Acceptance=$false; Evidence=$false; Files=$false }
   }
   if (-not $current) { continue }
   if ($line -match '^- Status: (.+?)\.$') { $taskInfo[$current].Status = $Matches[1] }
@@ -86,6 +103,7 @@ if ($texts.ContainsKey('TASKS.md')) {
   if ($line -match '^- Dependencies: (.+)$') { $taskInfo[$current].Dependencies = @([regex]::Matches($Matches[1],'TASK-\d{3}') | ForEach-Object Value) }
   if ($line -match '^- Requirement IDs: (.+)$') { $taskInfo[$current].Requirements = @([regex]::Matches($Matches[1],'(?:FUNC|CONTENT|UX|ACC|PERF|TECH|RESEARCH|QA|FOUND)-\d{3}') | ForEach-Object Value) }
   if ($line -match '^- Acceptance criteria: .{30,}') { $taskInfo[$current].Acceptance = $true }
+  if ($line -match '^- Acceptance evidence:\s*(\S.*)$') { $taskInfo[$current].Evidence = $true }
   if ($line -match '^- Files likely affected: .+') { $taskInfo[$current].Files = $true }
  }
  foreach ($id in $taskInfo.Keys) {
@@ -96,7 +114,7 @@ if ($texts.ContainsKey('TASKS.md')) {
    if (-not $taskInfo.ContainsKey($dep)) { Fail "Unknown dependency $dep in $id" }
    elseif ($task.Status -in @('READY','DONE') -and $taskInfo[$dep].Status -ne 'DONE') { Fail "$id is $($task.Status) with unfinished dependency $dep" }
   }
-  if ([int]($id -replace 'TASK-','') -ge 7 -and $task.Status -eq 'DONE') { Fail "Future task marked DONE in foundation milestone: $id" }
+  if ($task.Status -eq 'DONE' -and -not $task.Evidence) { Fail "DONE task lacks acceptance evidence: $id" }
  }
 }
 $visit = @{}
@@ -152,6 +170,6 @@ if ($issues.Count) {
  exit 1
 }
 Write-Output "PASS: $($required.Count) required files; $($requirements.Count) requirements; $($sources.Count) sources; $($decisions.Count) decisions; $($tasks.Count) tasks; 116 inventory elements."
-Write-Output 'PASS: relative links, canonical references, task traceability/dependencies/cycles, handoff headings and foundation status checks.'
+Write-Output 'PASS: project-memory links, canonical references, task traceability/dependencies/cycles, DONE acceptance evidence, handoff headings and archived-guide checks.'
 Write-Output 'LIMIT: structural checks do not establish scientific correctness or browser/accessibility conformance. See TESTING.md.'
 exit 0

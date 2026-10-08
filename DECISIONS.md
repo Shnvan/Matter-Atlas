@@ -5,7 +5,7 @@ Dates use Asia/Manila. Accepted decisions reflect explicit user constraints and 
 ## DEC-001 — Foundation-only milestone
 
 - Date: 2026-10-08.
-- Status: accepted.
+- Status: superseded for application delivery by DEC-009; retained as foundation history.
 - Context: Deliver the requested external project memory before the teaching application.
 - Options considered: Build full site immediately; foundation then site; foundation only.
 - Decision: Foundation only, with a useful offline documentation guide.
@@ -25,7 +25,7 @@ Dates use Asia/Manila. Accepted decisions reflect explicit user constraints and 
 ## DEC-003 — Local-only single-file delivery
 
 - Date: 2026-10-08.
-- Status: accepted.
+- Status: superseded for application delivery by DEC-009; retained as foundation history.
 - Context: The application must open directly without tooling or required assets.
 - Options considered: Hosted framework; buildless external files; self-contained HTML.
 - Decision: Vanilla ES6+, inline CSS/SVG/Canvas in index.html; no required fetch/import/CDN; no GSAP by default.
@@ -83,3 +83,25 @@ Dates use Asia/Manila. Accepted decisions reflect explicit user constraints and 
 - Consequences: No ceremonial empty files. Structural checks supplement factual/manual review.
 
 
+
+## DEC-009 — Approved static frontend migration
+
+- Date: 2026-10-08.
+- Status: accepted.
+- Context: User approved the NASA-inspired redesign and six-mode application implementation after the completed foundation.
+- Decision: Supersede DEC-001 milestone boundary and DEC-003 single-file/no-build constraint for the new application. Use Next.js 16.4.0, React 19.3.0, TypeScript 6.0.3, Tailwind 4.3.3 and Geist 1.7.2, with compatible libraries locked by npm after build checks. Use local HTTP static export and bundled assets/content; no hosting or required internet services.
+- Consequences: Preserve root index.html as the original file-URL guide and baseline Git commit eef829b. Contributor documents receive safe allowlisted build-time routes. Historical foundation checks do not establish new app acceptance.
+
+## DEC-010 — Warm object-first scientific workspace
+
+- Date: 2026-10-08.
+- Status: accepted.
+- Decision: NASA-inspired editorial hierarchy with the brief's warm light default and complete dark theme. Desktop >=1200px uses 64px header, 232px navigator, 336px inspector; tablet drawers and mobile sheets protect board space. Explore/Journey/Learn organize all six modes. No NASA logos or endorsement implied.
+- Consequences: TASK-028 is now mandatory theme work, rather than an optional late enhancement. CAD-derived layered SVG/2.5D is the initial renderer; WebGL is deferred. Visual acceptance requires screenshots and input checks.
+
+## DEC-011 — Canonical design and execution ownership
+
+- Date: 2026-10-08.
+- Status: accepted.
+- Decision: Keep DESIGN as design-system owner and UX as interaction-model owner instead of duplicating DESIGN_SYSTEM/INTERACTION_MODEL files requested by the generic redesign brief. Add docs/design/UI_AUDIT.md, .agent/PLANS.md and three narrow repository skills that link to canonical policy.
+- Consequences: Inventory, bibliography, terminology, requirements and tasks retain their established ownership. Runtime data is a reviewed projection. DONE requires explicit acceptance evidence; the validator must not permanently prohibit application tasks from completion.

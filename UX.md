@@ -2,7 +2,9 @@
 
 ## Entry and navigation
 
-Current entry is an offline project guide with documentation links and honest phase status. The future teaching page begins with a short mode explanation, the assembled board, and a visible “illustrations may be simplified and not to scale” note. Navigation exposes Explore, Explode, Assemble, Zoom, Signal Journey, and Quiz only when all respective controls work. Supporting sections have an in-page contents list.
+The teaching application opens on the assembled Uno and concise board overview: “Select a component to look inside.” Explore contains board exploration, explode and assembly; Journey contains scale and signals; Learn contains topics, pins and quiz. Contributor documentation is secondary under /project/. The original index.html remains the historical offline guide.
+
+Desktop uses a 64px header, 232px navigator and 336px inspector at >=1200px. Tablet uses drawers and mobile (<768px) uses sheets. Open/close actions restore focus; selecting a component never silently enters its interior. Explicit Zoom inside starts the branch. Fit/reset remain reachable after manipulation.
 
 ## Explore and detail flow
 
@@ -29,3 +31,7 @@ Choose an answer -> submit -> immediate explanation and source -> next -> final 
 Free beginner: explore one part with short content. Guided student: follow the full graph path with position and progress. Teacher: directly select a signal/logic scene, pause, and expand explanation. Keyboard-only learner: skip link, component list, native mode controls, accessible detail, graph buttons, and select/place assembly. No essential instruction uses “hover” without a focus/tap alternative.
 
 See [six learner journeys](docs/product/user-journeys.md), [interaction contract](docs/engineering/interactions.md), and [accessibility](ACCESSIBILITY.md).
+
+## Camera and object visibility
+
+Fit resets camera; pan/zoom/planar rotation have labeled keyboard controls as well as pointer input. Focus centers the selected part. Isolate dims context; Hide others removes it. Restore board clears these visibility changes. The inspector and component list remain synchronized with the selected identity. Mode changes cancel an active drag and stop mode-owned playback.

@@ -1,0 +1,4178 @@
+[
+  {
+    "id": "mcu-main",
+    "name": "ATMEGA328P-PU · ZU4",
+    "shortName": "ATmega328P",
+    "category": "MCU",
+    "subsystem": "Main microcontroller",
+    "referenceDesignators": ["ZU4"],
+    "partNumber": "ATMEGA328P-PU",
+    "purpose": "CPU / user program / peripherals.",
+    "madeOf": "Integrated circuits on silicon, with metal connections inside a protective package. Exact die geometry and bond materials are not established.",
+    "howItWorks": "A processor follows encoded instructions while memory and peripherals hold state, time events and exchange signals.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: cpu / user program / peripherals. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Like a small workshop with a coordinator, storage and specialist tools.",
+    "analogyLimit": "It is a collection of physical circuits, not a person making decisions.",
+    "intermediate": "Socketed 28-pin DIP footprint; do not use 32-pin ADC count.",
+    "deepDive": "CPU / user program / peripherals. Socketed 28-pin DIP footprint; do not use 32-pin ADC count. It is a collection of physical circuits, not a person making decisions.",
+    "sourceRefs": ["SRC-002", "SRC-006", "SRC-007", "SRC-032"],
+    "zoomTargets": ["ic-package"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "ZU4"
+      },
+      {
+        "label": "Design identity",
+        "value": "ATMEGA328P-PU"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "ZU4",
+        "x": 46.355,
+        "y": 16.383,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 46.355,
+          "y": 16.383,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-mcu-main",
+        "slotId": "slot-mcu-main",
+        "slotPosition": {
+          "x": 463.54999999999995,
+          "y": 369.57000000000005
+        },
+        "tooltip": "ATmega328P",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "CPU / user program / peripherals.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-006"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Integrated circuits on silicon, with metal connections inside a protective package. Exact die geometry and bond materials are not established.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-006", "SRC-007", "SRC-032"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A processor follows encoded instructions while memory and peripherals hold state, time events and exchange signals.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-006", "SRC-007", "SRC-032"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: cpu / user program / peripherals. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-006", "SRC-007", "SRC-032"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "icsp",
+    "name": "3x2 M · ICSP",
+    "shortName": "ICSP · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["ICSP"],
+    "partNumber": "3x2 M",
+    "purpose": "Main MCU SPI/programming/reset/supply.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: main mcu spi/programming/reset/supply. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "3x2 male footprint; not extra I2C pins.",
+    "deepDive": "Main MCU SPI/programming/reset/supply. 3x2 male footprint; not extra I2C pins. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "ICSP"
+      },
+      {
+        "label": "Design identity",
+        "value": "3x2 M"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "ICSP",
+        "x": 64.897,
+        "y": 27.94,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 64.897,
+          "y": 27.94,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-icsp",
+        "slotId": "slot-icsp",
+        "slotPosition": {
+          "x": 648.97,
+          "y": 254.00000000000003
+        },
+        "tooltip": "ICSP · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Main MCU SPI/programming/reset/supply.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: main mcu spi/programming/reset/supply. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "iol",
+    "name": "8x1F-H8.5 · IOL",
+    "shortName": "IOL · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["IOL"],
+    "partNumber": "8x1F-H8.5",
+    "purpose": "D0-D7.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: d0-d7. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "8 positions; UART D0/D1, PWM D3/D5/D6.",
+    "deepDive": "D0-D7. 8 positions; UART D0/D1, PWM D3/D5/D6. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "IOL"
+      },
+      {
+        "label": "Design identity",
+        "value": "8x1F-H8.5"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "IOL",
+        "x": 54.61,
+        "y": 50.8,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 54.61,
+          "y": 50.8,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-iol",
+        "slotId": "slot-iol",
+        "slotPosition": {
+          "x": 546.1,
+          "y": 25.400000000000063
+        },
+        "tooltip": "IOL · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "D0-D7.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: d0-d7. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "ioh",
+    "name": "10x1F-H8.5 · IOH",
+    "shortName": "IOH · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["IOH"],
+    "partNumber": "10x1F-H8.5",
+    "purpose": "D8-D13, GND, AREF, SDA, SCL.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: d8-d13, gnd, aref, sda, scl. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "10 positions; duplicated SDA/SCL nets, not two extra independent GPIO.",
+    "deepDive": "D8-D13, GND, AREF, SDA, SCL. 10 positions; duplicated SDA/SCL nets, not two extra independent GPIO. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "IOH"
+      },
+      {
+        "label": "Design identity",
+        "value": "10x1F-H8.5"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "IOH",
+        "x": 30.226,
+        "y": 50.8,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 30.226,
+          "y": 50.8,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-ioh",
+        "slotId": "slot-ioh",
+        "slotPosition": {
+          "x": 302.26,
+          "y": 25.400000000000063
+        },
+        "tooltip": "IOH · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "D8-D13, GND, AREF, SDA, SCL.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: d8-d13, gnd, aref, sda, scl. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "ad",
+    "name": "6x1F-H8.5 · AD",
+    "shortName": "AD · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["AD"],
+    "partNumber": "6x1F-H8.5",
+    "purpose": "A0-A5.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: a0-a5. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "6 analog-capable GPIO; A4 SDA / A5 SCL.",
+    "deepDive": "A0-A5. 6 analog-capable GPIO; A4 SDA / A5 SCL. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "AD"
+      },
+      {
+        "label": "Design identity",
+        "value": "6x1F-H8.5"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "AD",
+        "x": 57.15,
+        "y": 2.54,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 57.15,
+          "y": 2.54,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-ad",
+        "slotId": "slot-ad",
+        "slotPosition": {
+          "x": 571.5,
+          "y": 508.00000000000006
+        },
+        "tooltip": "AD · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "A0-A5.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: a0-a5. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c2",
+    "name": "100n · C2",
+    "shortName": "C2 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Power",
+    "referenceDesignators": ["C2"],
+    "partNumber": "100n",
+    "purpose": "+5V-to-GND regulator-rail bypass.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +5v-to-gnd regulator-rail bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF.",
+    "deepDive": "+5V-to-GND regulator-rail bypass. 100 nF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C2"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C2",
+        "x": 12.065,
+        "y": 29.845,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 12.065,
+          "y": 29.845,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-c2",
+        "slotId": "slot-c2",
+        "slotPosition": {
+          "x": 120.64999999999999,
+          "y": 234.95000000000005
+        },
+        "tooltip": "C2 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+5V-to-GND regulator-rail bypass.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +5v-to-gnd regulator-rail bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "pc1",
+    "name": "47u · PC1",
+    "shortName": "PC1 · polarized bulk capacitor",
+    "category": "polarized bulk capacitor",
+    "subsystem": "Power",
+    "referenceDesignators": ["PC1"],
+    "partNumber": "47u",
+    "purpose": "VIN-to-GND smoothing.",
+    "madeOf": "Electrodes, dielectric and a polarized package; the precise supplier materials are not established.",
+    "howItWorks": "It buffers rail changes by changing separated electrode charge; correct polarity matters.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: vin-to-gnd smoothing. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A local energy buffer beside a supply.",
+    "analogyLimit": "It is not a continuous DC path through the dielectric.",
+    "intermediate": "47 uF; PANASONIC_D footprint not exact procurement identity.",
+    "deepDive": "VIN-to-GND smoothing. 47 uF; PANASONIC_D footprint not exact procurement identity. It is not a continuous DC path through the dielectric.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "PC1"
+      },
+      {
+        "label": "Design identity",
+        "value": "47u"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "PC1",
+        "x": 25.527,
+        "y": 9.144,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 25.527,
+          "y": 9.144,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-pc1",
+        "slotId": "slot-pc1",
+        "slotPosition": {
+          "x": 255.27,
+          "y": 441.96000000000004
+        },
+        "tooltip": "PC1 · polarized bulk capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "VIN-to-GND smoothing.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Electrodes, dielectric and a polarized package; the precise supplier materials are not established.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "It buffers rail changes by changing separated electrode charge; correct polarity matters.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: vin-to-gnd smoothing. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "pc2",
+    "name": "47u · PC2",
+    "shortName": "PC2 · polarized bulk capacitor",
+    "category": "polarized bulk capacitor",
+    "subsystem": "Power",
+    "referenceDesignators": ["PC2"],
+    "partNumber": "47u",
+    "purpose": "+5V-to-GND smoothing.",
+    "madeOf": "Electrodes, dielectric and a polarized package; the precise supplier materials are not established.",
+    "howItWorks": "It buffers rail changes by changing separated electrode charge; correct polarity matters.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +5v-to-gnd smoothing. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A local energy buffer beside a supply.",
+    "analogyLimit": "It is not a continuous DC path through the dielectric.",
+    "intermediate": "47 uF; manual names EEE-1EA470WP, not established for all baseline assemblies.",
+    "deepDive": "+5V-to-GND smoothing. 47 uF; manual names EEE-1EA470WP, not established for all baseline assemblies. It is not a continuous DC path through the dielectric.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "PC2"
+      },
+      {
+        "label": "Design identity",
+        "value": "47u"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "PC2",
+        "x": 18.415,
+        "y": 9.144,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 18.415,
+          "y": 9.144,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-pc2",
+        "slotId": "slot-pc2",
+        "slotPosition": {
+          "x": 184.14999999999998,
+          "y": 441.96000000000004
+        },
+        "tooltip": "PC2 · polarized bulk capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+5V-to-GND smoothing.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Electrodes, dielectric and a polarized package; the precise supplier materials are not established.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "It buffers rail changes by changing separated electrode charge; correct polarity matters.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +5v-to-gnd smoothing. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "led-on",
+    "name": "ON indicator LED",
+    "shortName": "ON · LED",
+    "category": "LED",
+    "subsystem": "Indicators",
+    "referenceDesignators": ["ON"],
+    "partNumber": "GREEN",
+    "purpose": "+5V rail indication through parallel RN4C/D.",
+    "madeOf": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+    "howItWorks": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +5v rail indication through parallel rn4c/d. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "An energy converter producing light.",
+    "analogyLimit": "Electrons are not consumed and light is not made from colored balls.",
+    "intermediate": "GREEN label; exact LED compound/part unknown.",
+    "deepDive": "+5V rail indication through parallel RN4C/D. GREEN label; exact LED compound/part unknown. Electrons are not consumed and light is not made from colored balls.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+    "zoomTargets": ["led-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "ON"
+      },
+      {
+        "label": "Design identity",
+        "value": "GREEN"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "ON",
+        "x": 58.42,
+        "y": 36.576,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 58.42,
+          "y": 36.576,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-led-on",
+        "slotId": "slot-led-on",
+        "slotPosition": {
+          "x": 584.2,
+          "y": 167.64000000000004
+        },
+        "tooltip": "ON · LED",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+5V rail indication through parallel RN4C/D.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +5v rail indication through parallel rn4c/d. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "led-rx",
+    "name": "RX indicator LED",
+    "shortName": "RX · LED",
+    "category": "LED",
+    "subsystem": "Indicators",
+    "referenceDesignators": ["RX"],
+    "partNumber": "YELLOW",
+    "purpose": "USB firmware activity, driven by U3 PD4.",
+    "madeOf": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+    "howItWorks": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb firmware activity, driven by u3 pd4. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "An energy converter producing light.",
+    "analogyLimit": "Electrons are not consumed and light is not made from colored balls.",
+    "intermediate": "YELLOW; source through RN2B, MCU sinks current.",
+    "deepDive": "USB firmware activity, driven by U3 PD4. YELLOW; source through RN2B, MCU sinks current. Electrons are not consumed and light is not made from colored balls.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+    "zoomTargets": ["led-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RX"
+      },
+      {
+        "label": "Design identity",
+        "value": "YELLOW"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RX",
+        "x": 27.94,
+        "y": 34.29,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 34.29,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-led-rx",
+        "slotId": "slot-led-rx",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 190.50000000000006
+        },
+        "tooltip": "RX · LED",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB firmware activity, driven by U3 PD4.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb firmware activity, driven by u3 pd4. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "led-tx",
+    "name": "TX indicator LED",
+    "shortName": "TX · LED",
+    "category": "LED",
+    "subsystem": "Indicators",
+    "referenceDesignators": ["TX"],
+    "partNumber": "YELLOW",
+    "purpose": "USB firmware activity, driven by U3 PD5.",
+    "madeOf": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+    "howItWorks": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb firmware activity, driven by u3 pd5. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "An energy converter producing light.",
+    "analogyLimit": "Electrons are not consumed and light is not made from colored balls.",
+    "intermediate": "YELLOW; source through RN2C, MCU sinks current.",
+    "deepDive": "USB firmware activity, driven by U3 PD5. YELLOW; source through RN2C, MCU sinks current. Electrons are not consumed and light is not made from colored balls.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+    "zoomTargets": ["led-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "TX"
+      },
+      {
+        "label": "Design identity",
+        "value": "YELLOW"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "TX",
+        "x": 27.94,
+        "y": 36.576,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 36.576,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-led-tx",
+        "slotId": "slot-led-tx",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 167.64000000000004
+        },
+        "tooltip": "TX · LED",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB firmware activity, driven by U3 PD5.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb firmware activity, driven by u3 pd5. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "d1",
+    "name": "M7 · D1",
+    "shortName": "D1 · rectifier diode",
+    "category": "rectifier diode",
+    "subsystem": "Protection",
+    "referenceDesignators": ["D1"],
+    "partNumber": "M7",
+    "purpose": "Series barrel-input reverse-polarity protection.",
+    "madeOf": "A semiconductor diode and package contacts; exact supplier identity is not established by M7.",
+    "howItWorks": "Direction-dependent conduction passes intended barrel-input current while resisting reverse polarity under its operating conditions.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: series barrel-input reverse-polarity protection. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A direction-sensitive gate.",
+    "analogyLimit": "It has voltage drop, leakage and limits; it is not an ideal one-way switch.",
+    "intermediate": "M7 design marking only; exact supplier not established. VIN header bypasses D1.",
+    "deepDive": "Series barrel-input reverse-polarity protection. M7 design marking only; exact supplier not established. VIN header bypasses D1. It has voltage drop, leakage and limits; it is not an ideal one-way switch.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-019"],
+    "zoomTargets": ["diode-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "D1"
+      },
+      {
+        "label": "Design identity",
+        "value": "M7"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "D1",
+        "x": 21.59,
+        "y": 2.794,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 21.59,
+          "y": 2.794,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-d1",
+        "slotId": "slot-d1",
+        "slotPosition": {
+          "x": 215.9,
+          "y": 505.46000000000004
+        },
+        "tooltip": "D1 · rectifier diode",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Series barrel-input reverse-polarity protection.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor diode and package contacts; exact supplier identity is not established by M7.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Direction-dependent conduction passes intended barrel-input current while resisting reverse polarity under its operating conditions.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: series barrel-input reverse-polarity protection. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "barrel-jack",
+    "name": "POWERSUPPLY_DC21MMX · X1",
+    "shortName": "Barrel jack",
+    "category": "barrel jack",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["X1"],
+    "partNumber": "POWERSUPPLY_DC21MMX",
+    "purpose": "External power input.",
+    "madeOf": "Metal contacts and an insulating housing; exact materials are unverified.",
+    "howItWorks": "Its center contact supplies the external input through D1 to VIN, while another contact provides the return.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: external power input. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A keyed entrance for external power.",
+    "analogyLimit": "VIN header power bypasses the barrel diode and is a different protection path.",
+    "intermediate": "2.1 mm design connector family; switched contact tied to ground in design.",
+    "deepDive": "External power input. 2.1 mm design connector family; switched contact tied to ground in design. VIN header power bypasses the barrel diode and is a different protection path.",
+    "sourceRefs": ["SRC-002", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "X1"
+      },
+      {
+        "label": "Design identity",
+        "value": "POWERSUPPLY_DC21MMX"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "X1",
+        "x": 5.334,
+        "y": 8.382,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 5.334,
+          "y": 8.382,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-barrel-jack",
+        "slotId": "slot-barrel-jack",
+        "slotPosition": {
+          "x": 53.339999999999996,
+          "y": 449.58000000000004
+        },
+        "tooltip": "Barrel jack",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "External power input.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Metal contacts and an insulating housing; exact materials are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Its center contact supplies the external input through D1 to VIN, while another contact provides the return.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: external power input. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "usb-port",
+    "name": "USB-B_TH · X2",
+    "shortName": "USB-B",
+    "category": "USB-B",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["X2"],
+    "partNumber": "USB-B_TH",
+    "purpose": "USB power, data and shield.",
+    "madeOf": "Four electrical contacts, a metal shield and insulating/mechanical support.",
+    "howItWorks": "Separate contacts carry supply, return and differential data; the shield has its own grounding network.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb power, data and shield. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "One connector carrying several separate services.",
+    "analogyLimit": "Power and data do not travel through one identical serial chain.",
+    "intermediate": "USB-B_TH; PN61729 is library footprint identifier.",
+    "deepDive": "USB power, data and shield. USB-B_TH; PN61729 is library footprint identifier. Power and data do not travel through one identical serial chain.",
+    "sourceRefs": ["SRC-002", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "X2"
+      },
+      {
+        "label": "Design identity",
+        "value": "USB-B_TH"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "X2",
+        "x": 3.81,
+        "y": 38.1,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 3.81,
+          "y": 38.1,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-usb-port",
+        "slotId": "slot-usb-port",
+        "slotPosition": {
+          "x": 38.1,
+          "y": 152.40000000000003
+        },
+        "tooltip": "USB-B",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB power, data and shield.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Four electrical contacts, a metal shield and insulating/mechanical support.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Separate contacts carry supply, return and differential data; the shield has its own grounding network.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb power, data and shield. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "regulator-5v",
+    "name": "NCP1117ST50T3G · U1",
+    "shortName": "5 V regulator",
+    "category": "regulator",
+    "subsystem": "Power",
+    "referenceDesignators": ["U1"],
+    "partNumber": "NCP1117ST50T3G",
+    "purpose": "VIN to +5V.",
+    "madeOf": "A semiconductor regulating circuit in a protective package. Exact internal construction is not depicted.",
+    "howItWorks": "Feedback adjusts a pass device to maintain the intended output voltage while excess electrical energy becomes heat.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: vin to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Like a pressure regulator maintaining a downstream level.",
+    "analogyLimit": "Voltage is not fluid pressure; available current and heating impose limits.",
+    "intermediate": "Manual reports SPX1117; discrepancy remains bounded.",
+    "deepDive": "VIN to +5V. Manual reports SPX1117; discrepancy remains bounded. Voltage is not fluid pressure; available current and heating impose limits.",
+    "sourceRefs": ["SRC-002", "SRC-011", "SRC-010"],
+    "zoomTargets": ["regulator"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "U1"
+      },
+      {
+        "label": "Design identity",
+        "value": "NCP1117ST50T3G"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "U1",
+        "x": 7.747,
+        "y": 17.399,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 7.747,
+          "y": 17.399,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-regulator-5v",
+        "slotId": "slot-regulator-5v",
+        "slotPosition": {
+          "x": 77.47,
+          "y": 359.41
+        },
+        "tooltip": "5 V regulator",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "VIN to +5V.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-011"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor regulating circuit in a protective package. Exact internal construction is not depicted.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-010", "SRC-011"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Feedback adjusts a pass device to maintain the intended output voltage while excess electrical energy becomes heat.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-011", "SRC-010"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: vin to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-011", "SRC-010"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c4",
+    "name": "100n · C4",
+    "shortName": "C4 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Main microcontroller",
+    "referenceDesignators": ["C4"],
+    "partNumber": "100n",
+    "purpose": "AREF-to-GND bypass.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: aref-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF; not a series analog signal stage.",
+    "deepDive": "AREF-to-GND bypass. 100 nF; not a series analog signal stage. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C4"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C4",
+        "x": 27.94,
+        "y": 44.45,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 44.45,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-c4",
+        "slotId": "slot-c4",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 88.9
+        },
+        "tooltip": "C4 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "AREF-to-GND bypass.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: aref-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "usb-fuse",
+    "name": "MF-MSMF050-2 500mA · F1",
+    "shortName": "USB polyfuse",
+    "category": "polymer PTC fuse",
+    "subsystem": "Protection",
+    "referenceDesignators": ["F1"],
+    "partNumber": "MF-MSMF050-2 500mA",
+    "purpose": "USB VBUS overcurrent protection.",
+    "madeOf": "A polymer and conductive network, with proprietary composition unspecified.",
+    "howItWorks": "Heating expands the polymer network and raises resistance. After the fault and power are removed, cooling allows recovery.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb vbus overcurrent protection. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A self-recovering restriction that responds to heating.",
+    "analogyLimit": "Its 0.50 A hold rating is conditional, not an instantaneous trip threshold.",
+    "intermediate": "0.50 A hold at stated test temperature, not instantaneous cutoff; manual calls F1 a capacitor.",
+    "deepDive": "USB VBUS overcurrent protection. 0.50 A hold at stated test temperature, not instantaneous cutoff; manual calls F1 a capacitor. Its 0.50 A hold rating is conditional, not an instantaneous trip threshold.",
+    "sourceRefs": ["SRC-002", "SRC-012", "SRC-013"],
+    "zoomTargets": ["ptc"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "F1"
+      },
+      {
+        "label": "Design identity",
+        "value": "MF-MSMF050-2 500mA"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "F1",
+        "x": 4.064,
+        "y": 26.543,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 4.064,
+          "y": 26.543,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-usb-fuse",
+        "slotId": "slot-usb-fuse",
+        "slotPosition": {
+          "x": 40.64,
+          "y": 267.97
+        },
+        "tooltip": "USB polyfuse",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB VBUS overcurrent protection.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-012"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A polymer and conductive network, with proprietary composition unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-012", "SRC-013"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Heating expands the polymer network and raises resistance. After the fault and power are removed, cooling allows recovery.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-012", "SRC-013"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb vbus overcurrent protection. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-012", "SRC-013"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c7",
+    "name": "100n · C7",
+    "shortName": "C7 · capacitor",
+    "category": "capacitor",
+    "subsystem": "USB",
+    "referenceDesignators": ["C7"],
+    "partNumber": "100n",
+    "purpose": "ATmega16U2 +5V-to-GND bypass.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: atmega16u2 +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF.",
+    "deepDive": "ATmega16U2 +5V-to-GND bypass. 100 nF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C7"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C7",
+        "x": 27.94,
+        "y": 31.496,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 31.496,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-c7",
+        "slotId": "slot-c7",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 218.44000000000005
+        },
+        "tooltip": "C7 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "ATmega16U2 +5V-to-GND bypass.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: atmega16u2 +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "led-l",
+    "name": "L indicator LED",
+    "shortName": "Built-in LED",
+    "category": "LED",
+    "subsystem": "Indicators",
+    "referenceDesignators": ["L"],
+    "partNumber": "YELLOW",
+    "purpose": "Buffered D13/SCK state through U5B and RN2A.",
+    "madeOf": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+    "howItWorks": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: buffered d13/sck state through u5b and rn2a. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "An energy converter producing light.",
+    "analogyLimit": "Electrons are not consumed and light is not made from colored balls.",
+    "intermediate": "YELLOW label; LED current comes from U5B output, not directly D13.",
+    "deepDive": "Buffered D13/SCK state through U5B and RN2A. YELLOW label; LED current comes from U5B output, not directly D13. Electrons are not consumed and light is not made from colored balls.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+    "zoomTargets": ["led-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "L"
+      },
+      {
+        "label": "Design identity",
+        "value": "YELLOW"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "L",
+        "x": 27.94,
+        "y": 42.164,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 42.164,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-led-l",
+        "slotId": "slot-led-l",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 111.76000000000002
+        },
+        "tooltip": "Built-in LED",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Buffered D13/SCK state through U5B and RN2A.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A light-emitting semiconductor junction, contacts and package. The actual compound and encapsulant are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Forward current supplies carriers that can recombine and emit photons; the external circuit limits current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: buffered d13/sck state through u5b and rn2a. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-019", "SRC-023"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "power-mosfet",
+    "name": "FDN340P · T1",
+    "shortName": "Power MOSFET",
+    "category": "P-channel MOSFET",
+    "subsystem": "Power",
+    "referenceDesignators": ["T1"],
+    "partNumber": "FDN340P",
+    "purpose": "Switch USBVCC connection to +5V.",
+    "madeOf": "A semiconductor channel, insulated gate and conductive terminals; cross-section is conceptual.",
+    "howItWorks": "A sufficiently negative gate-to-source voltage allows the P-channel path to conduct. This board uses it to connect USB power.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: switch usbvcc connection to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "An electrically controlled valve.",
+    "analogyLimit": "This is P-channel; a generic N-channel HIGH-means-ON rule does not apply.",
+    "intermediate": "Gate-source voltage controls channel; not an N-channel demonstration.",
+    "deepDive": "Switch USBVCC connection to +5V. Gate-source voltage controls channel; not an N-channel demonstration. This is P-channel; a generic N-channel HIGH-means-ON rule does not apply.",
+    "sourceRefs": ["SRC-002", "SRC-008"],
+    "zoomTargets": ["p-mosfet"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "T1"
+      },
+      {
+        "label": "Design identity",
+        "value": "FDN340P"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "T1",
+        "x": 8.128,
+        "y": 26.543,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 8.128,
+          "y": 26.543,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-power-mosfet",
+        "slotId": "slot-power-mosfet",
+        "slotPosition": {
+          "x": 81.28,
+          "y": 267.97
+        },
+        "tooltip": "Power MOSFET",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Switch USBVCC connection to +5V.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-008"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor channel, insulated gate and conductive terminals; cross-section is conceptual.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-008"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A sufficiently negative gate-to-source voltage allows the P-channel path to conduct. This board uses it to connect USB power.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-008"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: switch usbvcc connection to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-008"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c1",
+    "name": "100n · C1",
+    "shortName": "C1 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Power",
+    "referenceDesignators": ["C1"],
+    "partNumber": "100n",
+    "purpose": "U5 +5V-to-GND bypass.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: u5 +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF; exact dielectric formulation unverified.",
+    "deepDive": "U5 +5V-to-GND bypass. 100 nF; exact dielectric formulation unverified. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C1"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C1",
+        "x": 18.415,
+        "y": 15.367,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 18.415,
+          "y": 15.367,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-c1",
+        "slotId": "slot-c1",
+        "slotPosition": {
+          "x": 184.14999999999998,
+          "y": 379.73
+        },
+        "tooltip": "C1 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "U5 +5V-to-GND bypass.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: u5 +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "mcu-usb",
+    "name": "ATMEGA16U2-MU(R) · U3",
+    "shortName": "ATmega16U2",
+    "category": "MCU",
+    "subsystem": "USB microcontroller",
+    "referenceDesignators": ["U3"],
+    "partNumber": "ATMEGA16U2-MU(R)",
+    "purpose": "USB-to-UART bridge firmware.",
+    "madeOf": "Integrated circuits on silicon, with metal connections inside a protective package. Exact die geometry and bond materials are not established.",
+    "howItWorks": "A processor follows encoded instructions while memory and peripherals hold state, time events and exchange signals.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb-to-uart bridge firmware. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Like a small workshop with a coordinator, storage and specialist tools.",
+    "analogyLimit": "It is a collection of physical circuits, not a person making decisions.",
+    "intermediate": "MLF32 footprint; separate ICSP1.",
+    "deepDive": "USB-to-UART bridge firmware. MLF32 footprint; separate ICSP1. It is a collection of physical circuits, not a person making decisions.",
+    "sourceRefs": ["SRC-002", "SRC-007", "SRC-006", "SRC-032"],
+    "zoomTargets": ["ic-package"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "U3"
+      },
+      {
+        "label": "Design identity",
+        "value": "ATMEGA16U2-MU(R)"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "U3",
+        "x": 19.939,
+        "y": 34.671,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 19.939,
+          "y": 34.671,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-mcu-usb",
+        "slotId": "slot-mcu-usb",
+        "slotPosition": {
+          "x": 199.39,
+          "y": 186.69000000000005
+        },
+        "tooltip": "ATmega16U2",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB-to-UART bridge firmware.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-007"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Integrated circuits on silicon, with metal connections inside a protective package. Exact die geometry and bond materials are not established.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-006", "SRC-007", "SRC-032"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A processor follows encoded instructions while memory and peripherals hold state, time events and exchange signals.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-007", "SRC-006", "SRC-032"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb-to-uart bridge firmware. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-007", "SRC-006", "SRC-032"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c5",
+    "name": "100n · C5",
+    "shortName": "C5 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Reset",
+    "referenceDesignators": ["C5"],
+    "partNumber": "100n",
+    "purpose": "DTR coupling to RESET / auto-reset.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: dtr coupling to reset / auto-reset. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF; RESET-EN trace can disable auto-reset.",
+    "deepDive": "DTR coupling to RESET / auto-reset. 100 nF; RESET-EN trace can disable auto-reset. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C5"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C5",
+        "x": 27.94,
+        "y": 29.845,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 29.845,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-c5",
+        "slotId": "slot-c5",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 234.95000000000005
+        },
+        "tooltip": "C5 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "DTR coupling to RESET / auto-reset.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: dtr coupling to reset / auto-reset. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "icsp1",
+    "name": "3x2 M · ICSP1",
+    "shortName": "ICSP1 · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["ICSP1"],
+    "partNumber": "3x2 M",
+    "purpose": "USB MCU programming/debug access.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: usb mcu programming/debug access. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "Separate signals MISO2/MOSI2/SCK2/RESET2.",
+    "deepDive": "USB MCU programming/debug access. Separate signals MISO2/MOSI2/SCK2/RESET2. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "ICSP1"
+      },
+      {
+        "label": "Design identity",
+        "value": "3x2 M"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "ICSP1",
+        "x": 18.288,
+        "y": 46.228,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 18.288,
+          "y": 46.228,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-icsp1",
+        "slotId": "slot-icsp1",
+        "slotPosition": {
+          "x": 182.88,
+          "y": 71.12000000000002
+        },
+        "tooltip": "ICSP1 · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USB MCU programming/debug access.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: usb mcu programming/debug access. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "z1",
+    "name": "CG0603MLC-05E · Z1",
+    "shortName": "Z1 · ESD protector",
+    "category": "ESD protector",
+    "subsystem": "USB",
+    "referenceDesignators": ["Z1"],
+    "partNumber": "CG0603MLC-05E",
+    "purpose": "D+ shunt to USHIELD.",
+    "madeOf": "A thin-film polymer protection structure. This is the manufacturer’s classification, despite the CAD library name.",
+    "howItWorks": "It shunts an electrostatic transient from a USB data line toward the shield node; it is not a series data stage.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: d+ shunt to ushield. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A short-lived pressure relief route.",
+    "analogyLimit": "It does not remove every overvoltage or guarantee survival.",
+    "intermediate": "Thin-film polymer technology per manufacturer; EAGLE library varistor name does not define composition.",
+    "deepDive": "D+ shunt to USHIELD. Thin-film polymer technology per manufacturer; EAGLE library varistor name does not define composition. It does not remove every overvoltage or guarantee survival.",
+    "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+    "zoomTargets": ["protection"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "Z1"
+      },
+      {
+        "label": "Design identity",
+        "value": "CG0603MLC-05E"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "Z1",
+        "x": 12.7,
+        "y": 39.37,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 12.7,
+          "y": 39.37,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-z1",
+        "slotId": "slot-z1",
+        "slotPosition": {
+          "x": 127.0,
+          "y": 139.70000000000005
+        },
+        "tooltip": "Z1 · ESD protector",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "D+ shunt to USHIELD.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A thin-film polymer protection structure. This is the manufacturer’s classification, despite the CAD library name.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-014", "SRC-015"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "It shunts an electrostatic transient from a USB data line toward the shield node; it is not a series data stage.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: d+ shunt to ushield. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "z2",
+    "name": "CG0603MLC-05E · Z2",
+    "shortName": "Z2 · ESD protector",
+    "category": "ESD protector",
+    "subsystem": "USB",
+    "referenceDesignators": ["Z2"],
+    "partNumber": "CG0603MLC-05E",
+    "purpose": "D- shunt to USHIELD.",
+    "madeOf": "A thin-film polymer protection structure. This is the manufacturer’s classification, despite the CAD library name.",
+    "howItWorks": "It shunts an electrostatic transient from a USB data line toward the shield node; it is not a series data stage.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: d- shunt to ushield. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A short-lived pressure relief route.",
+    "analogyLimit": "It does not remove every overvoltage or guarantee survival.",
+    "intermediate": "Protection branch, not series data component.",
+    "deepDive": "D- shunt to USHIELD. Protection branch, not series data component. It does not remove every overvoltage or guarantee survival.",
+    "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+    "zoomTargets": ["protection"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "Z2"
+      },
+      {
+        "label": "Design identity",
+        "value": "CG0603MLC-05E"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "Z2",
+        "x": 12.7,
+        "y": 33.655,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 12.7,
+          "y": 33.655,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-z2",
+        "slotId": "slot-z2",
+        "slotPosition": {
+          "x": 127.0,
+          "y": 196.85000000000002
+        },
+        "tooltip": "Z2 · ESD protector",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "D- shunt to USHIELD.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A thin-film polymer protection structure. This is the manufacturer’s classification, despite the CAD library name.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-014", "SRC-015"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "It shunts an electrostatic transient from a USB data line toward the shield node; it is not a series data stage.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: d- shunt to ushield. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-014", "SRC-015"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "ferrite-bead",
+    "name": "BLM21 · L1",
+    "shortName": "L1 · ferrite bead",
+    "category": "ferrite bead",
+    "subsystem": "USB",
+    "referenceDesignators": ["L1"],
+    "partNumber": "BLM21",
+    "purpose": "USHIELD to UGND noise connection.",
+    "madeOf": "A conductive path with ferrite magnetic material; exact BLM21 ordering suffix and chemistry remain unknown.",
+    "howItWorks": "Frequency-dependent magnetic impedance and losses impede high-frequency noise in the shield-to-USB-ground connection.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: ushield to ugnd noise connection. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A selective damper for fast disturbances.",
+    "analogyLimit": "It is not installed in series with USB VBUS in this schematic.",
+    "intermediate": "BLM21 family only; full ordering suffix/impedance unknown. Not series USB VBUS filter.",
+    "deepDive": "USHIELD to UGND noise connection. BLM21 family only; full ordering suffix/impedance unknown. Not series USB VBUS filter. It is not installed in series with USB VBUS in this schematic.",
+    "sourceRefs": ["SRC-002", "SRC-016"],
+    "zoomTargets": ["magnetic"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "L1"
+      },
+      {
+        "label": "Design identity",
+        "value": "BLM21"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "L1",
+        "x": 7.62,
+        "y": 45.085,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 7.62,
+          "y": 45.085,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-ferrite-bead",
+        "slotId": "slot-ferrite-bead",
+        "slotPosition": {
+          "x": 76.2,
+          "y": 82.55000000000003
+        },
+        "tooltip": "L1 · ferrite bead",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "USHIELD to UGND noise connection.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-016"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A conductive path with ferrite magnetic material; exact BLM21 ordering suffix and chemistry remain unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-016"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Frequency-dependent magnetic impedance and losses impede high-frequency noise in the shield-to-USB-ground connection.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-016"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: ushield to ugnd noise connection. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-016"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "r2",
+    "name": "1M · R2",
+    "shortName": "R2 · resistor",
+    "category": "resistor",
+    "subsystem": "Clock",
+    "referenceDesignators": ["R2"],
+    "partNumber": "1M",
+    "purpose": "Across ATmega328P oscillator XTAL1/XTAL2.",
+    "madeOf": "A resistive body with conductive terminals; film chemistry and tolerance are unspecified.",
+    "howItWorks": "Carrier scattering transfers electrical energy to the material, producing heat and a voltage drop under current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: across atmega328p oscillator xtal1/xtal2. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A restriction controlling flow.",
+    "analogyLimit": "Charge is conserved: it does not use up electrons.",
+    "intermediate": "1 MOhm; material/tolerance unverified.",
+    "deepDive": "Across ATmega328P oscillator XTAL1/XTAL2. 1 MOhm; material/tolerance unverified. Charge is conserved: it does not use up electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "R2"
+      },
+      {
+        "label": "Design identity",
+        "value": "1M"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "R2",
+        "x": 41.275,
+        "y": 22.733,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 41.275,
+          "y": 22.733,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-r2",
+        "slotId": "slot-r2",
+        "slotPosition": {
+          "x": 412.75,
+          "y": 306.07000000000005
+        },
+        "tooltip": "R2 · resistor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Across ATmega328P oscillator XTAL1/XTAL2.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A resistive body with conductive terminals; film chemistry and tolerance are unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Carrier scattering transfers electrical energy to the material, producing heat and a voltage drop under current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: across atmega328p oscillator xtal1/xtal2. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "rn2",
+    "name": "1K · RN2",
+    "shortName": "RN2 · resistor network",
+    "category": "resistor network",
+    "subsystem": "LED / reset",
+    "referenceDesignators": ["RN2"],
+    "partNumber": "1K",
+    "purpose": "A L current limit; B RX; C TX; D DTR pull-down.",
+    "madeOf": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+    "howItWorks": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: a l current limit; b rx; c tx; d dtr pull-down. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Four resistors sharing a single physical home.",
+    "analogyLimit": "One package does not imply the four resistors share an electrical node.",
+    "intermediate": "Four 1 kOhm units; only three are LED series resistors.",
+    "deepDive": "A L current limit; B RX; C TX; D DTR pull-down. Four 1 kOhm units; only three are LED series resistors. One package does not imply the four resistors share an electrical node.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RN2"
+      },
+      {
+        "label": "Design identity",
+        "value": "1K"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RN2",
+        "x": 27.94,
+        "y": 39.37,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 39.37,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-rn2",
+        "slotId": "slot-rn2",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 139.70000000000005
+        },
+        "tooltip": "RN2 · resistor network",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "A L current limit; B RX; C TX; D DTR pull-down.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: a l current limit; b rx; c tx; d dtr pull-down. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "rn1",
+    "name": "10K · RN1",
+    "shortName": "RN1 · resistor network",
+    "category": "resistor network",
+    "subsystem": "Power / reset",
+    "referenceDesignators": ["RN1"],
+    "partNumber": "10K",
+    "purpose": "A/B VIN divider; C USB MCU reset pull-up; D main reset pull-up.",
+    "madeOf": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+    "howItWorks": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: a/b vin divider; c usb mcu reset pull-up; d main reset pull-up. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Four resistors sharing a single physical home.",
+    "analogyLimit": "One package does not imply the four resistors share an electrical node.",
+    "intermediate": "Four 10 kOhm resistors in one package, not four independent board packages.",
+    "deepDive": "A/B VIN divider; C USB MCU reset pull-up; D main reset pull-up. Four 10 kOhm resistors in one package, not four independent board packages. One package does not imply the four resistors share an electrical node.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RN1"
+      },
+      {
+        "label": "Design identity",
+        "value": "10K"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RN1",
+        "x": 27.94,
+        "y": 23.876,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 27.94,
+          "y": 23.876,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-rn1",
+        "slotId": "slot-rn1",
+        "slotPosition": {
+          "x": 279.40000000000003,
+          "y": 294.64000000000004
+        },
+        "tooltip": "RN1 · resistor network",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "A/B VIN divider; C USB MCU reset pull-up; D main reset pull-up.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: a/b vin divider; c usb mcu reset pull-up; d main reset pull-up. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c6",
+    "name": "100n · C6",
+    "shortName": "C6 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Main microcontroller",
+    "referenceDesignators": ["C6"],
+    "partNumber": "100n",
+    "purpose": "VCC +5V-to-GND bypass.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: vcc +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF.",
+    "deepDive": "VCC +5V-to-GND bypass. 100 nF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C6"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C6",
+        "x": 45.72,
+        "y": 22.86,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 45.72,
+          "y": 22.86,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-c6",
+        "slotId": "slot-c6",
+        "slotPosition": {
+          "x": 457.2,
+          "y": 304.80000000000007
+        },
+        "tooltip": "C6 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "VCC +5V-to-GND bypass.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: vcc +5v-to-gnd bypass. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c8",
+    "name": "1u · C8",
+    "shortName": "C8 · capacitor",
+    "category": "capacitor",
+    "subsystem": "USB",
+    "referenceDesignators": ["C8"],
+    "partNumber": "1u",
+    "purpose": "UCAP-to-UGND capacitor.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: ucap-to-ugnd capacitor. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "1 uF; supports USB internal regulator; not independent board 3.3 V supply.",
+    "deepDive": "UCAP-to-UGND capacitor. 1 uF; supports USB internal regulator; not independent board 3.3 V supply. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-007", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C8"
+      },
+      {
+        "label": "Design identity",
+        "value": "1u"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C8",
+        "x": 12.7,
+        "y": 41.91,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 12.7,
+          "y": 41.91,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-c8",
+        "slotId": "slot-c8",
+        "slotPosition": {
+          "x": 127.0,
+          "y": 114.30000000000007
+        },
+        "tooltip": "C8 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "UCAP-to-UGND capacitor.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-007"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-007", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: ucap-to-ugnd capacitor. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-007", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "rn4",
+    "name": "1K · RN4",
+    "shortName": "RN4 · resistor network",
+    "category": "resistor network",
+    "subsystem": "LED / UART",
+    "referenceDesignators": ["RN4"],
+    "partNumber": "1K",
+    "purpose": "A/B UART series; C/D parallel power-LED resistors.",
+    "madeOf": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+    "howItWorks": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: a/b uart series; c/d parallel power-led resistors. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Four resistors sharing a single physical home.",
+    "analogyLimit": "One package does not imply the four resistors share an electrical node.",
+    "intermediate": "Four 1 kOhm units; ON branch has two in parallel.",
+    "deepDive": "A/B UART series; C/D parallel power-LED resistors. Four 1 kOhm units; ON branch has two in parallel. One package does not imply the four resistors share an electrical node.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RN4"
+      },
+      {
+        "label": "Design identity",
+        "value": "1K"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RN4",
+        "x": 58.42,
+        "y": 33.782,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 58.42,
+          "y": 33.782,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-rn4",
+        "slotId": "slot-rn4",
+        "slotPosition": {
+          "x": 584.2,
+          "y": 195.58000000000007
+        },
+        "tooltip": "RN4 · resistor network",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "A/B UART series; C/D parallel power-LED resistors.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: a/b uart series; c/d parallel power-led resistors. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "rn3",
+    "name": "22R · RN3",
+    "shortName": "RN3 · resistor network",
+    "category": "resistor network",
+    "subsystem": "USB",
+    "referenceDesignators": ["RN3"],
+    "partNumber": "22R",
+    "purpose": "A D- and D D+ series resistors; B/C unused.",
+    "madeOf": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+    "howItWorks": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: a d- and d d+ series resistors; b/c unused. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Four resistors sharing a single physical home.",
+    "analogyLimit": "One package does not imply the four resistors share an electrical node.",
+    "intermediate": "Four 22 Ohm units; two unconnected in baseline.",
+    "deepDive": "A D- and D D+ series resistors; B/C unused. Four 22 Ohm units; two unconnected in baseline. One package does not imply the four resistors share an electrical node.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RN3"
+      },
+      {
+        "label": "Design identity",
+        "value": "22R"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RN3",
+        "x": 12.827,
+        "y": 36.83,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 12.827,
+          "y": 36.83,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-rn3",
+        "slotId": "slot-rn3",
+        "slotPosition": {
+          "x": 128.27,
+          "y": 165.10000000000005
+        },
+        "tooltip": "RN3 · resistor network",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "A D- and D D+ series resistors; B/C unused.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Four resistive elements and package contacts. Their exact film material is unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Each element provides resistance; the schematic connects different units for limiting, division or bias.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: a d- and d d+ series resistors; b/c unused. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c3",
+    "name": "1u · C3",
+    "shortName": "C3 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Power",
+    "referenceDesignators": ["C3"],
+    "partNumber": "1u",
+    "purpose": "+3V3-to-GND regulator output.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +3v3-to-gnd regulator output. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "1 uF.",
+    "deepDive": "+3V3-to-GND regulator output. 1 uF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C3"
+      },
+      {
+        "label": "Design identity",
+        "value": "1u"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C3",
+        "x": 25.527,
+        "y": 15.367,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 25.527,
+          "y": 15.367,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-c3",
+        "slotId": "slot-c3",
+        "slotPosition": {
+          "x": 255.27,
+          "y": 379.73
+        },
+        "tooltip": "C3 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+3V3-to-GND regulator output.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +3v3-to-gnd regulator output. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "r1",
+    "name": "1M · R1",
+    "shortName": "R1 · resistor",
+    "category": "resistor",
+    "subsystem": "Clock",
+    "referenceDesignators": ["R1"],
+    "partNumber": "1M",
+    "purpose": "Across ATmega16U2 oscillator XT1/XT2.",
+    "madeOf": "A resistive body with conductive terminals; film chemistry and tolerance are unspecified.",
+    "howItWorks": "Carrier scattering transfers electrical energy to the material, producing heat and a voltage drop under current.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: across atmega16u2 oscillator xt1/xt2. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A restriction controlling flow.",
+    "analogyLimit": "Charge is conserved: it does not use up electrons.",
+    "intermediate": "1 MOhm; material/tolerance unverified.",
+    "deepDive": "Across ATmega16U2 oscillator XT1/XT2. 1 MOhm; material/tolerance unverified. Charge is conserved: it does not use up electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+    "zoomTargets": ["resistor-film"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "R1"
+      },
+      {
+        "label": "Design identity",
+        "value": "1M"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "R1",
+        "x": 19.05,
+        "y": 29.591,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 19.05,
+          "y": 29.591,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-r1",
+        "slotId": "slot-r1",
+        "slotPosition": {
+          "x": 190.5,
+          "y": 237.49
+        },
+        "tooltip": "R1 · resistor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Across ATmega16U2 oscillator XT1/XT2.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A resistive body with conductive terminals; film chemistry and tolerance are unspecified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Carrier scattering transfers electrical energy to the material, producing heat and a voltage drop under current.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: across atmega16u2 oscillator xt1/xt2. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-020"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c9",
+    "name": "22p · C9",
+    "shortName": "C9 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Clock",
+    "referenceDesignators": ["C9"],
+    "partNumber": "22p",
+    "purpose": "XT1-to-GND crystal loading.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: xt1-to-gnd crystal loading. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "22 pF.",
+    "deepDive": "XT1-to-GND crystal loading. 22 pF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C9"
+      },
+      {
+        "label": "Design identity",
+        "value": "22p"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C9",
+        "x": 16.002,
+        "y": 29.591,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 16.002,
+          "y": 29.591,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-c9",
+        "slotId": "slot-c9",
+        "slotPosition": {
+          "x": 160.01999999999998,
+          "y": 237.49
+        },
+        "tooltip": "C9 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "XT1-to-GND crystal loading.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: xt1-to-gnd crystal loading. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c11",
+    "name": "22p · C11",
+    "shortName": "C11 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Clock",
+    "referenceDesignators": ["C11"],
+    "partNumber": "22p",
+    "purpose": "XT2-to-GND crystal loading.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: xt2-to-gnd crystal loading. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "22 pF.",
+    "deepDive": "XT2-to-GND crystal loading. 22 pF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C11"
+      },
+      {
+        "label": "Design identity",
+        "value": "22p"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C11",
+        "x": 22.225,
+        "y": 29.591,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 22.225,
+          "y": 29.591,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-c11",
+        "slotId": "slot-c11",
+        "slotPosition": {
+          "x": 222.25,
+          "y": 237.49
+        },
+        "tooltip": "C11 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "XT2-to-GND crystal loading.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: xt2-to-gnd crystal loading. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "op-amp",
+    "name": "LMV358IDGKR · U5",
+    "shortName": "Dual op-amp",
+    "category": "dual op-amp",
+    "subsystem": "Power",
+    "referenceDesignators": ["U5"],
+    "partNumber": "LMV358IDGKR",
+    "purpose": "U5A compares VIN/2 with +3V3; U5B buffers SCK/D13 to L LED.",
+    "madeOf": "Two analog amplifier circuits in one silicon package.",
+    "howItWorks": "An amplifier responds to the difference between its inputs. Feedback or external wiring determines its role.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: u5a compares vin/2 with +3v3; u5b buffers sck/d13 to l led. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A sensitive comparison instrument with an amplified output.",
+    "analogyLimit": "The output cannot exceed its supply or drive unlimited current.",
+    "intermediate": "One physical package, two amplifier units. Not two comparator chips.",
+    "deepDive": "U5A compares VIN/2 with +3V3; U5B buffers SCK/D13 to L LED. One physical package, two amplifier units. Not two comparator chips. The output cannot exceed its supply or drive unlimited current.",
+    "sourceRefs": ["SRC-002", "SRC-009"],
+    "zoomTargets": ["analog-circuit"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "U5"
+      },
+      {
+        "label": "Design identity",
+        "value": "LMV358IDGKR"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "U5",
+        "x": 19.05,
+        "y": 20.32,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 19.05,
+          "y": 20.32,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-op-amp",
+        "slotId": "slot-op-amp",
+        "slotPosition": {
+          "x": 190.5,
+          "y": 330.20000000000005
+        },
+        "tooltip": "Dual op-amp",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "U5A compares VIN/2 with +3V3; U5B buffers SCK/D13 to L LED.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-009"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Two analog amplifier circuits in one silicon package.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-009"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "An amplifier responds to the difference between its inputs. Feedback or external wiring determines its role.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-009"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: u5a compares vin/2 with +3v3; u5b buffers sck/d13 to l led. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-009"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "reset-button",
+    "name": "TS42031-160R-TR-7260 · RESET",
+    "shortName": "Reset button",
+    "category": "pushbutton",
+    "subsystem": "Reset",
+    "referenceDesignators": ["RESET"],
+    "partNumber": "TS42031-160R-TR-7260",
+    "purpose": "Momentary main RESET-to-GND.",
+    "madeOf": "Conductive contacts and a mechanical actuator in a housing; exact interior materials are not established.",
+    "howItWorks": "Pressing joins RESET to ground; releasing allows the pull-up network to restore the inactive reset level.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: momentary main reset-to-gnd. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A momentary restart request.",
+    "analogyLimit": "It does not erase the stored sketch.",
+    "intermediate": "TS42031-160R-TR-7260 schematic identity; mechanical internals taught generally.",
+    "deepDive": "Momentary main RESET-to-GND. TS42031-160R-TR-7260 schematic identity; mechanical internals taught generally. It does not erase the stored sketch.",
+    "sourceRefs": ["SRC-002", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "RESET"
+      },
+      {
+        "label": "Design identity",
+        "value": "TS42031-160R-TR-7260"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "RESET",
+        "x": 6.35,
+        "y": 49.403,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 6.35,
+          "y": 49.403,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-reset-button",
+        "slotId": "slot-reset-button",
+        "slotPosition": {
+          "x": 63.5,
+          "y": 39.37000000000005
+        },
+        "tooltip": "Reset button",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Momentary main RESET-to-GND.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts and a mechanical actuator in a housing; exact interior materials are not established.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Pressing joins RESET to ground; releasing allows the pull-up network to restore the inactive reset level.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: momentary main reset-to-gnd. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "main-resonator",
+    "name": "CSTCE16M0V53-R0 16MHZ · Y2",
+    "shortName": "Main resonator",
+    "category": "ceramic resonator",
+    "subsystem": "Clock",
+    "referenceDesignators": ["Y2"],
+    "partNumber": "CSTCE16M0V53-R0 16MHZ",
+    "purpose": "ATmega328P XTAL1/XTAL2 clock resonant element.",
+    "madeOf": "A piezoelectric ceramic resonator and electrodes, in the specified CERALOCK family.",
+    "howItWorks": "Mechanical resonance and electrical feedback sustain the main microcontroller clock.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: atmega328p xtal1/xtal2 clock resonant element. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A tiny electrically driven tuning fork.",
+    "analogyLimit": "A clock tick is not necessarily one completed software statement.",
+    "intermediate": "CSTCE16M0V53-R0 16 MHz; no invented internal capacitor values.",
+    "deepDive": "ATmega328P XTAL1/XTAL2 clock resonant element. CSTCE16M0V53-R0 16 MHz; no invented internal capacitor values. A clock tick is not necessarily one completed software statement.",
+    "sourceRefs": ["SRC-002", "SRC-017"],
+    "zoomTargets": ["resonator"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "Y2"
+      },
+      {
+        "label": "Design identity",
+        "value": "CSTCE16M0V53-R0 16MHZ"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "Y2",
+        "x": 41.275,
+        "y": 24.892,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 41.275,
+          "y": 24.892,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-main-resonator",
+        "slotId": "slot-main-resonator",
+        "slotPosition": {
+          "x": 412.75,
+          "y": 284.48
+        },
+        "tooltip": "Main resonator",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "ATmega328P XTAL1/XTAL2 clock resonant element.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-017"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A piezoelectric ceramic resonator and electrodes, in the specified CERALOCK family.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-017"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Mechanical resonance and electrical feedback sustain the main microcontroller clock.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-017"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: atmega328p xtal1/xtal2 clock resonant element. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-017"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "regulator-3v3",
+    "name": "LP2985-33DBVR · U2",
+    "shortName": "3.3 V regulator",
+    "category": "regulator",
+    "subsystem": "Power",
+    "referenceDesignators": ["U2"],
+    "partNumber": "LP2985-33DBVR",
+    "purpose": "+5V to +3V3.",
+    "madeOf": "A semiconductor regulating circuit in a protective package. Exact internal construction is not depicted.",
+    "howItWorks": "Feedback adjusts a pass device to maintain the intended output voltage while excess electrical energy becomes heat.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +5v to +3v3. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "Like a pressure regulator maintaining a downstream level.",
+    "analogyLimit": "Voltage is not fluid pressure; available current and heating impose limits.",
+    "intermediate": "LP2985-33DBVR visible in image and CAD even where PDF text extraction omits it.",
+    "deepDive": "+5V to +3V3. LP2985-33DBVR visible in image and CAD even where PDF text extraction omits it. Voltage is not fluid pressure; available current and heating impose limits.",
+    "sourceRefs": ["SRC-002", "SRC-010", "SRC-011"],
+    "zoomTargets": ["regulator"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "U2"
+      },
+      {
+        "label": "Design identity",
+        "value": "LP2985-33DBVR"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "U2",
+        "x": 21.971,
+        "y": 15.24,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 21.971,
+          "y": 15.24,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-regulator-3v3",
+        "slotId": "slot-regulator-3v3",
+        "slotPosition": {
+          "x": 219.71,
+          "y": 381.0
+        },
+        "tooltip": "3.3 V regulator",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+5V to +3V3.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-010"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor regulating circuit in a protective package. Exact internal construction is not depicted.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-010", "SRC-011"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Feedback adjusts a pass device to maintain the intended output voltage while excess electrical energy becomes heat.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-010", "SRC-011"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +5v to +3v3. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-010", "SRC-011"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "power",
+    "name": "8x1F-H8.5 · POWER",
+    "shortName": "POWER · header",
+    "category": "header",
+    "subsystem": "Connectors",
+    "referenceDesignators": ["POWER"],
+    "partNumber": "8x1F-H8.5",
+    "purpose": "NC, IOREF, RESET, +3V3, +5V, GND, GND, VIN.",
+    "madeOf": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+    "howItWorks": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: nc, ioref, reset, +3v3, +5v, gnd, gnd, vin. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A labeled doorway to a circuit node.",
+    "analogyLimit": "Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "intermediate": "8 positions; IOREF tied +5V, one reserved/NC.",
+    "deepDive": "NC, IOREF, RESET, +3V3, +5V, GND, GND, VIN. 8 positions; IOREF tied +5V, one reserved/NC. Adjacent contacts need not carry related signals or tolerate the same voltage.",
+    "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+    "zoomTargets": ["contacts"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "POWER"
+      },
+      {
+        "label": "Design identity",
+        "value": "8x1F-H8.5"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "POWER",
+        "x": 36.83,
+        "y": 2.54,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 36.83,
+          "y": 2.54,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-power",
+        "slotId": "slot-power",
+        "slotPosition": {
+          "x": 368.29999999999995,
+          "y": 508.00000000000006
+        },
+        "tooltip": "POWER · header",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "NC, IOREF, RESET, +3V3, +5V, GND, GND, VIN.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductive contacts held by an insulating support; exact alloys and polymer are unverified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-002"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "A mating conductor extends a board net to another circuit. Function comes from the connected net, not the connector shape.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: nc, ioref, reset, +3v3, +5v, gnd, gnd, vin. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-005", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "d2",
+    "name": "CD1206-S01575 · D2",
+    "shortName": "D2 · switching diode",
+    "category": "switching diode",
+    "subsystem": "Reset",
+    "referenceDesignators": ["D2"],
+    "partNumber": "CD1206-S01575",
+    "purpose": "ATmega328P reset positive clamp to +5V.",
+    "madeOf": "A semiconductor junction and conductive terminals in a protective package.",
+    "howItWorks": "The reset clamp conducts when the reset node rises sufficiently above the supply, limiting that excursion.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: atmega328p reset positive clamp to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A relief path for an excessive node voltage.",
+    "analogyLimit": "It does not prevent every fault or carry the normal reset signal in series.",
+    "intermediate": "CD1206 device identity; MINIMELF is CAD footprint name, not confirmed physical package.",
+    "deepDive": "ATmega328P reset positive clamp to +5V. CD1206 device identity; MINIMELF is CAD footprint name, not confirmed physical package. It does not prevent every fault or carry the normal reset signal in series.",
+    "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+    "zoomTargets": ["diode-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "D2"
+      },
+      {
+        "label": "Design identity",
+        "value": "CD1206-S01575"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "D2",
+        "x": 59.436,
+        "y": 27.94,
+        "rotation": 270.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 59.436,
+          "y": 27.94,
+          "rotation": 270.0,
+          "mirrored": false
+        },
+        "svgId": "part-d2",
+        "slotId": "slot-d2",
+        "slotPosition": {
+          "x": 594.36,
+          "y": 254.00000000000003
+        },
+        "tooltip": "D2 · switching diode",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "ATmega328P reset positive clamp to +5V.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-030"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor junction and conductive terminals in a protective package.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-030"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "The reset clamp conducts when the reset node rises sufficiently above the supply, limiting that excursion.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: atmega328p reset positive clamp to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "d3",
+    "name": "CD1206-S01575 · D3",
+    "shortName": "D3 · switching diode",
+    "category": "switching diode",
+    "subsystem": "Reset",
+    "referenceDesignators": ["D3"],
+    "partNumber": "CD1206-S01575",
+    "purpose": "ATmega16U2 reset positive clamp to +5V.",
+    "madeOf": "A semiconductor junction and conductive terminals in a protective package.",
+    "howItWorks": "The reset clamp conducts when the reset node rises sufficiently above the supply, limiting that excursion.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: atmega16u2 reset positive clamp to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A relief path for an excessive node voltage.",
+    "analogyLimit": "It does not prevent every fault or carry the normal reset signal in series.",
+    "intermediate": "Same footprint caveat as D2.",
+    "deepDive": "ATmega16U2 reset positive clamp to +5V. Same footprint caveat as D2. It does not prevent every fault or carry the normal reset signal in series.",
+    "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+    "zoomTargets": ["diode-junction"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "D3"
+      },
+      {
+        "label": "Design identity",
+        "value": "CD1206-S01575"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "D3",
+        "x": 13.081,
+        "y": 46.228,
+        "rotation": 90.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 13.081,
+          "y": 46.228,
+          "rotation": 90.0,
+          "mirrored": false
+        },
+        "svgId": "part-d3",
+        "slotId": "slot-d3",
+        "slotPosition": {
+          "x": 130.81,
+          "y": 71.12000000000002
+        },
+        "tooltip": "D3 · switching diode",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "ATmega16U2 reset positive clamp to +5V.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-030"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A semiconductor junction and conductive terminals in a protective package.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-019", "SRC-030"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "The reset clamp conducts when the reset node rises sufficiently above the supply, limiting that excursion.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: atmega16u2 reset positive clamp to +5v. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-030", "SRC-019"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "usb-crystal",
+    "name": "16MHz · Y1",
+    "shortName": "USB crystal",
+    "category": "quartz crystal",
+    "subsystem": "Clock",
+    "referenceDesignators": ["Y1"],
+    "partNumber": "16MHz",
+    "purpose": "ATmega16U2 XT1/XT2 clock resonant element.",
+    "madeOf": "A piezoelectric resonant element and electrodes; exact manufacturer is not identified.",
+    "howItWorks": "Electrical and mechanical oscillation reinforce at a resonance when driven by the MCU oscillator circuit.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: atmega16u2 xt1/xt2 clock resonant element. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A tuning fork used as a timing reference.",
+    "analogyLimit": "It requires an oscillator circuit and is not a complete clock chip.",
+    "intermediate": "16 MHz; exact manufacturer part unspecified by baseline. Manual names ECS device separately.",
+    "deepDive": "ATmega16U2 XT1/XT2 clock resonant element. 16 MHz; exact manufacturer part unspecified by baseline. Manual names ECS device separately. It requires an oscillator circuit and is not a complete clock chip.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-017"],
+    "zoomTargets": ["resonator"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "Y1"
+      },
+      {
+        "label": "Design identity",
+        "value": "16MHz"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "Y1",
+        "x": 18.923,
+        "y": 26.162,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 18.923,
+          "y": 26.162,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-usb-crystal",
+        "slotId": "slot-usb-crystal",
+        "slotPosition": {
+          "x": 189.23,
+          "y": 271.78000000000003
+        },
+        "tooltip": "USB crystal",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "ATmega16U2 XT1/XT2 clock resonant element.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A piezoelectric resonant element and electrodes; exact manufacturer is not identified.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001", "SRC-017"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Electrical and mechanical oscillation reinforce at a resonance when driven by the MCU oscillator circuit.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-017"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: atmega16u2 xt1/xt2 clock resonant element. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-017"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "avcc-inductor",
+    "name": "10uH · L2",
+    "shortName": "L2 · inductor",
+    "category": "inductor",
+    "subsystem": "Power",
+    "referenceDesignators": ["L2"],
+    "partNumber": "10uH",
+    "purpose": "+5V to AVCC analog-supply filtering.",
+    "madeOf": "A conductive winding or pattern; the exact core and supplier are unknown.",
+    "howItWorks": "Changing current establishes a changing magnetic field. This part feeds the analog supply with a shunt bypass capacitor beside it.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: +5v to avcc analog-supply filtering. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A component resisting rapid changes in current.",
+    "analogyLimit": "The AVCC bypass capacitor is a parallel branch, not a series supply stage.",
+    "intermediate": "10 uH; supplier/core material unknown; keep distinct from L1.",
+    "deepDive": "+5V to AVCC analog-supply filtering. 10 uH; supplier/core material unknown; keep distinct from L1. The AVCC bypass capacitor is a parallel branch, not a series supply stage.",
+    "sourceRefs": ["SRC-002", "SRC-001"],
+    "zoomTargets": ["magnetic"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "L2"
+      },
+      {
+        "label": "Design identity",
+        "value": "10uH"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "L2",
+        "x": 39.116,
+        "y": 8.128,
+        "rotation": 0.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 39.116,
+          "y": 8.128,
+          "rotation": 0.0,
+          "mirrored": false
+        },
+        "svgId": "part-avcc-inductor",
+        "slotId": "slot-avcc-inductor",
+        "slotPosition": {
+          "x": 391.15999999999997,
+          "y": 452.12
+        },
+        "tooltip": "L2 · inductor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "+5V to AVCC analog-supply filtering.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "A conductive winding or pattern; the exact core and supplier are unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Changing current establishes a changing magnetic field. This part feeds the analog supply with a shunt bypass capacitor beside it.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: +5v to avcc analog-supply filtering. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "c10",
+    "name": "100n · C10",
+    "shortName": "C10 · capacitor",
+    "category": "capacitor",
+    "subsystem": "Main microcontroller",
+    "referenceDesignators": ["C10"],
+    "partNumber": "100n",
+    "purpose": "AVCC-to-GND analog bypass after L2.",
+    "madeOf": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+    "howItWorks": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+    "ifMissing": "Removing this part interrupts or degrades its stated role: avcc-to-gnd analog bypass after l2. The exact symptom depends on the rest of the circuit and operating conditions.",
+    "analogy": "A flexible buffer for electrical changes.",
+    "analogyLimit": "The dielectric is not a bucket filled with free electrons.",
+    "intermediate": "100 nF.",
+    "deepDive": "AVCC-to-GND analog bypass after L2. 100 nF. The dielectric is not a bucket filled with free electrons.",
+    "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+    "zoomTargets": ["capacitor-field"],
+    "specs": [
+      {
+        "label": "Reference",
+        "value": "C10"
+      },
+      {
+        "label": "Design identity",
+        "value": "100n"
+      }
+    ],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [
+      {
+        "referenceDesignator": "C10",
+        "x": 44.323,
+        "y": 10.541,
+        "rotation": 180.0,
+        "mirrored": false,
+        "boardPosition": {
+          "x": 44.323,
+          "y": 10.541,
+          "rotation": 180.0,
+          "mirrored": false
+        },
+        "svgId": "part-c10",
+        "slotId": "slot-c10",
+        "slotPosition": {
+          "x": 443.23,
+          "y": 427.99000000000007
+        },
+        "tooltip": "C10 · capacitor",
+        "assemblyEligible": true
+      }
+    ],
+    "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "AVCC-to-GND analog bypass after L2.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Separated conductive electrodes with a dielectric between them. This board part’s exact dielectric is unknown.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Opposite electrode charges establish an electric field. Current can briefly redistribute charge as voltage changes.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "General educational model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "ifMissing": {
+        "text": "Removing this part interrupts or degrades its stated role: avcc-to-gnd analog bypass after l2. The exact symptom depends on the rest of the circuit and operating conditions.",
+        "evidence": "inference",
+        "sourceRefs": ["SRC-002", "SRC-001", "SRC-021"],
+        "applicability": "UNO-TH_Rev3e reference design; production assemblies may differ.",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  },
+  {
+    "id": "pcb",
+    "name": "Printed circuit board",
+    "shortName": "PCB & copper",
+    "category": "PCB",
+    "subsystem": "PCB features",
+    "referenceDesignators": [],
+    "partNumber": null,
+    "purpose": "Supports parts and connects their terminals through patterned conductors.",
+    "madeOf": "Conductors and insulating support; FR-4 glass/epoxy is a general board model, not a verified procurement recipe for every Uno.",
+    "howItWorks": "Copper paths form electrical nodes. Insulating regions keep unrelated nodes apart, while vias connect copper layers.",
+    "ifMissing": "There is no shared mechanical support or routed circuit.",
+    "analogy": "A map of connected routes.",
+    "analogyLimit": "Traces carry physical electrical effects and have resistance, capacitance and inductance.",
+    "intermediate": "The CAD documents two copper layers, vias, pads, test access and a shaped outline.",
+    "deepDive": "Substrate recipe, finish and solder alloy are unverified. The viewer preserves layout but uses illustrative appearance.",
+    "sourceRefs": ["SRC-002", "SRC-029"],
+    "zoomTargets": ["pcb-layers", "conductor"],
+    "specs": [],
+    "measurements": [],
+    "representation": "layout-faithful",
+    "groupedParts": [],
+    "applicability": "UNO-TH_Rev3e geometry; general material model",
+    "evidence": "verified",
+    "claims": {
+      "purpose": {
+        "text": "Supports parts and connects their terminals through patterned conductors.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-029"],
+        "applicability": "UNO-TH_Rev3e geometry; general material model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "madeOf": {
+        "text": "Conductors and insulating support; FR-4 glass/epoxy is a general board model, not a verified procurement recipe for every Uno.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-029"],
+        "applicability": "UNO-TH_Rev3e geometry; general material model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      },
+      "howItWorks": {
+        "text": "Copper paths form electrical nodes. Insulating regions keep unrelated nodes apart, while vias connect copper layers.",
+        "evidence": "verified",
+        "sourceRefs": ["SRC-002", "SRC-029"],
+        "applicability": "UNO-TH_Rev3e geometry; general material model",
+        "notes": "Conceptual representation; no exact manufacturing geometry is asserted."
+      }
+    }
+  }
+]

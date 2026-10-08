@@ -1,0 +1,92 @@
+.figure {
+  margin: 0;
+  width: 100%;
+  color: var(--ink);
+}
+.stage {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  overflow: visible;
+  color: var(--ink);
+}
+.stage text {
+  font-family: inherit;
+  fill: currentColor;
+  font-size: 15px;
+}
+.stage .small {
+  font-size: 12px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+.controls button,
+.controls select {
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.controls button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--canvas);
+  border-color: var(--ink);
+}
+.controls button:focus-visible,
+.controls select:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+.controls label {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.controls input[type="range"] {
+  min-height: 44px;
+  width: 150px;
+  accent-color: var(--teal);
+}
+.controls input[type="range"]:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+.caption {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  line-height: 1.65;
+  font-size: 14px;
+  max-width: 68ch;
+}
+.caption strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.status {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .stage {
+    min-height: 260px;
+  }
+  .controls {
+    gap: 6px;
+  }
+  .controls button {
+    padding: 9px 12px;
+  }
+}

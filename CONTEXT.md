@@ -4,13 +4,14 @@
 
 A single-page educational website bridges everyday Arduino interactions and underlying physical causes. Readers should understand both composition and operation at each meaningful level. The original prompts are preserved in [website brief](docs/briefs/website-specification.txt) and [foundation brief](docs/briefs/project-foundation-specification.txt).
 
-## Locked constraints
+## Current constraints
 
-- Single self-contained `index.html`: HTML5, CSS3, vanilla ES6+, inline SVG board, SVG/Canvas microscopic scenes, Pointer Events, IntersectionObserver, reduced motion.
-- Opening the final HTML directly must work; no required fetch, server, build system, npm, framework, external imagery, font, or storage.
-- Main reference: official socketed ATmega328P Uno Rev3; exact design baseline in [inventory](COMPONENT_INVENTORY.md).
-- Plain English, jargon defined on first use, cause-and-effect explanations, labeled simplifications, no invented facts or sources.
-- Foundation milestone completes the documentation and guide before substantial application code.
+- The approved [redesign brief](docs/briefs/redesign-specification.txt) and DEC-009 supersede single-file/no-framework delivery for the new application.
+- Next.js static export, React, strict TypeScript, Tailwind, bundled Geist; npm lockfile; local HTTP delivery. No required runtime internet, content fetch, accounts or persistent storage.
+- Root index.html retains the foundation guide and direct-file behavior. Contributor material is accessible through a safe build-time /project/ route.
+- NASA-inspired editorial hierarchy, warm light default, dark alternative, a dominant CAD-derived board viewer, progressive inspector and explicit Zoom inside.
+- Main reference remains official socketed ATmega328P Uno Rev3; exact design baseline in [inventory](COMPONENT_INVENTORY.md).
+- Plain English, defined jargon, causal explanations, labeled simplifications and no invented facts or citations.
 
 ## Core conceptual structure
 

@@ -1,0 +1,1149 @@
+You are now responsible for redesigning and modernizing the existing
+"Inside the Arduino Uno: From Board to Electron" project.
+
+Do NOT start from a blank conceptual design without inspecting the existing
+repository.
+
+First inspect:
+
+- the current application
+- AGENTS.md
+- HANDOFF.md
+- PROJECT.md
+- REQUIREMENTS.md
+- DESIGN.md
+- UX.md
+- ARCHITECTURE.md
+- COMPONENT_INVENTORY.md
+- RESEARCH.md
+- SOURCES.md
+- DECISIONS.md
+- TASKS.md
+- the current index.html / application source
+- any existing SVG, Arduino board data, screenshots, tests, and assets
+
+Preserve verified educational content, citations, hardware research, project
+memory, and component inventory unless there is a documented reason to change
+them.
+
+This task is primarily a PRODUCT DESIGN + FRONTEND ARCHITECTURE + INTERACTION
+REDESIGN.
+
+============================================================
+1. PRIMARY PROBLEM WITH THE CURRENT UI
+============================================================
+
+The existing interface is clean but visually resembles:
+
+- developer documentation
+- an internal project dashboard
+- a dark SaaS/admin interface
+
+It does NOT yet feel like an interactive scientific object-learning product.
+
+The current hero gives too much space to:
+
+- a giant title
+- project-memory links
+- documentation cards
+- prose
+
+and too little space to the Arduino Uno itself.
+
+The learner should see and interact with the Arduino almost immediately.
+
+The public learner experience must not look like the repository's internal
+documentation interface.
+
+Move developer/project-memory documentation into a separate internal route,
+section, or clearly secondary area.
+
+Do NOT delete the documentation.
+
+============================================================
+2. NEW ART DIRECTION
+============================================================
+
+Design the product as:
+
+SCIENTIFIC ATLAS
+×
+INDUSTRIAL DESIGN STUDIO
+×
+INTERACTIVE MUSEUM EXHIBIT
+×
+MODERN PRODUCT INTERFACE
+
+The experience should feel calm, tactile, premium, highly considered, and
+scientifically credible.
+
+Core principle:
+
+QUIET INTERFACE.
+RICH OBJECT.
+
+The object being studied must contain most of the visual complexity.
+
+The surrounding UI should almost disappear until needed.
+
+Avoid the common AI-generated aesthetic.
+
+DO NOT default to:
+
+- huge gradients
+- neon glow
+- glassmorphism everywhere
+- oversized pill buttons
+- dozens of identical cards
+- "bento grid" for everything
+- giant SaaS hero text
+- blue-black developer dashboard styling
+- cyan outlines around every container
+- decorative floating particles
+- meaningless blur blobs
+- excessive shadows
+- every section inside a rounded rectangle
+- animation without semantic meaning
+
+No "card soup."
+
+============================================================
+3. COLOR DIRECTION
+============================================================
+
+Use warm monochrome neutrals as the visual foundation.
+
+PRIMARY LIGHT THEME:
+
+--canvas: #F3F1EB;
+--surface: #FAF9F6;
+--surface-pure: #FFFFFF;
+--ink: #11110F;
+--ink-secondary: #6E6D68;
+--hairline: #D9D6CE;
+
+Use Arduino teal approximately #00979D only as a functional accent.
+
+Do not flood the interface with teal.
+
+Use component/system colors only where they communicate meaning.
+
+Examples:
+
+Power       restrained amber
+Digital     teal
+Analog      muted violet
+Clock       muted green
+Ground      charcoal/neutral
+USB         restrained blue
+
+PRIMARY DARK THEME:
+
+Do not use blue/navy as the dark foundation.
+
+Prefer:
+
+--canvas: #0C0C0B;
+--surface: #141412;
+--surface-raised: #1B1B18;
+--ink: #F2F0E9;
+--ink-secondary: #9B9991;
+--hairline: #2C2B27;
+
+Preserve semantic accents.
+
+Use OKLCH variables internally if useful for systematic tonal control.
+
+============================================================
+4. TYPOGRAPHY
+============================================================
+
+Use typography to communicate information type.
+
+UI:
+clean modern sans serif such as Geist or an equivalently restrained variable
+sans.
+
+Scientific/object titles:
+an editorial serif used sparingly.
+
+Code / machine information:
+monospace.
+
+Example hierarchy:
+
+Arduino Uno R3
+ATmega328P
+Silicon
+MOSFET
+
+may use editorial/display typography.
+
+Buttons, filters, inspectors, technical labels:
+sans serif.
+
+Pin names, registers, voltages, addresses, binary, code:
+monospace.
+
+Do not use enormous marketing typography.
+
+The object is the hero, not the headline.
+
+============================================================
+5. APPLICATION SHELL
+============================================================
+
+The desktop application should behave primarily as an object-inspection
+workspace.
+
+Use approximately:
+
+TOP BAR
+56-64 px
+
+LEFT OBJECT NAVIGATOR
+220-280 px
+
+CENTER OBJECT VIEWPORT
+flexible and dominant
+
+RIGHT CONTEXT INSPECTOR
+320-400 px
+
+OPTIONAL CONTEXTUAL BOTTOM TRAY
+only when useful
+
+The center viewport should generally receive at least 55-65% of usable visual
+attention.
+
+Do not center the whole application inside a narrow article column.
+
+Use the full viewport intelligently.
+
+============================================================
+6. FIRST VIEW
+============================================================
+
+The first meaningful screen must immediately show the Arduino Uno.
+
+Do not require the user to scroll through project documentation before seeing
+the object.
+
+Suggested composition:
+
+---------------------------------------------------------------
+Inside the Uno       Explore Journey Learn       Search Theme
+---------------------------------------------------------------
+SYSTEMS             [                         ]   SELECTED PART
+Computing           [                         ]   ATmega328P
+Power               [      ARDUINO UNO        ]   Microcontroller
+USB                 [                         ]
+Clock               [      MAIN VIEWER        ]   Purpose...
+Reset               [                         ]
+                    [                         ]   Made of...
+PARTS               [                         ]
+ATmega328P                                      Zoom inside →
+Resistors
+Capacitors
+LEDs
+---------------------------------------------------------------
+Rotate Focus Isolate Explode Layers Signal Reset
+---------------------------------------------------------------
+
+This is conceptual, not a rigid pixel layout.
+
+============================================================
+7. OBJECT-CENTRIC INTERACTION MODEL
+============================================================
+
+Selecting an object should NOT navigate away immediately.
+
+Example:
+
+click ATmega328P
+
+→ component highlights subtly
+→ camera/view gently focuses it
+→ other components reduce visual prominence
+→ right inspector updates
+→ URL/state may update without destroying spatial context
+
+The learner should remain oriented around the same object.
+
+Only an explicit action such as:
+
+"Zoom inside"
+
+should transition into the deeper hierarchy.
+
+Persistent mental model:
+
+ONE OBJECT
++
+CHANGING SCALE
++
+CHANGING CONTEXT
+
+not:
+
+PAGE
+→ PAGE
+→ PAGE
+→ PAGE
+
+============================================================
+8. LEFT NAVIGATOR
+============================================================
+
+The left rail represents the WORLD BEING STUDIED, not generic website
+navigation.
+
+Group by:
+
+SYSTEMS
+
+- Main computing
+- USB communication
+- Power
+- Clock
+- Reset
+- Digital I/O
+- Analog I/O
+
+COMPONENTS
+
+- ATmega328P
+- ATmega16U2
+- Voltage regulators
+- MOSFET
+- Resonator/crystal
+- LEDs
+- Resistors
+- Capacitors
+- Diodes
+- Polyfuse
+- Ferrite bead
+- Connectors
+
+Support filtering/search.
+
+Selection should be restrained:
+
+subtle tint
+left indicator
+typographic emphasis
+
+No glowing selected states.
+
+============================================================
+9. RIGHT INSPECTOR
+============================================================
+
+The right side should behave like an inspector.
+
+For a selected component show progressively:
+
+NAME
+CATEGORY
+
+plain-language purpose
+
+KEY FACTS
+
+HOW IT WORKS
+
+MADE OF
+
+WHAT IF IT WERE MISSING?
+
+SOURCE / VERIFICATION STATUS
+
+ZOOM INSIDE →
+
+Use progressive disclosure.
+
+Do not display every paragraph at once.
+
+The inspector should remain usable while the central object is manipulated.
+
+============================================================
+10. VIEW CONTROLS
+============================================================
+
+Support appropriate combinations of:
+
+Rotate
+Pan
+Zoom
+Focus
+Isolate
+Hide Others
+Explode
+Layers
+Cross-section / X-ray
+Schematic
+Trace Signal
+Reset View
+Zoom Into
+
+Do NOT show every control at all times.
+
+Controls are contextual.
+
+Example:
+
+Board level:
+
+Focus
+Isolate
+Explode
+PCB Layers
+Schematic
+Signal Journey
+
+MOSFET level:
+
+Gate voltage
+Cross section
+Carrier visualization
+Electric-field visualization
+
+Atom level:
+
+Probability view
+Lattice context
+
+============================================================
+11. ISOLATE VS HIDE
+============================================================
+
+Implement these as different concepts.
+
+ISOLATE:
+
+Selected component remains fully visible.
+Context remains visible at very low prominence.
+
+HIDE OTHERS:
+
+Surrounding objects disappear.
+
+This preserves spatial learning before total isolation.
+
+============================================================
+12. CONTINUOUS ZOOM JOURNEY
+============================================================
+
+The deepest interaction must feel spatially continuous.
+
+Example:
+
+Arduino Uno
+→ focus ATmega328P
+→ surrounding board fades
+→ package enlarges
+→ package reveals silicon die
+→ die enlarges
+→ functional regions appear
+→ one circuit region isolates
+→ logic gate
+→ MOSFET
+→ MOSFET cross section
+→ doped silicon
+→ lattice
+→ atoms
+→ electron probability visualization
+
+Do NOT implement this primarily as unrelated page changes.
+
+Use shared visual identity, camera continuity, morphing, or carefully designed
+transitions.
+
+Where a literal physical zoom is impossible, use a clearly intentional
+semantic transition.
+
+Maintain a persistent:
+
+YOU ARE HERE
+
+hierarchy.
+
+============================================================
+13. PARALLEL PHYSICAL BRANCHES
+============================================================
+
+Do not falsely force every part through the transistor hierarchy.
+
+Examples:
+
+ATmega328P
+→ package
+→ die
+→ circuits
+→ MOSFETs
+→ semiconductor
+→ atoms
+
+LED
+→ LED package
+→ semiconductor die
+→ p-n junction
+→ carriers
+→ photon
+
+Resistor
+→ package
+→ resistive material
+→ atomic lattice
+→ electron scattering
+→ thermal energy
+
+Capacitor
+→ electrodes + dielectric
+→ separated charge
+→ electric field
+→ stored energy
+
+PCB trace
+→ copper
+→ metallic lattice
+→ mobile carriers
+
+The visual system must accommodate parallel branches.
+
+============================================================
+14. MOTION DESIGN
+============================================================
+
+Use animation only to communicate:
+
+- hierarchy
+- causality
+- scale
+- spatial relationship
+- state change
+- assembly
+- disassembly
+- signal propagation
+
+Good:
+
+component rises from board
+camera approaches component
+PCB layers separate
+package opens
+die becomes visible
+signal follows copper trace
+MOSFET channel appears
+electric field changes
+electron/hole states change
+
+Bad:
+
+random floating particles
+constant glowing
+decorative bouncing
+everything sliding in on page load
+animations whose only purpose is visual spectacle
+
+Prefer natural ease or critically damped spring behavior.
+
+Most UI microinteractions should complete around 120-250 ms.
+
+Larger object/camera transitions may be slower when necessary to preserve
+orientation.
+
+Always respect prefers-reduced-motion.
+
+============================================================
+15. FRONTEND STACK
+============================================================
+
+Migrate the application to a modern typed component architecture unless the
+existing repository contains a documented blocker.
+
+Preferred stack:
+
+Next.js 16.2+
+React 19.2+
+TypeScript
+Tailwind CSS 4
+shadcn/ui using React Aria primitives where appropriate
+Motion for React
+Zustand
+Lucide icons
+Zod
+
+For interactive 3D/microscopic content:
+
+Three.js
+@react-three/fiber v9 stable
+@react-three/drei
+
+Do not use alpha releases without a documented reason.
+
+Use WebGL only where it meaningfully improves the experience.
+
+Do NOT recreate the Uno in inaccurate fake 3D merely because Three.js is
+available.
+
+If accurate geometry is unavailable:
+
+use a high-quality layered SVG / 2.5D representation for the Uno.
+
+Use R3F for scenes such as:
+
+- IC/package decomposition
+- transistor structure
+- crystal lattice
+- atomic scenes
+- deep scale visualization
+
+where it genuinely improves comprehension.
+
+============================================================
+16. SHADCN RULE
+============================================================
+
+shadcn/ui is a primitive/component source, not the visual identity.
+
+Do not leave default shadcn appearance untouched.
+
+Avoid repeated:
+
+<Card>
+<CardHeader>
+<CardTitle>
+<CardDescription>
+
+for the entire UI.
+
+Use:
+
+spacing
+hairlines
+typographic hierarchy
+negative space
+layout
+and the studied object
+
+as the primary visual system.
+
+============================================================
+17. RESPONSIVE MODEL
+============================================================
+
+Desktop:
+
+left navigator
+center viewer
+right inspector
+
+Tablet:
+
+collapsible left navigator
+center viewer
+right drawer/sheet
+
+Mobile:
+
+full-width viewer
+compact top controls
+component navigator as sheet
+inspector as bottom sheet
+
+The object must remain the focus on mobile.
+
+Do not simply stack every desktop panel vertically.
+
+============================================================
+18. ACCESSIBILITY
+============================================================
+
+Accessibility is part of the interaction architecture.
+
+Every object selectable by pointer must also be selectable by keyboard.
+
+Every drag operation needs a non-drag alternative.
+
+Provide:
+
+visible focus
+semantic labels
+screen-reader descriptions
+ARIA live announcements where necessary
+reduced-motion alternatives
+sufficient contrast
+touch targets
+logical focus restoration
+keyboard-accessible zoom controls
+
+Canvas/WebGL scenes require meaningful DOM/text alternatives.
+
+============================================================
+19. DESIGN TOKENS
+============================================================
+
+Create a true design-token layer.
+
+Include:
+
+background
+surface
+surface-raised
+foreground
+muted
+border
+accent
+focus
+semantic subsystem colors
+
+spacing scale
+radius scale
+shadow scale
+type scale
+motion duration scale
+easing/spring definitions
+
+Keep radius restrained.
+
+Most structural containers should rely on spacing and hairlines before shadows.
+
+============================================================
+20. FRONTEND ARCHITECTURE
+============================================================
+
+Do not create a giant App.tsx/page.tsx.
+
+Separate:
+
+application shell
+object viewport
+navigator
+inspector
+toolbar
+zoom journey
+signal journey
+assembly mode
+quiz
+educational renderer
+citation renderer
+
+and the underlying domain data.
+
+UI should be generated from canonical educational data where reasonable.
+
+Use Zustand only for shared interactive state.
+
+Do not put static content into global state.
+
+============================================================
+21. PERFORMANCE
+============================================================
+
+Lazy-load heavy microscopic/3D scenes.
+
+Do not initialize every Three.js scene on first load.
+
+Pause rendering loops when:
+
+- scene is offscreen
+- tab is hidden
+- animation is unnecessary
+
+Use frameloop="demand" where appropriate.
+
+Avoid React re-renders for high-frequency pointer/camera state.
+
+Target smooth interaction on mid-range laptops and phones.
+
+============================================================
+22. TESTING STACK
+============================================================
+
+Set up:
+
+Vitest
+Playwright
+axe-core integration
+
+Test:
+
+object selection
+keyboard navigation
+inspector updates
+zoom transitions
+assembly interactions
+signal journeys
+mobile sheets
+theme switching
+reduced motion
+
+Add screenshot-based visual regression for important views:
+
+Desktop light
+Desktop dark
+Tablet
+Mobile
+
+Also test selected/focused/isolated/exploded states.
+
+============================================================
+23. VISUAL QA LOOP
+============================================================
+
+Do NOT declare the redesign successful after the first implementation.
+
+Use a visual iteration loop:
+
+1. Run app.
+2. Capture screenshots at target viewports.
+3. Inspect visual hierarchy.
+4. Compare against DESIGN.md.
+5. Identify generic AI-generated patterns.
+6. Remove unnecessary containers/cards.
+7. Improve spacing/typography.
+8. Re-test.
+9. Repeat.
+
+Audit specifically for:
+
+- too many boxes
+- excessive rounding
+- excessive text
+- low object prominence
+- inconsistent spacing
+- weak information hierarchy
+- unnecessary accents
+- fake depth
+- excessive shadows
+- generic SaaS patterns
+
+============================================================
+24. REPOSITORY AI OPERATING SYSTEM
+============================================================
+
+Inspect existing AGENTS.md and project-memory files first.
+
+Do NOT create duplicate documentation when a canonical file already exists.
+
+Maintain:
+
+AGENTS.md
+
+.agent/
+  PLANS.md
+
+Use an ExecPlan for this redesign because it is a substantial architecture and
+UI refactor.
+
+Keep AGENTS.md focused on stable repository-wide policy.
+
+Do not put temporary task details into AGENTS.md.
+
+============================================================
+25. CODEX SKILLS
+============================================================
+
+Create repo-local Codex skills ONLY for repeatable workflows that justify
+on-demand instructions.
+
+Preferred structure:
+
+.agents/
+└── skills/
+    ├── ui-art-direction/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── design-system.md
+    │
+    ├── arduino-fact-verification/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── source-policy.md
+    │
+    └── frontend-quality-gate/
+        ├── SKILL.md
+        └── references/
+            ├── accessibility-checklist.md
+            └── visual-regression-checklist.md
+
+SKILL: ui-art-direction
+
+Trigger when:
+
+- creating UI
+- modifying layout
+- modifying themes
+- creating animations
+- changing object-view behavior
+
+It must enforce this project's aesthetic principles and anti-patterns.
+
+SKILL: arduino-fact-verification
+
+Trigger when:
+
+- adding hardware facts
+- adding component specs
+- describing chip internals
+- adding materials
+- adding semiconductor claims
+- changing component inventory
+
+It must enforce the established source hierarchy.
+
+SKILL: frontend-quality-gate
+
+Trigger when:
+
+- a significant UI feature is considered complete
+- preparing a commit/release
+- making responsive changes
+
+It should run or guide:
+
+type checking
+linting
+tests
+Playwright
+accessibility checks
+visual screenshot checks
+
+Keep skill descriptions narrow enough that Codex knows when to invoke them.
+
+Do NOT create a skill for one-off tasks.
+
+Do NOT duplicate whole project documents into SKILL.md files.
+
+============================================================
+26. AGENTS / SUBAGENTS
+============================================================
+
+Do not create fake persona files just to simulate a team.
+
+Do not create:
+
+designer-agent.md
+frontend-agent.md
+physics-agent.md
+etc.
+
+unless the runtime provides a genuine agent mechanism that uses them.
+
+If this Codex environment supports parallel/subagents, use them where useful:
+
+RESEARCH
+verify technology and Arduino claims
+
+DESIGN REVIEW
+audit visual hierarchy and interaction
+
+IMPLEMENTATION
+perform migration/refactor
+
+QA
+run tests, accessibility, and screenshots
+
+If parallel agents are unavailable, accomplish the same workflow sequentially
+using the repository skills and checklists.
+
+============================================================
+27. ADD / UPDATE DESIGN DOCUMENTATION
+============================================================
+
+Create or update:
+
+docs/design/UI_AUDIT.md
+docs/design/DESIGN_SYSTEM.md
+docs/design/INTERACTION_MODEL.md
+
+UI_AUDIT.md:
+
+document what is wrong with the current design before changing it.
+
+DESIGN_SYSTEM.md:
+
+canonical tokens, typography, layout, components, motion, themes, anti-patterns.
+
+INTERACTION_MODEL.md:
+
+object navigation
+selection
+focus
+isolation
+hide
+explode
+zoom
+signal journey
+responsive adaptations
+keyboard behavior
+
+Update existing DESIGN.md / UX.md rather than creating conflicting duplicate
+sources if those files already serve these purposes.
+
+Record any documentation merge in DECISIONS.md.
+
+============================================================
+28. PRESERVE SCIENTIFIC TRUTH
+============================================================
+
+Visual beauty must never override scientific accuracy.
+
+Never invent:
+
+ATmega die layout
+transistor geometry
+component materials
+Arduino component identity
+board traces
+process node
+dimensions
+manufacturing details
+
+When a visualization is conceptual, label it.
+
+Prefer:
+
+"Conceptual internal view"
+
+over pretending it is an exact die photograph.
+
+============================================================
+29. MIGRATION SAFETY
+============================================================
+
+Do not immediately delete the functioning current implementation.
+
+First:
+
+- inspect it
+- identify reusable data/content
+- create the migration ExecPlan
+- preserve canonical research
+- preserve working behavior
+- establish new app shell
+
+Migrate incrementally.
+
+The existing application should remain recoverable through version control.
+
+============================================================
+30. PHASED EXECUTION
+============================================================
+
+PHASE 0
+Audit the current UI and repository.
+
+Output/update:
+
+UI_AUDIT.md
+DESIGN_SYSTEM.md
+INTERACTION_MODEL.md
+ExecPlan
+
+PHASE 1
+Set up modern frontend architecture.
+
+PHASE 2
+Implement application shell and themes.
+
+PHASE 3
+Implement object-centric Uno viewer.
+
+PHASE 4
+Implement navigator + inspector.
+
+PHASE 5
+Implement focus/isolate/explode interactions.
+
+PHASE 6
+Implement continuous scale journey.
+
+PHASE 7
+Implement signal journeys.
+
+PHASE 8
+Responsive/mobile refinement.
+
+PHASE 9
+Accessibility.
+
+PHASE 10
+Visual regression and final polish.
+
+============================================================
+31. ACCEPTANCE TEST
+============================================================
+
+The final product should NOT feel like:
+
+an internal documentation portal.
+
+It should feel like:
+
+"I placed an Arduino Uno under an extraordinary interactive scientific
+microscope."
+
+Within five seconds a new visitor should understand:
+
+1. This is an Arduino Uno.
+2. I can touch/click its parts.
+3. I can learn what every part does.
+4. I can go inside those parts.
+5. I can eventually reach transistors, silicon, atoms, electrons, and photons.
+
+The user should be able to follow:
+
+Arduino
+→ ATmega328P
+→ package
+→ die
+→ CPU/circuit
+→ logic
+→ transistor
+→ doped silicon
+→ lattice
+→ atom
+→ electron
+
+while always understanding:
+
+WHAT AM I LOOKING AT?
+
+WHAT IS IT MADE OF?
+
+HOW DOES IT WORK?
+
+The user should also be able to follow parallel physical branches such as:
+
+Arduino
+→ LED
+→ p-n junction
+→ carriers
+→ photon
+
+without being taught false hierarchy.
+
+============================================================
+32. FIRST RESPONSE / FIRST ACTION
+============================================================
+
+Do not immediately rewrite the entire repository.
+
+First:
+
+1. inspect the current implementation
+2. inspect all project-memory documents
+3. run the current project
+4. capture desktop and mobile screenshots
+5. produce UI_AUDIT.md
+6. propose the migration architecture
+7. create/update the ExecPlan
+8. identify which repo-local skills are actually warranted
+
+Then begin implementation unless a genuine blocking ambiguity exists.
+
+Do not ask for confirmation on routine engineering/design decisions.
+
+Use your judgment and carry the redesign through to a working, tested state.

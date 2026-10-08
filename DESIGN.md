@@ -1,37 +1,34 @@
 # Visual design system
 
-## Principles
+## Direction
 
-An Arduino-inspired electronics workbench: readable, orderly, and restrained. Explanations lead; illustrations support them. Use labels, shapes, and line styles in addition to color. The current guide establishes these defaults; later scenes inherit them.
+Quiet interface, rich object. Combine NASA-inspired editorial hierarchy with a scientific atlas: confident typography, clear navigation, generous space, restrained lines and the recognizable Uno as the first-screen subject. Avoid marketing heroes, card grids, gradients, glows, glass effects and decorative motion. The user selected this direction; it does not imply NASA endorsement. [Audit](docs/design/UI_AUDIT.md) records the starting interface.
 
 ## Tokens
 
-| Token | Dark default | Light proposal |
+| Token | Light default | Dark |
 | --- | --- | --- |
-| background | #0B1218 | #F4F7F8 |
-| surface | #14212B | #FFFFFF |
-| raised | #1B2D39 | #E7EFF2 |
-| text | #EAF3F6 | #14212B |
-| muted | #AFBFCA | #405563 |
-| accent | #00979D | #00979D |
-| link/focus | #73E3DE | #006A70 |
-| border | #36505F | #B8CBD2 |
-| caution | #F2C879 | #765000 |
+| canvas | #F3F1EB | #0C0C0B |
+| surface | #FAF9F6 | #141412 |
+| raised | #FFFFFF | #1B1B18 |
+| ink | #11110F | #F2F0E9 |
+| secondary | #6E6D68 | #A5A39B |
+| hairline | #D9D6CE | #343430 |
+| accent / board teal | #00979D | #00979D |
+| action text / focus | #006F73 | #7DD4CF |
 
-Use teal as an accent and graphical fill. Do not assume white small text on #00979D passes AA; use the brighter link token or dark text on bright surfaces and measure actual contrast. Light theme is optional backlog work, not currently delivered.
+Teal indicates action/selection, not pervasive decoration. Measure actual text/focus contrast before shipping; darken light-theme teal text as necessary to meet AA. Power amber, digital teal, analog muted violet, clock muted green, ground charcoal and USB blue always include names/symbols. Hairlines are decorative separators, never sole control boundaries.
 
-Typography: system sans for body/headings; system monospace for identifiers and measurements. Body 1rem, line-height 1.6; headings fluid via clamp. Limit prose to about 70 characters per line. Spacing scale: 4, 8, 12, 16, 24, 32, 48, 64 px. Radii: 8 px controls, 16 px cards, 24 px major containers. Borders 1 px; elevation uses one subtle shadow rather than bright glows.
+Use locally bundled Geist Sans and Mono; a system serif only for occasional scientific titles. Base interface body 14px with readable line height; component/scene prose 12–14px, editorial paragraphs 14–16px, documentation 14–15px. Prose is limited to roughly 65 characters wide; native 200% browser zoom is included in acceptance. Small Mono labels are supplemental metadata rather than the only explanation. Spacing: 4, 8, 12, 16, 24, 32, 48, 64px. Corners: 0 for structural panes, 4px controls, at most 8px sheets. Use a subtle sheet shadow only where layering needs explanation.
 
-## Components and illustrations
+## Object workspace
 
-Cards include title/category, purpose, composition/mechanism, citation, and depth controls. Board components keep CAD-relative placement and visible location markers. Selection uses outline and label. Explode retains leader lines. Icons are simple inline strokes with labels; avoid unlabeled icon-only actions. Diagram arrows distinguish control, energy/data, and return path using a legend.
+At widths >=1200px: header 64px, navigator 232px, inspector 336px, remaining width dedicated to the board. At 768–1199px use drawers; below 768px use navigation and inspector sheets around a full-width viewer. Do not stack three desktop panes. Object, not title/prose, dominates the initial viewport. Contextual controls appear only for the active scene.
 
-Microscopic drawings show a visible badge: conceptual or simplified. A conceptual die map uses functional regions, not a fabricated physical floorplan. Atoms use probability-cloud shapes, not planetary motion. Quantitative size labels appear only with verified context. Board graphics use “Layout-faithful educational illustration” unless fidelity is separately established.
+CAD coordinates determine physical placement; educational package shapes may simplify geometry. Selected objects use a solid boundary and label. Isolate retains faint context; hide others removes it. Explode preserves leader lines and an obvious reassemble control. All important marks have HTML descriptions.
 
-## Motion and responsive behavior
+## Motion and visual truth
 
-Short transitions around 150-250 ms; never rely on animation for meaning. Reduced motion removes continuous movement and spatial travel. Scene timing is explanatory, not physical speed. Phones use single-column sections and bottom-sheet details; tablets stack or split based on content width; desktop uses a board with adjacent details. Ensure 44 px control targets and no document-wide sideways overflow; tables may have a labeled contained scroll region.
+UI transitions 120–250ms with natural easing; slower explanatory transitions only when they clarify causality or scale. Reduced motion switches scenes instantly. No perpetual decoration or idle animation. Labels always distinguish layout-faithful, simplified and conceptual representations. A polished die scene remains conceptual; clouds never become planetary electron orbits. Unknown dimensions stay unavailable, and software has no physical scale.
 
-## Visual truth rules
-
-Zoom transitions do not imply true scale. Electron dots do not represent a complete quantum description or measured drift speed. Current arrows use declared conventional-current direction; carrier scenes distinguish electron motion. Conceptual internals never become exact through visual polish. All scene meaning has readable text. See [accessibility](ACCESSIBILITY.md) and [rendering](docs/engineering/rendering.md).
+Read [UX](UX.md) for flows, [accessibility](ACCESSIBILITY.md) for behavior, and [rendering](docs/engineering/rendering.md) for coordinate truth.

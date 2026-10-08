@@ -1,0 +1,602 @@
+[
+  {
+    "id": "SRC-001",
+    "title": "UNO-TH_Rev3e schematic",
+    "organization": "Arduino.",
+    "type": "schematic.",
+    "url": "https://docs.arduino.cc/resources/schematics/A000066-schematics.pdf",
+    "documentIdentity": "Sheet 1 circuit symbols and net labels; title block UNO-TH_Rev3e, printed 06/03/19 12:33. Two-page PDF includes license.",
+    "evidenceLocation": "Sheet 1 circuit symbols and net labels; title block UNO-TH_Rev3e, printed 06/03/19 12:33. Two-page PDF includes license.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Baseline identities, values, pin/net connectivity, buffer/power circuits. SHA-256: 2c1041200352485393108e03c5117a07d4ea03954654485526c2c56cd01f7a42. Does not establish exact production BOM."
+    ],
+    "authorityNotes": "Baseline identities, values, pin/net connectivity, buffer/power circuits. SHA-256: 2c1041200352485393108e03c5117a07d4ea03954654485526c2c56cd01f7a42. Does not establish exact production BOM.",
+    "checksum": "2c1041200352485393108e03c5117a07d4ea03954654485526c2c56cd01f7a42"
+  },
+  {
+    "id": "SRC-002",
+    "title": "A000066 CAD files",
+    "organization": "Arduino.",
+    "type": "EAGLE schematic/board archive.",
+    "url": "https://docs.arduino.cc/static/6bb7a3ca51ebee82a252f60c0b418787/A000066-cad-files.zip",
+    "documentIdentity": "UNO-TH_Rev3e.brd: drawing/board/elements, signals/contactref, packages; .sch: parts/devices/nets.",
+    "evidenceLocation": "UNO-TH_Rev3e.brd: drawing/board/elements, signals/contactref, packages; .sch: parts/devices/nets.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "116 board elements, positions, package footprints, connectivity and board features. Archive SHA-256: 532b306cb153846eafc0ca9fe991d7a4dfa0c52dcefafa2efeaebf4b845ec820. Linked by official hardware page; package names are design library identifiers, not guaranteed supplier part numbers."
+    ],
+    "authorityNotes": "116 board elements, positions, package footprints, connectivity and board features. Archive SHA-256: 532b306cb153846eafc0ca9fe991d7a4dfa0c52dcefafa2efeaebf4b845ec820. Linked by official hardware page; package names are design library identifiers, not guaranteed supplier part numbers.",
+    "checksum": "532b306cb153846eafc0ca9fe991d7a4dfa0c52dcefafa2efeaebf4b845ec820"
+  },
+  {
+    "id": "SRC-003",
+    "title": "UNO R3 hardware documentation",
+    "organization": "Arduino.",
+    "type": "product documentation.",
+    "url": "https://docs.arduino.cc/hardware/uno-rev3/",
+    "documentIdentity": "Features and downloadable resources.",
+    "evidenceLocation": "Features and downloadable resources.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Socketed ATmega328P reference, 14 digital I/O, 6 analog inputs, 16 MHz ceramic resonator."
+    ],
+    "authorityNotes": "Socketed ATmega328P reference, 14 digital I/O, 6 analog inputs, 16 MHz ceramic resonator.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-004",
+    "title": "Arduino UNO R3 User Manual A000066",
+    "organization": "Arduino.",
+    "type": "manual PDF.",
+    "url": "https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf",
+    "documentIdentity": "English Board Topology table, section 3.1, printed page 7; accessed file 27 pages.",
+    "evidenceLocation": "English Board Topology table, section 3.1, printed page 7; accessed file 27 pages.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Manual reports SPX1117, CGRA4007-G, LMV358LIST-A.9 and ECS-160-20-4X-DU; F1 described as capacitor. Conflicts with schematic; do not use table as unqualified BOM."
+    ],
+    "authorityNotes": "Manual reports SPX1117, CGRA4007-G, LMV358LIST-A.9 and ECS-160-20-4X-DU; F1 described as capacitor. Conflicts with schematic; do not use table as unqualified BOM.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-005",
+    "title": "UNO R3 Full Pinout",
+    "organization": "Arduino.",
+    "type": "pinout PDF.",
+    "url": "https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf",
+    "documentIdentity": "Top-view pin labels and port/function callouts; last update label 6 Oct 2022.",
+    "evidenceLocation": "Top-view pin labels and port/function callouts; last update label 6 Oct 2022.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Header roles, PWM/serial/interrupt mapping, supply notes. Board guidance must be distinguished from MCU absolute maximum ratings."
+    ],
+    "authorityNotes": "Header roles, PWM/serial/interrupt mapping, supply notes. Board guidance must be distinguished from MCU absolute maximum ratings.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-006",
+    "title": "ATmega328P product documentation",
+    "organization": "Microchip.",
+    "type": "manufacturer product page and linked datasheets.",
+    "url": "https://www.microchip.com/en-us/product/ATMEGA328P",
+    "documentIdentity": "Overview; ATmega48A/PA/88A/PA/168A/PA/328/P datasheet link.",
+    "evidenceLocation": "Overview; ATmega48A/PA/88A/PA/168A/PA/328/P datasheet link.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "32 KB flash, 2 KB SRAM, 1 KB EEPROM, AVR peripherals. Package-specific ADC count must use datasheet; generic page lists 32-pin capabilities."
+    ],
+    "authorityNotes": "32 KB flash, 2 KB SRAM, 1 KB EEPROM, AVR peripherals. Package-specific ADC count must use datasheet; generic page lists 32-pin capabilities.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-007",
+    "title": "ATmega8U2/16U2/32U2 complete datasheet",
+    "organization": "Microchip / Atmel.",
+    "type": "manufacturer datasheet.",
+    "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf",
+    "documentIdentity": "Features, pin configuration, block diagram, USB controller and clock sections.",
+    "evidenceLocation": "Features, pin configuration, block diagram, USB controller and clock sections.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "USB-capable ATmega16U2, 16 KB flash and 512-byte SRAM/EEPROM. Manufacturer document 7799; use fetched revision before claiming revision-specific details."
+    ],
+    "authorityNotes": "USB-capable ATmega16U2, 16 KB flash and 512-byte SRAM/EEPROM. Manufacturer document 7799; use fetched revision before claiming revision-specific details.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-008",
+    "title": "FDN340P datasheet",
+    "organization": "onsemi.",
+    "type": "manufacturer datasheet.",
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/fdn340p-d.pdf",
+    "documentIdentity": "Page 1 general description, pin/marking diagrams and ratings.",
+    "evidenceLocation": "Page 1 general description, pin/marking diagrams and ratings.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "P-channel logic-level MOSFET and manufacturer pin numbering. Rated current is not the board's usable supply current."
+    ],
+    "authorityNotes": "P-channel logic-level MOSFET and manufacturer pin numbering. Rated current is not the board's usable supply current.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-009",
+    "title": "LMV358 product information",
+    "organization": "Texas Instruments.",
+    "type": "manufacturer product page/datasheet.",
+    "url": "https://www.ti.com/product/LMV358",
+    "documentIdentity": "Description and linked LMV3xx datasheet.",
+    "evidenceLocation": "Description and linked LMV3xx datasheet.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Dual operational amplifier; Uno uses one section for source-selection comparison and one as L LED buffer (topology from schematic)."
+    ],
+    "authorityNotes": "Dual operational amplifier; Uno uses one section for source-selection comparison and one as L LED buffer (topology from schematic).",
+    "checksum": null
+  },
+  {
+    "id": "SRC-010",
+    "title": "LP2985 product information",
+    "organization": "Texas Instruments.",
+    "type": "manufacturer product page/datasheet.",
+    "url": "https://www.ti.com/product/LP2985",
+    "documentIdentity": "Description and ordering variants.",
+    "evidenceLocation": "Description and ordering variants.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Low-dropout regulator family; board's LP2985-33DBVR identity from CAD/schematic. Device current capability does not supersede board 3.3 V guidance."
+    ],
+    "authorityNotes": "Low-dropout regulator family; board's LP2985-33DBVR identity from CAD/schematic. Device current capability does not supersede board 3.3 V guidance.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-011",
+    "title": "NCP1117 datasheet",
+    "organization": "onsemi.",
+    "type": "manufacturer datasheet.",
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/ncp1117-d.pdf",
+    "documentIdentity": "Description and fixed output versions/ordering information.",
+    "evidenceLocation": "Description and fixed output versions/ordering information.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Regulator family including 5 V version; board current depends on input voltage, heat dissipation, and loads."
+    ],
+    "authorityNotes": "Regulator family including 5 V version; board current depends on input voltage, heat dissipation, and loads.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-012",
+    "title": "MF-MSMF Series PTC Resettable Fuses",
+    "organization": "Bourns.",
+    "type": "manufacturer datasheet.",
+    "url": "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf",
+    "documentIdentity": "Electrical Characteristics and Thermal Derating tables, MF-MSMF050 row.",
+    "evidenceLocation": "Electrical Characteristics and Thermal Derating tables, MF-MSMF050 row.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "0.50 A hold and 1.00 A trip at stated 23 C conditions; time/temperature dependent protection, not an instantaneous 500 mA cutoff."
+    ],
+    "authorityNotes": "0.50 A hold and 1.00 A trip at stated 23 C conditions; time/temperature dependent protection, not an instantaneous 500 mA cutoff.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-013",
+    "title": "Multifuse Products short form",
+    "organization": "Bourns.",
+    "type": "manufacturer technical guide.",
+    "url": "https://www.bourns.com/docs/technical-documents/technical-library/multifuse-pptc-resettable-fuses/publications/bourns_mf_ptc_short_form.pdf",
+    "documentIdentity": "How the polymer PTC device works / PTC response characteristic.",
+    "evidenceLocation": "How the polymer PTC device works / PTC response characteristic.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General polymer/carbon conductive network and heating-dependent resistance; does not establish proprietary recipe of the board's part."
+    ],
+    "authorityNotes": "General polymer/carbon conductive network and heating-dependent resistance; does not establish proprietary recipe of the board's part.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-014",
+    "title": "CG0603MLC-05E / -12E ChipGuard ESD Protectors",
+    "organization": "Bourns.",
+    "type": "manufacturer datasheet.",
+    "url": "https://www.bourns.com/docs/Product-Datasheets/cg0603mlc-05e_cg0603mlc-12e.pdf",
+    "documentIdentity": "General Information / Electrical Characteristics / How to Order; REV E 07/20 printed.",
+    "evidenceLocation": "General Information / Electrical Characteristics / How to Order; REV E 07/20 printed.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Bidirectional low-capacitance ESD protector identity; connected as shunts, not series power devices."
+    ],
+    "authorityNotes": "Bidirectional low-capacitance ESD protector identity; connected as shunts, not series power devices.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-015",
+    "title": "ChipGuard CG0603MLC-05E / -12E product page",
+    "organization": "Bourns.",
+    "type": "manufacturer product page.",
+    "url": "https://bourns.com/products/circuit-protection/details/chipguardesdsuppressorsaecq200qualifiedforautomotiveapplications/cg0603mlc-05e-cg0603mlc-12e-automotive",
+    "documentIdentity": "Specifications: Technology.",
+    "evidenceLocation": "Specifications: Technology.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Thin Film Polymer technology; do not call these semiconductor diodes or ceramic varistors merely because the EAGLE library is named varistor."
+    ],
+    "authorityNotes": "Thin Film Polymer technology; do not call these semiconductor diodes or ceramic varistors merely because the EAGLE library is named varistor.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-016",
+    "title": "Basics of Noise Countermeasures, Lesson 4: Chip ferrite beads",
+    "organization": "Murata.",
+    "type": "manufacturer educational article.",
+    "url": "https://article.murata.com/en-us/article/basics-of-noise-countermeasures-lesson-4",
+    "documentIdentity": "Typical structure and impedance frequency characteristics.",
+    "evidenceLocation": "Typical structure and impedance frequency characteristics.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General ferrite/coil construction and high-frequency losses. BLM21 suffix and ferrite composition remain unknown."
+    ],
+    "authorityNotes": "General ferrite/coil construction and high-frequency losses. BLM21 suffix and ferrite composition remain unknown.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-017",
+    "title": "Basic Knowledge: Ceramic Resonators (CERALOCK)",
+    "organization": "Murata.",
+    "type": "manufacturer educational documentation.",
+    "url": "https://www.murata.com/en-us/products/timingdevice/ceralock/overview/basic/",
+    "documentIdentity": "Overview and oscillation principle.",
+    "evidenceLocation": "Overview and oscillation principle.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General piezoelectric ceramic resonator operation. Does not independently establish exact Y2 internal capacitance/specification."
+    ],
+    "authorityNotes": "General piezoelectric ceramic resonator operation. Does not independently establish exact Y2 internal capacitance/specification.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-018",
+    "title": "Semiconductors and Doping, University Physics Vol. 3 §9.6",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/9-6-semiconductors-and-doping",
+    "documentIdentity": "Intrinsic/extrinsic semiconductor and n/p type explanation.",
+    "evidenceLocation": "Intrinsic/extrinsic semiconductor and n/p type explanation.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General silicon band/carrier/dopant concepts. Not a source for the exact Uno fabrication process."
+    ],
+    "authorityNotes": "General silicon band/carrier/dopant concepts. Not a source for the exact Uno fabrication process.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-019",
+    "title": "Semiconductor Devices, University Physics Vol. 3 §9.7",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/9-7-semiconductor-devices",
+    "documentIdentity": "p-n junction and device explanations.",
+    "evidenceLocation": "p-n junction and device explanations.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General junction, depletion/bias and LED mechanisms; exact Uno LED compounds are unspecified."
+    ],
+    "authorityNotes": "General junction, depletion/bias and LED mechanisms; exact Uno LED compounds are unspecified.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-020",
+    "title": "Model of Conduction in Metals, University Physics Vol. 2 §9.2",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-2/pages/9-2-model-of-conduction-in-metals",
+    "documentIdentity": "Drift velocity and conduction model.",
+    "evidenceLocation": "Drift velocity and conduction model.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General current, drift and scattering; no specific Uno signal speed or resistance-film recipe."
+    ],
+    "authorityNotes": "General current, drift and scattering; no specific Uno signal speed or resistance-film recipe.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-021",
+    "title": "Capacitors and Capacitance, University Physics Vol. 2 §8.1",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance",
+    "documentIdentity": "Capacitance and conductor/dielectric structure.",
+    "evidenceLocation": "Capacitance and conductor/dielectric structure.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Separated electrode charge and capacitance; distinguish field energy and dielectric polarization from charge stored inside dielectric."
+    ],
+    "authorityNotes": "Separated electrode charge and capacitance; distinguish field energy and dielectric polarization from charge stored inside dielectric.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-022",
+    "title": "The Hydrogen Atom, University Physics Vol. 3 §8.1",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/8-1-the-hydrogen-atom",
+    "documentIdentity": "Wave functions and probability distributions.",
+    "evidenceLocation": "Wave functions and probability distributions.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Quantum probability clouds. Hydrogen solutions are not exact multi-electron silicon/copper orbital images."
+    ],
+    "authorityNotes": "Quantum probability clouds. Hydrogen solutions are not exact multi-electron silicon/copper orbital images.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-023",
+    "title": "Photoelectric Effect, University Physics Vol. 3 §6.2",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect",
+    "documentIdentity": "Photon energy/frequency relation.",
+    "evidenceLocation": "Photon energy/frequency relation.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "E = hf, general photon energy; no exact LED wavelength."
+    ],
+    "authorityNotes": "E = hf, general photon energy; no exact LED wavelength.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-024",
+    "title": "The Standard Model",
+    "organization": "CERN.",
+    "type": "research organization educational page.",
+    "url": "https://home.cern/science/physics/standard-model/",
+    "documentIdentity": "Matter particles and forces/carrier particles.",
+    "evidenceLocation": "Matter particles and forces/carrier particles.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Electrons, quarks, photons/gluons in Standard Model; optional beyond-electronics context. Do not imply the model includes gravity."
+    ],
+    "authorityNotes": "Electrons, quarks, photons/gluons in Standard Model; optional beyond-electronics context. Do not imply the model includes gravity.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-025",
+    "title": "Ready to transform the enterprise world? We are!",
+    "organization": "Arduino Team.",
+    "type": "official historical/context blog article, 2022-06-07.",
+    "url": "https://blog.arduino.cc/2022/06/07/ready-to-transform-the-enterprise-world-we-are/",
+    "documentIdentity": "Paragraphs describing Interaction Design Institute Ivrea, novice prototyping audience and open-source philosophy.",
+    "evidenceLocation": "Paragraphs describing Interaction Design Institute Ivrea, novice prototyping audience and open-source philosophy.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Beginner/prototyping origins and accessibility/open-source motivations. No claim about current company leadership or funding. Exact founder chronology/name story needs separate evidence. Legacy AboutUs redirects to a missing page; this replacement was opened through web research. Direct automated HTTP returned 403."
+    ],
+    "authorityNotes": "Beginner/prototyping origins and accessibility/open-source motivations. No claim about current company leadership or funding. Exact founder chronology/name story needs separate evidence. Legacy AboutUs redirects to a missing page; this replacement was opened through web research. Direct automated HTTP returned 403.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-026",
+    "title": "The Untold History of Arduino",
+    "organization": "Hernando Barragan.",
+    "type": "first-person historical account.",
+    "url": "https://arduinohistory.github.io/",
+    "documentIdentity": "Wiring at IDII, Processing relationship and Arduino development account.",
+    "evidenceLocation": "Wiring at IDII, Processing relationship and Arduino development account.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Participant's perspective on Wiring lineage. Attribute disputed interpretations; not a neutral adjudication of credit."
+    ],
+    "authorityNotes": "Participant's perspective on Wiring lineage. Attribute disputed interpretations; not a neutral adjudication of credit.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-027",
+    "title": "Sketch build process",
+    "organization": "Arduino.",
+    "type": "official developer documentation.",
+    "url": "https://docs.arduino.cc/arduino-cli/sketch-build-process",
+    "documentIdentity": "Overview, preprocessing, compilation and upload.",
+    "evidenceLocation": "Overview, preprocessing, compilation and upload.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "AVR build chain to program image; source code is information processed by tools before upload."
+    ],
+    "authorityNotes": "AVR build chain to program image; source code is information processed by tools before upload.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-028",
+    "title": "ArduinoCore-avr standard pin definitions",
+    "organization": "Arduino.",
+    "type": "official source code.",
+    "url": "https://github.com/arduino/ArduinoCore-avr/blob/master/variants/standard/pins_arduino.h",
+    "documentIdentity": "digital_pin_to_port/bit_mask/timer tables and LED_BUILTIN.",
+    "evidenceLocation": "digital_pin_to_port/bit_mask/timer tables and LED_BUILTIN.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Arduino logical pin mappings, PWM timers, standard variant. Reverify exact core version when explaining compiler output."
+    ],
+    "authorityNotes": "Arduino logical pin mappings, PWM timers, standard variant. Reverify exact core version when explaining compiler output.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-029",
+    "title": "Signal Acquisition and Conditioning Seminar, Section 2",
+    "organization": "Texas Instruments.",
+    "type": "manufacturer technical seminar PDF.",
+    "url": "https://www.ti.com/lit/ml/slap082/slap082.pdf",
+    "documentIdentity": "PCB materials discussion: FR4 epoxy-glass.",
+    "evidenceLocation": "PCB materials discussion: FR4 epoxy-glass.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General FR-4 construction; does not prove substrate formulation, thickness, finish, or solder alloy on every Uno."
+    ],
+    "authorityNotes": "General FR-4 construction; does not prove substrate formulation, thickness, finish, or solder alloy on every Uno.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-030",
+    "title": "CD1206-S01575 Switching Chip Diode",
+    "organization": "Bourns.",
+    "type": "manufacturer archived datasheet.",
+    "url": "https://www.bourns.com/docs/technical-documents/obsolete-parts/cd1206_s01575_obsolete.pdf",
+    "documentIdentity": "Device title and switching diode electrical characteristics.",
+    "evidenceLocation": "Device title and switching diode electrical characteristics.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General device identity for D2/D3; board reset clamp topology from schematic."
+    ],
+    "authorityNotes": "General device identity for D2/D3; board reset clamp topology from schematic.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-031",
+    "title": "Design Considerations for Logic Products",
+    "organization": "Texas Instruments.",
+    "type": "manufacturer application report.",
+    "url": "https://www.ti.com/lit/an/sdya018/sdya018.pdf",
+    "documentIdentity": "CMOS inverter circuit and logic-state discussion.",
+    "evidenceLocation": "CMOS inverter circuit and logic-state discussion.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General CMOS complementary pull-up/pull-down logic; not exact ATmega gate layout."
+    ],
+    "authorityNotes": "General CMOS complementary pull-up/pull-down logic; not exact ATmega gate layout.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-032",
+    "title": "Assembly and Packaging Key Technologies",
+    "organization": "Microchip.",
+    "type": "manufacturer technology overview.",
+    "url": "https://www.microchip.com/en-us/products/services/advanced-packaging/key-technologies",
+    "documentIdentity": "Wire bond / flip chip / packaged part options.",
+    "evidenceLocation": "Wire bond / flip chip / packaged part options.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General package connections vary; no exact ATmega328P cross-section or wire alloy established."
+    ],
+    "authorityNotes": "General package connections vary; no exact ATmega328P cross-section or wire alloy established.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-033",
+    "title": "ArduinoCore-avr 1.8.6 standard variant",
+    "organization": "Arduino.",
+    "type": "versioned official source code.",
+    "url": "https://raw.githubusercontent.com/arduino/ArduinoCore-avr/1.8.6/variants/standard/pins_arduino.h",
+    "documentIdentity": "Tag 1.8.6; NUM_ANALOG_INPUTS, PWM/interrupt macros, port/bit/timer tables and DIP diagram; cross-checked with SRC-001/SRC-002/SRC-005 for ATmega328P board/package mapping.",
+    "evidenceLocation": "Tag 1.8.6; NUM_ANALOG_INPUTS, PWM/interrupt macros, port/bit/timer tables and DIP diagram; cross-checked with SRC-001/SRC-002/SRC-005 for ATmega328P board/package mapping.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Arduino logical aliases, six exposed ADC channels, six PWM pins, dedicated interrupts D2/D3. A6/A7 constants do not establish physical pins on the 28-pin Uno. Not a claim that 1.8.6 is the newest core."
+    ],
+    "authorityNotes": "Arduino logical aliases, six exposed ADC channels, six PWM pins, dedicated interrupts D2/D3. A6/A7 constants do not establish physical pins on the 28-pin Uno. Not a claim that 1.8.6 is the newest core.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-034",
+    "title": "One board to rule them all: History of the Arduino UNO",
+    "organization": "Arduino Team.",
+    "type": "official retrospective, 2021-12-09.",
+    "url": "https://blog.arduino.cc/2021/12/09/one-board-to-rule-them-all-history-of-the-arduino-uno/",
+    "documentIdentity": "Rise of the Techno-Hippies; Taking Shape; Ten Thousand and UNO; The Day of the UNO.",
+    "evidenceLocation": "Rise of the Techno-Hippies; Taking Shape; Ten Thousand and UNO; The Day of the UNO.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Uno means one; culmination of earlier boards, 2010 New York launch and education/usability motivation. Retrospective participant accounts are attributed; no exhaustive adjudication of historical credit."
+    ],
+    "authorityNotes": "Uno means one; culmination of earlier boards, 2010 New York launch and education/usability motivation. Retrospective participant accounts are attributed; no exhaustive adjudication of historical credit.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-035",
+    "title": "Dinner is Ready",
+    "organization": "Massimo Banzi / Arduino.",
+    "type": "contemporary announcement, 2010-09-24.",
+    "url": "https://blog.arduino.cc/2010/09/24/dinner-is-ready/",
+    "documentIdentity": "Opening announcement and branding/communication section.",
+    "evidenceLocation": "Opening announcement and branding/communication section.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Announced unveiling at Maker Faire NYC on 25 September 2010; corroborates launch context without assuming every detail applies to Rev3."
+    ],
+    "authorityNotes": "Announced unveiling at Maker Faire NYC on 25 September 2010; corroborates launch context without assuming every detail applies to Rev3.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-036",
+    "title": "Atomic Structure and Symbolism",
+    "organization": "OpenStax / Rice University.",
+    "type": "academic textbook section.",
+    "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "documentIdentity": "Nuclear structure, particle charges, atomic number, neutrality, and linked periodic table.",
+    "evidenceLocation": "Nuclear structure, particle charges, atomic number, neutrality, and linked periodic table.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General atomic identity and charge; not literal planetary trajectories or a board-specific atomic image."
+    ],
+    "authorityNotes": "General atomic identity and charge; not literal planetary trajectories or a board-specific atomic image.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-037",
+    "title": "Structure and Materials of Ceramic Capacitors",
+    "organization": "Murata.",
+    "type": "manufacturer technical FAQ.",
+    "url": "https://www.murata.com/support/faqs/capacitor/ceramiccapacitor/conf/0001",
+    "documentIdentity": "Multilayer capacitor structure diagram and dielectric/electrode explanation.",
+    "evidenceLocation": "Multilayer capacitor structure diagram and dielectric/electrode explanation.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General alternating electrode and ceramic dielectric model; no attribution of exact Uno capacitor construction or chemistry."
+    ],
+    "authorityNotes": "General alternating electrode and ceramic dielectric model; no attribution of exact Uno capacitor construction or chemistry.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-038",
+    "title": "Dielectric Materials in Capacitors",
+    "organization": "TDK.",
+    "type": "manufacturer educational article.",
+    "url": "https://www.tdk.com/en/tech-mag/electronics_primer/9",
+    "documentIdentity": "Electrolytic capacitor types and oxide-film dielectric explanation.",
+    "evidenceLocation": "Electrolytic capacitor types and oxide-film dielectric explanation.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General electrolytic construction and material families; does not establish Uno component procurement or composition."
+    ],
+    "authorityNotes": "General electrolytic construction and material families; does not establish Uno component procurement or composition.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-039",
+    "title": "What is an FPGA?",
+    "organization": "Microchip Developer Help.",
+    "type": "manufacturer educational article.",
+    "url": "https://developerhelp.microchip.com/xwiki/bin/view/products/fpga/hello-fpga/what-is/",
+    "documentIdentity": "SRAM-based and Flash-based technology sections, floating-gate MOS transistor explanation.",
+    "evidenceLocation": "SRAM-based and Flash-based technology sections, floating-gate MOS transistor explanation.",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "General volatile SRAM and nonvolatile floating-gate flash concepts. FPGA examples do not establish exact ATmega328P memory cell layout or process."
+    ],
+    "authorityNotes": "General volatile SRAM and nonvolatile floating-gate flash concepts. FPGA examples do not establish exact ATmega328P memory cell layout or process.",
+    "checksum": null
+  },
+  {
+    "id": "SRC-040",
+    "title": "Oral History of Massimo Banzi",
+    "organization": "Computer History Museum / Massimo Banzi",
+    "type": "recorded participant oral-history transcript",
+    "url": "https://archive.computerhistory.org/resources/access/text/2016/03/102740131-05-01-acc.pdf",
+    "documentIdentity": "CHM Ref X7483.2015",
+    "evidenceLocation": "Printed pages 11–12: early-2005 workshops and Arduino naming account",
+    "accessed": "2026-10-08",
+    "claimsSupported": [
+      "Banzi recalls naming Arduino after Bar Di Re Arduino in Ivrea during early development."
+    ],
+    "authorityNotes": "Attributed first-person recollection; not an adjudication of competing historical credit or independent confirmation of every date.",
+    "checksum": null
+  }
+]

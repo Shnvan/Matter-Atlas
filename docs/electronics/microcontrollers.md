@@ -20,4 +20,6 @@ Use generic complementary CMOS examples: NOT inverts; NAND is low only for two h
 
 D0/D1 UART; D2/D3 external interrupts; PWM D3, D5, D6, D9, D10, D11; SPI D10 SS, D11 COPI, D12 CIPO, D13 SCK; A4 SDA and A5 SCL also appear on duplicated Rev3 header pins. IOREF ties to +5V; AREF is not the +5V supply pin. [SRC-005, SRC-028](../../SOURCES.md)
 
-Full physical/MCU package-pin mapping and explicit core version still require TASK-007 review before public table/instruction examples. Pin-change interrupts differ from the two dedicated external interrupt inputs. See [data model](../../DATA_MODEL.md).
+The application mapping is pinned to ArduinoCore-avr **1.8.6** standard variant and cross-checked with the baseline EAGLE netlist and official pinout. This is a reviewed teaching version, not a claim about the newest core. D0–D7 map to PD0–PD7 (DIP 2, 3, 4, 5, 6, 11, 12, 13); D8–D13 to PB0–PB5 (14–19); A0–A5 to PC0–PC5 (23–28). RESET is PC6/pin 1. Dedicated oscillator pins PB6/PB7 are 9/10; VCC 7, GND 8/22, AVCC 20, AREF 21. [SRC-001, SRC-002, SRC-005, SRC-033](../../SOURCES.md)
+
+Pin-change interrupts differ from the dedicated INT0/INT1 inputs on D2/D3. A4/A5 and the separate SDA/SCL header positions share the same two MCU pins. A6/A7 constants in a generic core header do not create pins on this socketed board. PWM changes duty cycle of a digital waveform, not a built-in DAC voltage. The application also retains separate records for each physical duplicated header position. See [data model](../../DATA_MODEL.md).

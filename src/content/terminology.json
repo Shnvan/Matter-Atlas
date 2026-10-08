@@ -1,0 +1,290 @@
+[
+  {
+    "id": "conductor",
+    "term": "conductor",
+    "beginner": "A material in which charge can move readily.",
+    "precise": "Has mobile charge carriers under an applied field.",
+    "misconception": "It does not make current without a complete circuit and driving conditions.",
+    "relatedTermIds": ["current", "electric-field"],
+    "sourceRefs": ["SRC-020"]
+  },
+  {
+    "id": "insulator",
+    "term": "insulator",
+    "beginner": "A material that conducts very poorly in normal use.",
+    "precise": "Carrier availability/mobility is low under stated conditions.",
+    "misconception": "All insulators can fail under sufficiently high fields; not an absolute ban on conduction.",
+    "relatedTermIds": ["semiconductor", "capacitance"],
+    "sourceRefs": ["SRC-018", "SRC-021"]
+  },
+  {
+    "id": "semiconductor",
+    "term": "semiconductor",
+    "beginner": "A material whose carriers can be controlled for useful electrical behavior.",
+    "precise": "Its electronic states and band structure allow controllable carrier populations.",
+    "misconception": "Doping does not turn an ordinary insulator into silicon; pure silicon already is a semiconductor.",
+    "relatedTermIds": ["doping", "electron", "hole"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "dopant",
+    "term": "dopant",
+    "beginner": "An added atom that changes carrier behavior.",
+    "precise": "An impurity species introduced to modify electronic carrier concentration.",
+    "misconception": "A dopant is not a microscopic battery inside silicon.",
+    "relatedTermIds": ["doping", "n-type", "p-type"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "doping",
+    "term": "doping",
+    "beginner": "Adding controlled impurities to a semiconductor.",
+    "precise": "Changes carrier concentration and electrical characteristics.",
+    "misconception": "It is not what originally makes pure silicon a semiconductor.",
+    "relatedTermIds": ["dopant", "semiconductor"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "n-type",
+    "term": "n-type",
+    "beginner": "Semiconductor where electrons are the majority carriers.",
+    "precise": "Donor doping increases electron population relative to holes.",
+    "misconception": "The whole piece is not simply negatively charged.",
+    "relatedTermIds": ["p-type", "electron", "dopant"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "p-type",
+    "term": "p-type",
+    "beginner": "Semiconductor where holes are the majority carriers.",
+    "precise": "Acceptor doping increases hole population relative to electrons.",
+    "misconception": "The whole piece is not simply positively charged.",
+    "relatedTermIds": ["n-type", "hole", "dopant"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "electron",
+    "term": "electron",
+    "beginner": "A particle with negative electric charge.",
+    "precise": "An elementary lepton described by quantum theory.",
+    "misconception": "It is not a planet on a definite orbit and is not consumed as circuit fuel.",
+    "relatedTermIds": ["hole", "current", "electric-field"],
+    "sourceRefs": ["SRC-022", "SRC-024"]
+  },
+  {
+    "id": "hole",
+    "term": "hole",
+    "beginner": "An effective positive carrier in a semiconductor.",
+    "precise": "Missing occupation in valence electronic states behaves as a positive mobile carrier.",
+    "misconception": "It is not a literal floating empty particle.",
+    "relatedTermIds": ["electron", "p-type"],
+    "sourceRefs": ["SRC-018"]
+  },
+  {
+    "id": "current",
+    "term": "current",
+    "beginner": "How fast net charge flows.",
+    "precise": "Charge-flow rate through a cross-section, in amperes.",
+    "misconception": "Signal speed is not the same as net electron drift speed.",
+    "relatedTermIds": ["conductor", "electron", "voltage"],
+    "sourceRefs": ["SRC-020"]
+  },
+  {
+    "id": "voltage",
+    "term": "voltage",
+    "beginner": "Electric potential difference between points.",
+    "precise": "Energy change per unit charge between locations.",
+    "misconception": "A single point's voltage needs a reference.",
+    "relatedTermIds": ["current", "electric-field", "capacitance"],
+    "sourceRefs": ["SRC-020", "SRC-021"]
+  },
+  {
+    "id": "electric-field",
+    "term": "electric field",
+    "beginner": "An electrical influence that exerts force on charge.",
+    "precise": "Electric force per unit positive test charge locally.",
+    "misconception": "A MOSFET is controlled by a field, not a moving contact.",
+    "relatedTermIds": ["voltage", "mosfet"],
+    "sourceRefs": ["SRC-031"]
+  },
+  {
+    "id": "resistance",
+    "term": "resistance",
+    "beginner": "How a conductor/component limits current under stated conditions.",
+    "precise": "Ratio of voltage to current at an operating point, with material/temperature dependence.",
+    "misconception": "A resistor does not consume electrons.",
+    "relatedTermIds": ["resistor", "current"],
+    "sourceRefs": ["SRC-020"]
+  },
+  {
+    "id": "resistor",
+    "term": "resistor",
+    "beginner": "A component designed to provide resistance.",
+    "precise": "A part used for limiting current, voltage division and bias.",
+    "misconception": "A resistor is not a semiconductor or transistor by definition.",
+    "relatedTermIds": ["resistance", "circuit"],
+    "sourceRefs": ["SRC-020"]
+  },
+  {
+    "id": "capacitance",
+    "term": "capacitance",
+    "beginner": "How much separated charge a potential difference supports.",
+    "precise": "Electrode charge magnitude divided by potential difference.",
+    "misconception": "Capacitance is not the total net charge of both electrodes combined.",
+    "relatedTermIds": ["capacitor", "voltage"],
+    "sourceRefs": ["SRC-021"]
+  },
+  {
+    "id": "capacitor",
+    "term": "capacitor",
+    "beginner": "Conductors separated by an insulating dielectric.",
+    "precise": "A component supporting opposite electrode charge and electric field energy.",
+    "misconception": "It does not store free charge in the dielectric as a bucket.",
+    "relatedTermIds": ["capacitance", "insulator"],
+    "sourceRefs": ["SRC-021"]
+  },
+  {
+    "id": "diode",
+    "term": "diode",
+    "beginner": "A part whose current depends strongly on voltage direction.",
+    "precise": "A general p-n diode's junction/bias controls carrier transport.",
+    "misconception": "Reverse current is not identically zero under all conditions.",
+    "relatedTermIds": ["semiconductor", "led"],
+    "sourceRefs": ["SRC-019"]
+  },
+  {
+    "id": "led",
+    "term": "LED",
+    "beginner": "A light-emitting diode.",
+    "precise": "A semiconductor device producing photons through suitable carrier recombination.",
+    "misconception": "Color is not simply set by using more electricity.",
+    "relatedTermIds": ["diode", "photon"],
+    "sourceRefs": ["SRC-019"]
+  },
+  {
+    "id": "photon",
+    "term": "photon",
+    "beginner": "A quantum of electromagnetic radiation, including light.",
+    "precise": "An elementary field quantum with energy related to frequency.",
+    "misconception": "It is not a tiny colored ball drawn to physical size.",
+    "relatedTermIds": ["led", "electron"],
+    "sourceRefs": ["SRC-023", "SRC-024"]
+  },
+  {
+    "id": "transistor",
+    "term": "transistor",
+    "beginner": "A device that controls electrical conduction.",
+    "precise": "A semiconductor device family used for amplification and switching.",
+    "misconception": "Not every transistor is a MOSFET or a mechanical switch.",
+    "relatedTermIds": ["mosfet", "semiconductor"],
+    "sourceRefs": ["SRC-031"]
+  },
+  {
+    "id": "mosfet",
+    "term": "MOSFET",
+    "beginner": "A transistor whose gate field controls a semiconductor channel.",
+    "precise": "Metal-oxide-semiconductor field-effect transistor; bias and polarity govern operation.",
+    "misconception": "A gate HIGH does not mean ON for every polarity and source voltage.",
+    "relatedTermIds": ["transistor", "electric-field"],
+    "sourceRefs": ["SRC-008", "SRC-031"]
+  },
+  {
+    "id": "logic-gate",
+    "term": "logic gate",
+    "beginner": "A circuit implementing a logical input/output function.",
+    "precise": "Interprets voltage ranges as logical states.",
+    "misconception": "Logical zero/one are not identical to exact universal voltages.",
+    "relatedTermIds": ["circuit", "machine-code"],
+    "sourceRefs": ["SRC-031"]
+  },
+  {
+    "id": "circuit",
+    "term": "circuit",
+    "beginner": "Connected parts through which electrical effects act.",
+    "precise": "Network of elements and nodes, including supply/return/control paths.",
+    "misconception": "A drawing's arrows are not necessarily a series wire path.",
+    "relatedTermIds": ["current", "integrated-circuit"],
+    "sourceRefs": ["SRC-001"]
+  },
+  {
+    "id": "integrated-circuit",
+    "term": "integrated circuit",
+    "beginner": "Many electronic structures made together on a chip.",
+    "precise": "Interconnected digital and/or analog circuits on a semiconductor die.",
+    "misconception": "The black package is larger than the actual die and is not the die itself.",
+    "relatedTermIds": ["microcontroller", "transistor"],
+    "sourceRefs": ["SRC-006", "SRC-032"]
+  },
+  {
+    "id": "microcontroller",
+    "term": "microcontroller",
+    "beginner": "A chip combining a processor with memory and peripherals.",
+    "precise": "An embedded computing device with programmable operation and I/O.",
+    "misconception": "It is not just a CPU, and not all its blocks are logic gates.",
+    "relatedTermIds": ["integrated-circuit", "firmware"],
+    "sourceRefs": ["SRC-006"]
+  },
+  {
+    "id": "pcb",
+    "term": "PCB",
+    "beginner": "A board supporting and connecting electronic parts.",
+    "precise": "Printed circuit board with patterned conductors and insulating support.",
+    "misconception": "The board substrate is not the same as its copper traces.",
+    "relatedTermIds": ["trace", "pad", "via"],
+    "sourceRefs": ["SRC-002", "SRC-029"]
+  },
+  {
+    "id": "trace",
+    "term": "trace",
+    "beginner": "A patterned conductor on a PCB.",
+    "precise": "A routed copper feature connecting nodes.",
+    "misconception": "It is not an abstract signal arrow with zero electrical properties.",
+    "relatedTermIds": ["pcb", "conductor"],
+    "sourceRefs": ["SRC-002"]
+  },
+  {
+    "id": "pad",
+    "term": "pad",
+    "beginner": "A conductive connection area for a lead or contact.",
+    "precise": "PCB land associated with mounting/connection/test access.",
+    "misconception": "A pad need not be a via or a plated hole.",
+    "relatedTermIds": ["trace", "via"],
+    "sourceRefs": ["SRC-002"]
+  },
+  {
+    "id": "via",
+    "term": "via",
+    "beginner": "A connection between board copper layers.",
+    "precise": "A plated interlayer feature defined in the board design.",
+    "misconception": "Not every mounting hole is a via.",
+    "relatedTermIds": ["pcb", "pad"],
+    "sourceRefs": ["SRC-002"]
+  },
+  {
+    "id": "firmware",
+    "term": "firmware",
+    "beginner": "Software programmed into an embedded device.",
+    "precise": "Executable/data content used by hardware for its operation.",
+    "misconception": "Firmware is information, not literally a physical collection of gates.",
+    "relatedTermIds": ["bootloader", "machine-code"],
+    "sourceRefs": ["SRC-027"]
+  },
+  {
+    "id": "bootloader",
+    "term": "bootloader",
+    "beginner": "A program that helps load another program.",
+    "precise": "Firmware managing program transfer/storage and startup under configured conditions.",
+    "misconception": "It is not the USB bridge chip itself.",
+    "relatedTermIds": ["firmware", "microcontroller"],
+    "sourceRefs": ["SRC-003", "SRC-027"]
+  },
+  {
+    "id": "machine-code",
+    "term": "machine code",
+    "beginner": "Encoded instructions a processor can execute.",
+    "precise": "Binary instruction encodings for a specific architecture.",
+    "misconception": "High-level statements do not each map to one universal instruction.",
+    "relatedTermIds": ["firmware", "logic-gate"],
+    "sourceRefs": ["SRC-027"]
+  }
+]

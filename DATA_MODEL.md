@@ -1,6 +1,6 @@
 # Embedded data contracts
 
-Status: future application contracts, not implemented arrays. All collections are immutable content; transient interaction state lives separately in [architecture](ARCHITECTURE.md). Examples illustrate schema shape and do not constitute delivered teaching controls. Canonical factual data is reviewed into `index.html` manually.
+Status: canonical contracts for the application projections; implementation acceptance is tracked in TASKS. All collections are immutable content; transient interaction state lives separately in [architecture](ARCHITECTURE.md). Examples illustrate schema shape and do not constitute delivered teaching controls. Canonical factual data is projected into typed application modules and validated with Zod. Build-time projections never promote unsupported claims.
 
 ## Shared types and rules
 
@@ -146,4 +146,8 @@ Definitions are owned by [terminology](docs/product/terminology.md); UI abbrevia
 
 ## Validation before feature delivery
 
-Check unique IDs, enums, types, all references, complete grouped physical coverage, known SVG slots, graph navigability/history, meaningful scales, provenance, source anchors, one correct quiz answer, no optional unimplemented control. Content errors block affected teaching rendering with readable recovery during development; they must be corrected before the working release. The foundation validator checks Markdown memory, not these future runtime arrays.
+Check unique IDs, enums, types, all references, complete grouped physical coverage, known SVG slots, graph navigability/history, meaningful scales, provenance, source anchors, one correct quiz answer, no optional unimplemented control. Content errors block affected teaching rendering with readable recovery during development; they must be corrected before the working release. The foundation validator checks Markdown memory, while Zod/Vitest check the implemented runtime projections.
+
+## Interaction state extension
+
+The shared store adds theme (light/dark), focused component ID or null, isolated component ID or null, hidden component ID set, exploded flag and responsive navigator/inspector open state. Camera pan/zoom/rotation uses finite bounded values; pointer-rate updates remain in refs. Invalid component/node IDs recover to the board with readable feedback. Actual journey history stores origin and visited nodes. Static collections are not copied into the store. Assembly cancellation clears transient drag state without changing already placed parts; quiz answers can contribute to score only once.

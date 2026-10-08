@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+test-results/
+playwright-report/
+coverage/
+*.tsbuildinfo
+public/project/raw/
+public/project/archive/
+qa-artifacts/

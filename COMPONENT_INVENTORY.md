@@ -6,7 +6,7 @@ Design baseline: Arduino A000066 socketed Uno Rev3, **UNO-TH_Rev3e** schematic a
 
 Inventory rows distinguish one physical footprint from its schematic units. U5A/B belong to one U5 package; RN1-RN4 each contain four resistor units. Quantity 1 below means one CAD element, not necessarily a fitted part. JP2 is not mounted; fiducials/test pads/jumpers are board features; FRAME1 is metadata. The `.brd` has 116 elements and every one is reconciled below. Component roles derived from circuit/net topology are documented interpretations of verified connectivity. Materials, suppliers, tolerances and interiors are unknown unless specifically cited.
 
-Positions are original CAD package origins in mm, with x rightward and y upward; they are not necessarily component centers. Rotation/mirroring must be retained. Future SVG transform: xSVG = xCAD * 10, ySVG = (53.34 - yCAD) * 10, before scene margins; see [rendering](docs/engineering/rendering.md). These coordinates are sourced, not hand-estimated screen locations. Use package extents to hit-test connector overhangs.
+Positions are original CAD package origins in mm, with x rightward and y upward; they are not necessarily component centers. Rotation/mirroring must be retained. Implemented SVG transform: xSVG = xCAD, ySVG = 53.34 - yCAD (one SVG unit per CAD mm), before scene margins; see [rendering](docs/engineering/rendering.md). These coordinates are sourced, not hand-estimated screen locations. Use package extents to hit-test connector overhangs.
 
 ## Reconciled element table
 

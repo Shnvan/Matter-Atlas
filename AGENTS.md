@@ -2,9 +2,9 @@
 
 ## Mission and scope
 
-Build **Inside the Arduino Uno: From Board to Electron**, an accurate, accessible educational experience for beginners. Every meaningful object answers what it is made of and how it works. The current milestone is project foundation only: documentation, verified inventory, schemas, tasks, and an offline project guide. The six educational modes have not been implemented.
+Build **Inside the Arduino Uno: From Board to Electron**, an accurate, accessible educational experience for beginners. Every meaningful object answers what it is made of and how it works. The current milestone implements the six educational modes in a NASA-inspired scientific workspace on the verified foundation. TASKS records actual completion; the archived offline guide remains recoverable.
 
-Non-goals: hardware simulation with engineering accuracy, programming an attached board, cloud services, accounts, framework migration, exhaustive proprietary chip reconstruction, and clone-board anatomy in the main reference.
+Non-goals: hardware simulation with engineering accuracy, programming an attached board, cloud services, accounts, exhaustive proprietary chip reconstruction, and clone-board anatomy in the main reference.
 
 ## Start here
 
@@ -22,8 +22,9 @@ Canonical owners: hardware identity and board locations in [COMPONENT_INVENTORY]
 
 ## Engineering conventions
 
-The future application is one `index.html`, with inline CSS, SVG, and a classic inline script. Use vanilla ES6+, named logical modules/functions, explicit state transitions, stable IDs, event delegation, Pointer Events, and one animation coordinator. No npm, build system, runtime fetch, external required asset, framework, or localStorage-dependent core behavior. Default to no GSAP. Use textContent and explicit DOM creation for text; never interpret learner input as HTML. No analytics or external connections in the guide.
+The application uses Next.js static export, React, strict TypeScript, Tailwind, locally bundled Geist, typed/Zod-validated content and Zustand shared interaction state. Use npm and the committed lockfile. Serve the export over local HTTP; root index.html remains the historical file-URL guide. No required internet assets, runtime content fetches, analytics, accounts, hosting or persistent-storage-dependent core behavior. DEC-009 supersedes the original single-file/no-build constraint.
 
+Separate shell, viewer, navigator, inspector, toolbar, educational scenes, assembly, signals, quiz and citations. Use SVG/2.5D first; do not initialize WebGL without an accepted educational need. Keep high-frequency camera/pointer values in refs and one animation coordinator. React escapes learner text; contributor Markdown uses safe rendering from a build-time allowlist. Never interpret user input as HTML.
 Keep CSS colors in custom properties and repeated content in structured data. Do not replace accepted assumptions or make broad refactors without recording a new decision. Do not introduce a control without implemented behavior and acceptance checks.
 
 ## Research and citations
@@ -47,3 +48,7 @@ Run `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/validate-founda
 A task is DONE only when its acceptance evidence exists. Feature completion additionally requires verified content, resolving citations, working keyboard/touch alternatives, reduced motion, responsive checks, no introduced console errors, and updated documentation. Never mark unimplemented features done.
 
 After every substantial session update TASKS, relevant research/decisions, meaningful CHANGELOG entries, and every required HANDOFF heading. Keep handoff current and short. Important discoveries must survive in the repository. Avoid parallel edits to canonical files; if multiple contributors work, assign bounded tasks and one integration owner.
+
+## Repository skills
+
+Use the narrow [UI art direction](.agents/skills/ui-art-direction/SKILL.md), [Arduino fact verification](.agents/skills/arduino-fact-verification/SKILL.md), and [frontend quality gate](.agents/skills/frontend-quality-gate/SKILL.md) workflows when their described work applies. Maintain the living execution plan in [.agent/PLANS.md](.agent/PLANS.md). DESIGN and UX remain canonical; skills link rather than duplicate policy.
